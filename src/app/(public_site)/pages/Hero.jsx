@@ -5,14 +5,12 @@ import Link from 'next/link'
 
 const Hero = () => {
   return (
-    <section className="w-screen h-screen center bg-red-300 relative overflow-hidden">
-      {/* Pixel art background */}
-      {/* <div className='pixel-bg-hero' /> */}
+    <section className="w-screen h-screen center bg-red-300 relative overflow-hidden pixel-bg-hero">
       <div className="flex">
         <div>
           <div>
             <Image
-              src="/images/logo2.svg"
+              src="/svgs/logo2.svg"
               alt="SharkByte Logo"
               width={200}
               height={200}

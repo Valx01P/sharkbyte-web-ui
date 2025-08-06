@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="w-full relative bottom-0 h-[4rem] bg-green-300">
+    <footer className="w-full relative bottom-0 h-[4rem] bg-transparent shadow-2xl shadow-amber-50">
       <div className="w-full ">
         <h1>Footer</h1>
         {/* logo, social media links */}

@@ -1,23 +1,23 @@
-
 const Navbar = () => {
   return (
     <nav className="fixed top-0 z-10 w-full shadow-2xl bg-transparent">
-      <div className="center-spaced bg-green-300">
+      <div className="center-spaced">
         {/* logo */}
-        <div className="min-w-8 w-32 center-left max-tablet:bg-blue-300 bg-red-300">
-          <h1>logo</h1>
+        <div className="min-w-8 w-32 center-left">
+          <h1>SharkByte</h1>
         </div>
 
         {/* nav links */}
-        <ul className="center-spaced gap-6 max-tablet:bg-blue-300 bg-red-300">
-          <li>faq</li>
-          <li>about</li>
-          <li>sponsor</li>
+        <ul className="center-spaced gap-6">
+          <li className="max-tablet:hidden">About</li>
+          <li className="max-tablet:hidden">Schedule</li>
+          <li className="max-tablet:hidden">FAQ</li>
+          <li className="max-tablet:hidden">Sponsors</li>
         </ul>
-        
+
         {/* signup / login */}
-        <div className="min-w-8 w-32 center-right max-tablet:bg-blue-300 bg-red-300">
-          <h1>signup</h1>
+        <div className="min-w-8 w-32 center-right">
+          <h1>Register</h1>
         </div>
       </div>
     </nav>

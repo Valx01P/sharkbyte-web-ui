@@ -1,15 +1,10 @@
-
 const Schedule = () => {
   return (
-    <section id="schedule" className="w-screen h-screen center bg-green-200 relative overflow-hidden">
+    <section id="schedule" className="w-screen h-screen center bg-green-200 relative overflow-hidden pixel-bg-schedule">
       <h1>Schedule</h1>
       <div>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
+        <div></div>
+        <div></div>
       </div>
     </section>
   )

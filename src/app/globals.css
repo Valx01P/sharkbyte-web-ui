@@ -25,7 +25,6 @@
   @apply flex justify-center items-start;
 }
 
-
 .center-right {
   @apply flex justify-end items-center;
 }
@@ -72,19 +71,34 @@ body {
 }
 
 /* Prevent sections from shrinking in the horizontal flex track */
-section { 
+section {
   flex-shrink: 0;
   position: relative;
 }
 
 /* Bounce util */
 @keyframes bounce {
-  0%,20%,53%,80%,100% { transform: translateY(0); }
-  40%,43%              { transform: translateY(-10px); }
-  70%                  { transform: translateY(-5px); }
-  90%                  { transform: translateY(-3px); }
+  0%,
+  20%,
+  53%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40%,
+  43% {
+    transform: translateY(-10px);
+  }
+  70% {
+    transform: translateY(-5px);
+  }
+  90% {
+    transform: translateY(-3px);
+  }
 }
-.animate-bounce { animation: bounce 2s infinite; }
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
 
 /* @keyframes fadeIn {
   0%   { opacity: 0; transform: translateY(20px); }
@@ -97,30 +111,102 @@ section {
 
 /* ─────────────────────────  Pixel-art backgrounds  ───────────────────────── */
 .pixel-bg-hero,
-.pixel-bg-stats {
-  position: absolute;
-  inset: 0;
-  /* stretch 1 px past either side to hide rounding seam */
-  left: -1px;
-  width: calc(100% + 2px);
-  height: 100%;
-  z-index: 1;
+.pixel-bg-stats,
+.pixel-bg-about,
+.pixel-bg-schedule,
+.pixel-bg-faq,
+.pixel-bg-sponsors,
+.pixel-bg-sponsors-cta,
+.pixel-bg-team,
+.pixel-bg-socials {
   background-repeat: no-repeat;
   background-size: cover;
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges;
-  pointer-events: none;
-  opacity: 0.85;
 }
 
-.pixel-bg-hero  { background-image: url('/images/px_hero.png');  }
-.pixel-bg-stats { background-image: url('/images/px_stats.png'); }
+.pixel-bg-hero {
+  background-image: url('/images/hero.png');
+  background-position: right center;
+}
+
+.pixel-bg-stats {
+  background-image: url('/images/stats.png');
+  background-position: left center;
+}
+
+.pixel-bg-about {
+  background-image: url('/images/about.png');
+}
+
+.pixel-bg-schedule {
+  background-image: url('/images/schedule.png');
+}
+
+.pixel-bg-faq {
+  background-image: url('/images/faq.png');
+}
+
+.pixel-bg-sponsors {
+  background-image: url('/images/sponsors.png');
+}
+
+.pixel-bg-sponsors::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/rock-foreground.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.pixel-bg-sponsors-cta {
+  background-image: url('/images/sponsors-cta.png');
+}
+
+.pixel-bg-team {
+  background-image: url('/images/team.png');
+}
+
+.pixel-bg-socials {
+  background-image: url('/images/socials.png');
+}
 
 /* Mobile: keep visual “seam” by locking each half */
 @media (max-width: 768px) {
-  .pixel-bg-hero  { background-position: right center; }
-  .pixel-bg-stats { background-position: left  center; }
+  .pixel-bg-hero {
+    background-position: right center;
+  }
+  .pixel-bg-stats {
+    background-position: left center;
+  }
+}
+
+.pixel-logo {
+  color: white;
+  text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000,
+    -2px 0 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    0 2px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
 }
 
 /* 
