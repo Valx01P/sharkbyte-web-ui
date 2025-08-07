@@ -5,8 +5,8 @@ import Link from 'next/link'
 
 const Hero = () => {
   return (
-    <section className="w-screen h-screen center bg-red-300 relative overflow-hidden pixel-bg-hero">
-      <div className="flex">
+    <section className="w-screen h-screen center-left bg-red-300 relative overflow-hidden pixel-bg-hero">
+      <div className="flex w-full center-spaced">
         <div>
           <div>
             <Image
@@ -32,16 +32,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div>
-          <Image
-            src="/images/placeholder.webp"
-            alt="SharkByte Logo"
-            width={200}
-            height={200}
-            priority
-            className="w-40 h-auto bg-transparent"
-          />
-        </div>
+        <div />
       </div>
     </section>
   )

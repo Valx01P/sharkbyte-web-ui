@@ -17,7 +17,9 @@ const Navbar = () => {
 
         {/* signup / login */}
         <div className="min-w-8 w-32 center-right">
-          <h1>Register</h1>
+          <button className="bg-white border-4">
+            <h1>Register</h1>
+          </button>
         </div>
       </div>
     </nav>
