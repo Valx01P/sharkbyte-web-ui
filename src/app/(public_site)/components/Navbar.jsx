@@ -1,25 +1,25 @@
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 z-10 w-full shadow-2xl bg-transparent">
-      <div className="center-spaced">
+    <nav className="fixed px-4 top-0 z-10 w-full shadow-2xl bg-transparent">
+      <div className="flex">
         {/* logo */}
-        <div className="min-w-8 w-32 center-left">
+        <div className="center-left w-full">
           <h1>SharkByte</h1>
         </div>
 
         {/* nav links */}
-        <ul className="center-spaced gap-6">
-          <li className="max-tablet:hidden">About</li>
-          <li className="max-tablet:hidden">Schedule</li>
-          <li className="max-tablet:hidden">FAQ</li>
-          <li className="max-tablet:hidden">Sponsors</li>
+        <ul className="center-spaced gap-6 w-full">
+          <li className="max-medium:hidden">About</li>
+          <li className="max-medium:hidden">Schedule</li>
+          <li className="max-medium:hidden">FAQ</li>
+          <li className="max-medium:hidden">Sponsors</li>
         </ul>
 
         {/* signup / login */}
-        <div className="min-w-8 w-32 center-right">
-          <button className="bg-white border-4">
-            <h1>Register</h1>
-          </button>
+        <div className="center-right w-full">
+          <button className="max-medium:hidden bg-white px-3 border-3 pixel-shadow">Register</button>
+          {/* mobile hamburger menu nav */}
+          <div className="min-medium:hidden"></div>
         </div>
       </div>
     </nav>
