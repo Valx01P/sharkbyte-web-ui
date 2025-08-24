@@ -1,5 +1,6 @@
 import localFont from 'next/font/local'
 import Navbar from '@/app/(public_site)/components/Navbar'
+import Footer from '@/app/(public_site)/components/Footer'
 import SocialsOverlay from '@/app/(public_site)/components/SocialsOverlay'
 import './globals.css'
 
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {/* <SocialsOverlay /> */}
         {children}
+        <Footer />
       </body>
     </html>
   )

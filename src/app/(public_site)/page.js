@@ -9,7 +9,7 @@ import About from './pages/About'
 import Schedule from './pages/Schedule'
 import Faq from './pages/Faq'
 import Sponsors from './pages/Sponsors'
-import SponsorsCTA from './pages/SponsorsCTA'
+import Partners from './pages/Partners'
 import Team from './pages/Team'
 import Socials from './pages/Socials'
 
@@ -48,7 +48,7 @@ export default function Home() {
       <div ref={sponsorsTrackRef} className="h-screen overflow-hidden relative">
         <div ref={sponsorsRailRef} className="h-full flex">
           <Sponsors />
-          <SponsorsCTA />
+          <Partners />
           <Team />
         </div>
       </div>
