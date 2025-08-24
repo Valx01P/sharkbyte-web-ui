@@ -16,7 +16,7 @@ gsap.registerPlugin(ScrollTrigger)
 export function useHorizontalScroll({ trackRef, railRef, panels, scrubSpeed = 0.35 }) {
   useLayoutEffect(() => {
     const track = trackRef.current
-    const rail  = railRef.current
+    const rail = railRef.current
     if (!track || !rail) return
 
     let tween // holds the current gsap tween
@@ -27,7 +27,7 @@ export function useHorizontalScroll({ trackRef, railRef, panels, scrubSpeed = 0.
       tween?.kill()
 
       const screenWidth = window.innerWidth
-      const isMobile = screenWidth < 768 
+      const isMobile = screenWidth < 768
       const scrollFactor = isMobile ? 2 : 1.25 // faster scroll speed on mobile
 
       gsap.set(rail, {

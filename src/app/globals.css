@@ -211,7 +211,13 @@ section {
 } */
 
 @keyframes wiggle {
-  0% { transform: rotate(-1.5deg); }
-  50% { transform: rotate(1.5deg); }
-  100% { transform: rotate(-1.5deg); }
+  0% {
+    transform: rotate(-1.5deg);
+  }
+  50% {
+    transform: rotate(1.5deg);
+  }
+  100% {
+    transform: rotate(-1.5deg);
+  }
 }

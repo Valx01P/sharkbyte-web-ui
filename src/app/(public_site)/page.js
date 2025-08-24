@@ -13,7 +13,6 @@ import SponsorsCTA from './pages/SponsorsCTA'
 import Team from './pages/Team'
 import Socials from './pages/Socials'
 
-
 export default function Home() {
   const heroStatsTrackRef = useRef(null)
   const heroStatsRailRef = useRef(null)
@@ -21,7 +20,7 @@ export default function Home() {
   const sponsorsRailRef = useRef(null)
 
   useHorizontalScroll({ trackRef: heroStatsTrackRef, panels: 2, railRef: heroStatsRailRef })
-  useHorizontalScroll({ trackRef: sponsorsTrackRef,  panels: 3, railRef: sponsorsRailRef })
+  useHorizontalScroll({ trackRef: sponsorsTrackRef, panels: 3, railRef: sponsorsRailRef })
 
   return (
     <main className="overflow-hidden">
