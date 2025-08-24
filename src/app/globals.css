@@ -1,40 +1,10 @@
 @import 'tailwindcss';
 
 @theme {
-  --breakpoint-large: 1440px;
-  --breakpoint-medium: 1024px;
-  --breakpoint-tablet: 834px;
-  --breakpoint-largeMobile: 425px;
-  --breakpoint-mobile: 375px;
-  --breakpoint-smallMobile: 320px;
   --font-pixel: 'VT323', monospace;
   /* --color-primary: #000;
   --color-secondary: #fff;
   --text-title: 2rem; */
-}
-
-.center {
-  @apply flex justify-center items-center;
-}
-
-.center-spaced {
-  @apply flex justify-around items-center;
-}
-
-.center-top {
-  @apply flex justify-center items-start;
-}
-
-.center-right {
-  @apply flex justify-end items-center;
-}
-
-.center-bottom {
-  @apply flex justify-center items-end;
-}
-
-.center-left {
-  @apply flex justify-start items-center;
 }
 
 :root {
@@ -239,3 +209,9 @@ section {
   1px  1px 0 black;
 
 } */
+
+@keyframes wiggle {
+  0% { transform: rotate(-1.5deg); }
+  50% { transform: rotate(1.5deg); }
+  100% { transform: rotate(-1.5deg); }
+}
