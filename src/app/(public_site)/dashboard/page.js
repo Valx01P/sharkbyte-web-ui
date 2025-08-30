@@ -1,9 +1,11 @@
-
+import HackerForm from "./components/HackerForm"
+import ContributorForm from "./components/ContributorForm"
+import BetaHackerForm from "./components/BetaHackerForm"
 
 export default function Dashboard() {
   return (
-    <main className="overflow-hidden h-screen bg-gray-300 flex justify-center items-center">
-
-    </main>
+    <>
+      <BetaHackerForm/>
+    </>
   )
 }
