@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const Hero = () => {
  return (
-   <section className="flex justify-start items-center w-screen h-screen relative overflow-hidden pixel-bg-hero">
+   <section id='home' className="flex justify-start items-center w-screen h-screen relative overflow-hidden pixel-bg-hero">
      {/* CONTENT CONTAINER */}
      <div className="flex justify-around items-center w-full">
 

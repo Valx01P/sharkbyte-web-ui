@@ -2,7 +2,7 @@
 
 const About = () => {
  return (
-   <section className="w-screen h-screen flex flex-col justify-center items-center relative overflow-hidden pixel-bg-about">
+   <section id="about" className="w-screen h-screen flex flex-col justify-center items-center relative overflow-hidden pixel-bg-about">
      {/* TITLE */}
      <div className="mb-6 max-[1350px]:mb-4">
        <div className="bg-gray-900 text-white px-6 py-3 border-3 border-gray-600 pixel-shadow max-[1350px]:px-4 max-[1350px]:py-2">

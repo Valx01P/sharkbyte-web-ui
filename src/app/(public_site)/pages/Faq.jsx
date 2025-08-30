@@ -29,7 +29,7 @@ const Faq = () => {
  }
 
  return (
-   <section className="w-screen h-screen flex flex-col justify-center items-center relative overflow-hidden pixel-bg-faq">
+   <section id='faq' className="w-screen h-screen flex flex-col justify-center items-center relative overflow-hidden pixel-bg-faq px-4">
      {/* TITLE */}
      <div className="mb-4 max-[650px]:mb-3">
        <div className="bg-gray-900 text-white px-4 py-2 border-3 border-gray-600 pixel-shadow max-[650px]:px-3 max-[650px]:py-1">
@@ -38,7 +38,7 @@ const Faq = () => {
      </div>
 
      {/* FAQ CONTAINER */}
-     <div className="w-full max-w-xl px-4 max-[650px]:px-2 max-[650px]:max-w-sm">
+     <div className="w-full max-w-xl max-[650px]:max-w-full">
        <div className="space-y-2 max-[650px]:space-y-1">
          {faqData.map((faq, index) => (
            <div key={index} className="bg-gray-900 border-2 border-gray-600 pixel-shadow transition-transform duration-300 hover:scale-105">
@@ -47,13 +47,13 @@ const Faq = () => {
                onClick={() => toggleFaq(index)}
                className="w-full p-3 text-left text-white flex justify-between items-center max-[650px]:p-2"
              >
-               <span className="font-bold text-sm max-[650px]:text-xs">{faq.question}</span>
-               <span className={`text-lg transition-transform duration-300 max-[650px]:text-base ${openFaq === index ? 'rotate-45' : ''}`}>+</span>
+               <span className="font-bold text-sm max-[650px]:text-xs pr-4">{faq.question}</span>
+               <span className={`text-lg transition-transform duration-300 max-[650px]:text-base flex-shrink-0 ${openFaq === index ? 'rotate-45' : ''}`}>+</span>
              </button>
              
              {/* ANSWER */}
              {openFaq === index && (
-               <div className="px-2 pt-2 pb-3 text-white border-t border-gray-600">
+               <div className="px-3 pb-3 text-white border-t border-gray-600 max-[650px]:px-2 max-[650px]:pb-2">
                  <p className="text-gray-200 text-sm max-[650px]:text-xs">{faq.answer}</p>
                </div>
              )}

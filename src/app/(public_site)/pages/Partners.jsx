@@ -7,7 +7,7 @@ const Partners = () => {
   ]
 
   return (
-    <section className="w-screen h-screen flex flex-col justify-center items-center relative overflow-hidden pixel-bg-sponsors-cta px-4">
+    <section id="partners" className="w-screen h-screen flex flex-col justify-center items-center relative overflow-hidden pixel-bg-sponsors-cta px-4">
       {/* COMMUNITY PARTNERS TITLE */}
       <div className="mb-4 max-[650px]:mb-3 relative z-10">
         <div className="bg-gray-900 text-white px-4 py-2 border-3 border-gray-600 pixel-shadow max-[650px]:px-3 max-[650px]:py-1">
