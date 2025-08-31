@@ -38,7 +38,7 @@ const Navbar = () => {
      <div className="flex justify-between h-full relative px-4 max-[1026px]:px-0">
       {
         (pathname === '/') &&
-        <div className='w-[115px] h-[175px] max-[1350px]:w-[100px] max-[1350px]:h-[145px] bg-blue fixed top-[60px] left-[-10px]'>
+        <a href="https://mlh.io/seasons/2026/events" className='w-[115px] h-[175px] max-[1350px]:w-[100px] max-[1350px]:h-[145px] bg-blue fixed top-[60px] left-[-10px]'>
           <Image
             src="/svgs/mlh.svg"
             alt="mlh-logo"
@@ -46,7 +46,7 @@ const Navbar = () => {
             height={150}
             className="w-full h-full"
           />
-        </div>
+        </a>
       }
 
       

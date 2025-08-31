@@ -4,7 +4,7 @@ const Stats = () => {
  return (
    <section id="stats" className="w-screen h-screen flex justify-center items-center relative overflow-hidden pixel-bg-stats">
      {/* CONTENT CONTAINER */}
-     <div className="flex justify-around items-center w-full">
+     <div className="flex justify-around items-center w-full flex-row-reverse">
 
        {/* LEFT SIDE */}
        <div />
