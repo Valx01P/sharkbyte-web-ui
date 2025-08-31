@@ -8,9 +8,6 @@ import { useRouter } from 'next/navigation'
 
 const Navbar = () => {
  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
- const [isLoginMenuOpen, setIsLoginMenuOpen] = useState(false)
- const [isLoggedIn, setIsLoggedIn] = useState(true)
- const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false)
  const pathname = usePathname()
  const router = useRouter()
 
@@ -55,13 +52,9 @@ const Navbar = () => {
       
       {/* LOGO */}
       <div className="flex justify-center items-center w-min">
-        {/* DIVIDER */}
-        {/* <div className='max-[1026px]:hidden px-4 max-[1350px]:text-sm max-[1350px]:px-2'> | </div> */}
         <Link href="/" className="text-[35px] transition-transform duration-300 hover:animate-[wiggle_2s_ease-in-out_infinite] cursor-pointer pl-4 max-[1350px]:text-sm">
           SharkByte
         </Link>
-        {/* DIVIDER */}
-        {/* <div className='max-[1026px]:hidden px-4 max-[1350px]:text-sm max-[1350px]:px-2'> | </div> */}
       </div>
 
       {/* _____ DESKTOP _____ */}
@@ -79,26 +72,6 @@ const Navbar = () => {
       {/* _____ DESKTOP _____ */}
       <div className='max-[1026px]:hidden flex items-center justify-end relative'>
         <div className="flex items-center">
-          {/* Login */}
-          {!isLoggedIn ? (
-            <div className='h-[35px] transition-transform duration-300 hover:scale-105 bg-gradient-to-l from-[#6366f1] to-[#8b5cf6] text-white px-3 border-3 border-gray-600 pixel-shadow max-[1350px]:text-sm max-[1350px]:px-2 flex justify-center items-center cursor-pointer'>
-              Login
-            </div>
-          ) : (
-            <Link 
-              href="/dashboard" 
-              className="bg-gradient-to-r from-[#fc6cfc] via-[#cc73fc] to-[#8784fb] 
-                        bg-clip-text text-transparent 
-                        transition-transform duration-300 hover:scale-110 
-                        max-[1350px]:text-sm cursor-pointer"
-            >
-              Dashboard
-            </Link>
-          )}
-
-
-          {/* DIVIDER */}
-          <div className='px-2 max-[1350px]:text-sm'> | </div>
           {/* Socials */}
           <div className='flex gap-2 pr-2 max-[1350px]:text-sm'>
             <a href="https://discord.gg/sharkbyte" target="_blank" rel="noopener noreferrer">
@@ -111,27 +84,6 @@ const Navbar = () => {
               <svg className='transition-transform duration-300 hover:scale-110' stroke="currentColor" fill="currentColor" viewBox="0 0 448 512" focusable="false" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
             </a>
           </div>
-          {
-            isLoggedIn &&
-            <>
-              {/* DIVIDER */}
-              <div className='max-[1350px]:text-sm pr-2'> | </div>
-              <Image
-
-                src="https://yt3.ggpht.com/yti/ANjgQV9vmQj7nDQfs2WN4onJkOiXSuHn9s-Dwkrn3dG49vaBRtw=s88-c-k-c0x00ffffff-no-rj"
-                height={42}
-                width={42}
-                className='rounded-full cursor-pointer'
-                alt="profile"
-                onClick={() => setIsProfileMenuOpen(!isProfileMenuOpen)}
-              />
-              {isProfileMenuOpen &&
-              <div className='fixed top-[60px] right-0 bg-gray-900 border border-gray-500 w-[100px] h-[70px] flex justify-center items-center'>
-                <p className='text-xs'>Logout</p>
-              </div>
-              }
-            </>
-          }
         </div>
       </div>
 
@@ -174,37 +126,13 @@ const Navbar = () => {
                {/* Menu content */}
                <div className="flex flex-col items-end pr-8 space-y-6">
                  {/* Nav Links */}
-                 <div className="flex flex-col it ems-end space-y-4">
+                 <div className="flex flex-col items-end space-y-4">
                    <button onClick={() => { scrollToSection('home'); setIsMobileMenuOpen(false); }} className="text-right relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Home</button>
                    <button onClick={() => { scrollToSection('about'); setIsMobileMenuOpen(false); }} className="text-right relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">About</button>
                    <button onClick={() => { scrollToSection('schedule'); setIsMobileMenuOpen(false); }} className="text-right relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Schedule</button>
                    <button onClick={() => { scrollToSection('faq'); setIsMobileMenuOpen(false); }} className="text-right relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">FAQ</button>
                    <button onClick={() => { scrollToSection('sponsors'); setIsMobileMenuOpen(false); }} className="text-right relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Sponsors</button>
-                  { isLoggedIn &&
-                  <>
-                    <Link 
-                      href="/dashboard" 
-                      className="bg-gradient-to-r from-[#fc6cfc] via-[#cc73fc] to-[#8784fb] 
-                                bg-clip-text text-transparent 
-                                transition-transform duration-300 hover:scale-110 
-                                max-[1350px]:text-sm cursor-pointer"
-                    >
-                      Dashboard
-                    </Link>
-                  </>
-                  }
                  </div>
-                 
-                 {/* Login button - Fixed height and padding */}
-                 {!isLoggedIn ? (
-                   <div className="h-8 transition-transform duration-300 hover:scale-105 bg-gradient-to-l from-[#6366f1] to-[#8b5cf6] text-white px-4 border-3 border-gray-600 pixel-shadow cursor-pointer flex items-center justify-center">
-                      Login
-                   </div>
-                 ) : (
-                  <div className="h-8 transition-transform duration-300 hover:scale-105 bg-gradient-to-l from-[#6366f1] to-[#8b5cf6] text-white px-4 border-3 border-gray-600 pixel-shadow cursor-pointer flex items-center justify-center">
-                      Logout
-                   </div>
-                 )}
                  
                  {/* Social icons */}
                  <div className="flex gap-3 pt-4">

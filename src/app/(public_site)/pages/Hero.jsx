@@ -30,7 +30,7 @@ const Hero = () => {
              November 7th - 9th, 2025
            </p>
            <div className="m-2 max-[1350px]:m-1.5 max-[650px]:m-1 flex justify-center">
-           <Link href="/register" prefetch={false} className="group">
+           <Link href="https://airtable.com/appY1e4YbYhqNWdpE/shr5bPimkY7ck4v88" prefetch={false} className="group">
              <h1 className="relative w-min overflow-hidden bg-gradient-to-l from-[#6366f1] to-[#8b5cf6] px-3 max-[650px]:px-2 border-3 border-gray-600 pixel-shadow text-white">
                <span className="relative z-20 block">Register</span>
                <span className="pointer-events-none absolute inset-0 z-0 opacity-0 transition-opacity duration-700 ease-out group-hover:opacity-100 bg-gradient-to-r from-[#8b5cf6] to-[#6366f1]"></span>

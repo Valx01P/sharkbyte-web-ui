@@ -37,7 +37,7 @@ const Socials = () => {
        </div>
 
        {/* REGISTER BUTTON - Hero Style */}
-       <Link href="/register" prefetch={false} className="group">
+       <Link href="https://airtable.com/appY1e4YbYhqNWdpE/shr5bPimkY7ck4v88" prefetch={false} className="group">
          <div className="relative w-min overflow-hidden bg-gradient-to-l from-[#6366f1] to-[#8b5cf6] px-6 py-3 border-3 border-gray-600 pixel-shadow text-white max-[650px]:px-4 max-[650px]:py-2">
            <span className="relative z-20 block font-bold text-base max-[1350px]:text-base max-[650px]:text-sm">Register</span>
            <span className="pointer-events-none absolute inset-0 z-0 opacity-0 transition-opacity duration-700 ease-out group-hover:opacity-100 bg-gradient-to-r from-[#8b5cf6] to-[#6366f1]"></span>

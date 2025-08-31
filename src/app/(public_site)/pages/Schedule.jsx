@@ -64,10 +64,10 @@ const Schedule = () => {
   return (
     <section
       id="schedule"
-      className="w-screen h-screen flex flex-col justify-center items-center relative overflow-hidden pixel-bg-schedule"
+      className="w-screen min-h-screen flex flex-col justify-start items-center relative overflow-hidden pixel-bg-schedule py-16 max-[650px]:py-12"
     >
       {/* TITLE */}
-      <div className="mb-6 max-[650px]:mb-4">
+      <div className="mb-6 max-[650px]:mb-4 mt-4 max-[650px]:mt-2">
         <div className="bg-gray-900 text-white px-6 py-3 border-3 border-gray-600 pixel-shadow max-[650px]:px-4 max-[650px]:py-2">
           <h1 className="text-lg font-bold text-center max-[1350px]:text-base max-[650px]:text-xs">Event Schedule</h1>
         </div>
@@ -92,7 +92,7 @@ const Schedule = () => {
       </div>
 
       {/* TIMELINE CONTAINER */}
-      <div className="w-full max-w-5lg px-4 max-[650px]:px-2">
+      <div className="w-full max-w-5lg px-4 max-[650px]:px-2 flex-1 flex flex-col justify-center">
         <div className="overflow-x-auto p-4">
           <div className="flex gap-4 pb-4 min-w-max max-[650px]:gap-3">
             {scheduleData[activeDay].events.map((event, eventIndex) => (
