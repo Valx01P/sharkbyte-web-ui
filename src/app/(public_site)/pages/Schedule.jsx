@@ -48,17 +48,17 @@ const Schedule = () => {
 
   // Event type styling - custom dark colors (no reds/yellows)
   const getEventTypeStyle = (type) => {
-  const styles = {
-    admin: "bg-gradient-to-r from-[#2d3748] to-[#1a202c]",
-    ceremony: "bg-gradient-to-r from-[#553c9a] to-[#2d1b69]",
-    networking: "bg-gradient-to-r from-[#2c5282] to-[#1a365d]",
-    food: "bg-gradient-to-r from-[#2f855a] to-[#1c4532]",
-    coding: "bg-gradient-to-r from-[#4a5568] to-[#2d3748]",
-    workshop: "bg-gradient-to-r from-[#38b2ac] to-[#285e61]",
-    mentorship: "bg-gradient-to-r from-[#5a67d8] to-[#3c366b]",
-    presentation: "bg-gradient-to-r from-[#b83280] to-[#702459]",
-  }
-  return styles[type] || "bg-gradient-to-r from-[#2d3748] to-[#1a202c]"
+    const styles = {
+      admin: "bg-gradient-to-r from-[#2d3748] to-[#1a202c]",
+      ceremony: "bg-gradient-to-r from-[#553c9a] to-[#2d1b69]",
+      networking: "bg-gradient-to-r from-[#2c5282] to-[#1a365d]",
+      food: "bg-gradient-to-r from-[#2f855a] to-[#1c4532]",
+      coding: "bg-gradient-to-r from-[#4a5568] to-[#2d3748]",
+      workshop: "bg-gradient-to-r from-[#38b2ac] to-[#285e61]",
+      mentorship: "bg-gradient-to-r from-[#5a67d8] to-[#3c366b]",
+      presentation: "bg-gradient-to-r from-[#b83280] to-[#702459]",
+    }
+    return styles[type] || "bg-gradient-to-r from-[#2d3748] to-[#1a202c]"
   }
 
   return (
