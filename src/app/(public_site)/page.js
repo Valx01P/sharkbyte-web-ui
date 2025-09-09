@@ -46,7 +46,7 @@ export default function Home() {
 
       {/* HORIZONTAL */}
       <div ref={sponsorsTrackRef} className="h-screen overflow-hidden relative">
-        <div ref={sponsorsRailRef} className="h-full flex">
+        <div ref={sponsorsRailRef} className="h-full w-auto flex">
           <Sponsors />
           <Partners />
           <Team />

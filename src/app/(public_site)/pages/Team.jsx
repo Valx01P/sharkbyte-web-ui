@@ -3,29 +3,52 @@
 const Team = () => {
  const teamMembers = [
    {
-     name: "Alex Rodriguez",
+     name: "Yandel",
      role: "Director",
-     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face"
+     image: "/images/team/yandel.png",
+     linkedin: "https://www.linkedin.com/in/yp06/"
    },
    {
-     name: "Sarah Chen",
-     role: "Design",
-     image: "https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fHww?w=1200&h=1400&fit=crop&crop=face"
+     name: "Raul",
+     role: "Co-Director",
+     image: "/images/team/raul.png",
+     linkedin: "https://www.linkedin.com/in/raul02/"
    },
    {
-     name: "Marcus Johnson",
-     role: "Web Dev",
-     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face"
+     name: "Abigail",
+     role: "Marketing",
+     image: "/images/team/abigail.png",
+     linkedin: "https://www.linkedin.com/in/abigail-lozano317/"
    },
    {
-     name: "Emily Davis",
-     role: "Operations",
-     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face"
-   },
-   {
-     name: "Jordan Kim",
+     name: "Daniel",
      role: "Outreach",
-     image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=80&h=80&fit=crop&crop=face"
+     image: "/images/team/daniel.png",
+     linkedin: "https://www.linkedin.com/in/daniel-rodriguez-3ab841372"
+   },
+   {
+     name: "Jorge",
+     role: "Outreach",
+     image: "/images/team/jorge.png",
+     linkedin: "https://www.linkedin.com/in/jorge-rodriguez-27a4a6231/"
+   },
+   {
+     name: "Julianna",
+     role: "Marketing",
+     image: "/images/team/julianna.png",
+     linkedin: "https://www.linkedin.com/in/julianna-chii/"
+   },
+   {
+     name: "Pablo",
+     role: "Web Design",
+     image: "/images/team/pablo.png",
+     linkedin: "https://www.linkedin.com/in/pablovaldes01/"
+   },
+   {
+     name: "Santiago",
+     role: "Sponsors",
+     image: "/images/team/santiago.png",
+     linkedin: "https://www.linkedin.com/in/santiago-padron-62922526b/"
    }
  ]
 
@@ -38,35 +61,130 @@ const Team = () => {
        </div>
      </div>
 
-     {/* TEAM GRID */}
-     <div className="relative z-10 grid grid-cols-3 gap-3 max-[650px]:gap-2">
-       {/* Top row - 3 members */}
-       {teamMembers.slice(0, 3).map((member, index) => (
-         <div key={index} className="bg-gray-900 text-white p-2 border-2 border-gray-600 pixel-shadow text-center max-[650px]:p-1.5 transition-transform duration-300 hover:animate-[wiggle_2s_ease-in-out_infinite] cursor-pointer">
-           <img 
-             src={member.image} 
-             alt={member.name}
-             className="w-12 h-12 rounded-full mx-auto mb-1 border border-gray-600 max-[650px]:w-10 max-[650px]:h-10"
-           />
-           <h3 className="font-bold text-xs max-[650px]:text-[18px]">{member.name}</h3>
-           <p className="text-gray-300 text-[22px] max-[650px]:text-[17px]">{member.role}</p>
-         </div>
-       ))}
+     {/* DESKTOP TEAM GRID */}
+     <div className="max-[650px]:hidden">
+       {/* Top row - 2 members */}
+       <div className="relative z-10 grid grid-cols-2 gap-3">
+         {teamMembers.slice(0, 2).map((member, index) => (
+           <a 
+             key={index} 
+             href={member.linkedin} 
+             target="_blank" 
+             rel="noopener noreferrer"
+             className="flex justify-center items-center gap-0 flex-col bg-gray-900 text-white px-2 py-1 border-2 border-gray-600 pixel-shadow text-center transition-transform duration-300 hover:animate-[wiggle_2s_ease-in-out_infinite] hover:scale-105 cursor-pointer"
+           >
+             <div className="h-[150px]">
+              <img 
+                src={member.image} 
+                alt={member.name}
+                className="w-11 h-11 rounded-full mx-auto mb-0.5 mt-0.5 border border-gray-600"
+              />
+              <h3 className="font-bold text-[20px]">{member.name}</h3>
+              <p className="text-gray-300 relative top-[-10px] text-[20px]">{member.role}</p>
+             </div>
+           </a>
+         ))}
+       </div>
+
+       {/* Middle row - 3 members */}
+       <div className="relative z-10 grid grid-cols-3 gap-3 mt-3">
+         {teamMembers.slice(2, 5).map((member, index) => (
+           <a 
+             key={index} 
+             href={member.linkedin} 
+             target="_blank" 
+             rel="noopener noreferrer"
+             className="flex justify-center items-center gap-0 flex-col bg-gray-900 text-white px-2 py-1 border-2 border-gray-600 pixel-shadow text-center transition-transform duration-300 hover:animate-[wiggle_2s_ease-in-out_infinite] hover:scale-105 cursor-pointer"
+           >
+             <div className="h-[150px]">
+              <img 
+                src={member.image} 
+                alt={member.name}
+                className="w-11 h-11 rounded-full mx-auto mb-0.5 mt-0.5 border border-gray-600"
+              />
+              <h3 className="font-bold text-[20px]">{member.name}</h3>
+              <p className="text-gray-300 relative top-[-10px] text-[20px]">{member.role}</p>
+             </div>
+           </a>
+         ))}
+       </div>
+
+       {/* Bottom row - 3 members */}
+       <div className="relative z-10 grid grid-cols-3 gap-3 mt-3">
+         {teamMembers.slice(5, 8).map((member, index) => (
+           <a 
+             key={index} 
+             href={member.linkedin} 
+             target="_blank" 
+             rel="noopener noreferrer"
+             className="flex justify-center items-center gap-0 flex-col bg-gray-900 text-white px-2 py-1 border-2 border-gray-600 pixel-shadow text-center transition-transform duration-300 hover:animate-[wiggle_2s_ease-in-out_infinite] hover:scale-105 cursor-pointer"
+           >
+             <div className="h-[150px]">
+              <img 
+                src={member.image} 
+                alt={member.name}
+                className="w-11 h-11 rounded-full mx-auto mb-0.5 mt-0.5 border border-gray-600"
+              />
+              <h3 className="font-bold text-[20px]">{member.name}</h3>
+              <p className="text-gray-300 relative top-[-10px] text-[20px]">{member.role}</p>
+             </div>
+           </a>
+         ))}
+       </div>
      </div>
 
-     {/* Bottom row - 2 members centered */}
-     <div className="relative z-10 grid grid-cols-2 gap-3 mt-3 max-[650px]:gap-2 max-[650px]:mt-2">
-       {teamMembers.slice(3, 5).map((member, index) => (
-         <div key={index} className="bg-gray-900 text-white p-2 border-2 border-gray-600 pixel-shadow text-center max-[650px]:p-1.5 transition-transform duration-300 hover:animate-[wiggle_2s_ease-in-out_infinite] cursor-pointer">
-           <img 
-             src={member.image} 
-             alt={member.name}
-             className="w-12 h-12 rounded-full mx-auto mb-1 border border-gray-600 max-[650px]:w-10 max-[650px]:h-10"
-           />
-           <h3 className="font-bold text-xs max-[650px]:text-[18px]">{member.name}</h3>
-           <p className="text-gray-300 text-[22px] max-[650px]:text-[17px]">{member.role}</p>
+     {/* MOBILE TWO-ROW CAROUSEL */}
+     <div className="min-[651px]:hidden relative z-10 w-full overflow-x-auto">
+       <div className="flex flex-col gap-2">
+         {/* Top row */}
+         <div className="flex gap-2 px-4" style={{ width: 'max-content' }}>
+           {teamMembers.slice(0, 4).map((member, index) => (
+             <a 
+               key={index} 
+               href={member.linkedin} 
+               target="_blank" 
+               rel="noopener noreferrer"
+               className="flex justify-center items-center gap-0 flex-col bg-gray-900 text-white px-2 py-1 border-2 border-gray-600 pixel-shadow text-center transition-transform duration-300 hover:animate-[wiggle_2s_ease-in-out_infinite] hover:scale-105 cursor-pointer flex-shrink-0"
+             >
+               <div className="h-[150px]">
+                <img 
+                  src={member.image} 
+                  alt={member.name}
+                  className="w-11 h-11 rounded-full mx-auto mb-0.5 mt-0.5 border border-gray-600"
+                />
+                <h3 className="font-bold text-[20px]">{member.name}</h3>
+                <p className="text-gray-300 relative top-[-10px] text-[20px]">{member.role}</p>
+               </div>
+             </a>
+           ))}
          </div>
-       ))}
+         {/* Bottom row */}
+         <div className="flex gap-2 px-4 pb-2" style={{ width: 'max-content' }}>
+           {teamMembers.slice(4, 8).map((member, index) => (
+             <a 
+               key={index + 4} 
+               href={member.linkedin} 
+               target="_blank" 
+               rel="noopener noreferrer"
+               className="flex justify-center items-center gap-0 flex-col bg-gray-900 text-white px-2 py-1 border-2 border-gray-600 pixel-shadow text-center transition-transform duration-300 hover:animate-[wiggle_2s_ease-in-out_infinite] hover:scale-105 cursor-pointer flex-shrink-0"
+             >
+               <div className="h-[150px]">
+                <img 
+                  src={member.image} 
+                  alt={member.name}
+                  className="w-11 h-11 rounded-full mx-auto mb-0.5 mt-0.5 border border-gray-600"
+                />
+                <h3 className="font-bold text-[20px]">{member.name}</h3>
+                <p className="text-gray-300 relative top-[-10px] text-[20px]">{member.role}</p>
+               </div>
+             </a>
+           ))}
+         </div>
+       </div>
+     </div>
+     {/* MOBILE SCROLL INDICATOR */}
+     <div className="min-[651px]:hidden mt-3 text-gray-800 font-bold text-sm text-center max-[650px]:text-xs">
+       ← Scroll horizontally to view team →
      </div>
    </section>
  )

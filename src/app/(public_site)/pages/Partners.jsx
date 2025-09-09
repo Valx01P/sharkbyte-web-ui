@@ -2,8 +2,14 @@
 
 const Partners = () => {
   const partners = [
-    "Miami Dade College", "IEEE", "ACM", "Google Developer Groups",
-    "Microsoft Student Partners", "GitHub Campus", "Figma Community"
+    ["Miami Dade College", "https://www.mdc.edu/"],
+    ["INIT Pro", "https://www.linkedin.com/company/init-pro"],
+    ["Knight Foundation", "https://knightfoundation.org/community/miami/"],
+    ["Lab22c", "https://lab22c.com/"],
+    ["City of Miami", "https://www.miami.gov/Home"],
+    ["Miami Tech Works", "https://miamitechworks.org/"],
+    ["Momentum Miami", "https://www.momentum.miami/"],
+    ["Entec MDC", "https://www.mdc.edu/entec/"],
   ]
 
   return (
@@ -19,12 +25,13 @@ const Partners = () => {
       <div className="p-2 relative z-10 w-full max-w-xl bg-gray-900 text-white border-3 border-gray-600 pixel-shadow">
         <div className="grid grid-cols-3 gap-4 text-center max-[1350px]:gap-3 max-[650px]:grid-cols-2 max-[650px]:gap-2">
           {partners.map((partner, index) => (
-            <div 
+            <a 
+              href={partner[1]}
               key={index} 
               className="text-sm font-medium flex justify-center items-center text-white hover:text-[#8b5cf6] transition-colors duration-300 cursor-pointer max-[650px]:text-xs"
             >
-              {partner}
-            </div>
+              {partner[0]}
+            </a>
           ))}
         </div>
       </div>

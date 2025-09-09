@@ -5,50 +5,64 @@ import { useState } from 'react'
 const Schedule = () => {
   const [activeDay, setActiveDay] = useState(0)
 
-  // Schedule data - easily editable array structure
+  // Schedule data - updated to match Excel run of show
   const scheduleData = [
     {
       date: "Nov 7th",
       day: "Friday",
       events: [
-        { time: "6:00 PM", title: "Registration & Check-in", location: "Main Lobby", type: "admin" },
-        { time: "7:00 PM", title: "Opening Ceremony", location: "Auditorium", type: "ceremony" },
-        { time: "8:00 PM", title: "Team Formation", location: "Main Hall", type: "networking" },
-        { time: "9:00 PM", title: "Dinner & Networking", location: "Cafeteria", type: "food" },
-        { time: "10:00 PM", title: "Hacking Begins!", location: "Building 7", type: "coding" },
+        { time: "2:00 PM", title: "Setup", location: "Venue", type: "internal" },
+        { time: "4:00 PM", title: "Final checks", location: "Venue", type: "internal" },
+        { time: "5:00 PM", title: "Opening Ceremony", location: "Main Hall", type: "public" },
+        { time: "7:00 PM", title: "Dinner service prep", location: "Kitchen", type: "internal" },
+        { time: "8:00 PM", title: "Dinner service", location: "Cafeteria", type: "public" },
       ]
     },
     {
       date: "Nov 8th",
       day: "Saturday",
       events: [
-        { time: "8:00 AM", title: "Breakfast", location: "Cafeteria", type: "food" },
-        { time: "9:00 AM", title: "Etcetera presents", location: "Room 1111", type: "workshop" },
-        { time: "10:00 AM", title: "Lunch", location: "Building 7, Room 1111", type: "food" },
-        { time: "12:00 PM", title: "Tech Workshop: AI/ML", location: "Room 205", type: "workshop" },
-        { time: "2:00 PM", title: "Mentor Check-ins", location: "Various Rooms", type: "mentorship" },
-        { time: "6:00 PM", title: "Dinner", location: "Cafeteria", type: "food" },
-        { time: "8:00 PM", title: "Mini Presentations", location: "Main Hall", type: "presentation" },
-        { time: "10:00 PM", title: "Late Night Snacks", location: "Building 7", type: "food" },
+        { time: "6:00 AM", title: "Breakfast service prep", location: "Kitchen", type: "internal" },
+        { time: "7:00 AM", title: "Breakfast service", location: "Cafeteria", type: "public" },
+        { time: "8:00 AM", title: "Sponsor event", location: "Conference Room", type: "sponsor" },
+        { time: "8:30 AM", title: "Morning activities", location: "Main Hall", type: "public" },
+        { time: "10:00 AM", title: "Workshop session", location: "Room 205", type: "public" },
+        { time: "11:00 AM", title: "Networking break", location: "Lobby", type: "public" },
+        { time: "11:15 AM", title: "Lunch service prep", location: "Kitchen", type: "internal" },
+        { time: "12:00 PM", title: "Lunch service", location: "Cafeteria", type: "public" },
+        { time: "1:30 PM", title: "Sponsor table prep", location: "Main Hall", type: "internal" },
+        { time: "2:00 PM", title: "MDC table", location: "Main Hall", type: "public" },
+        { time: "2:15 PM", title: "ROO Capital", location: "Main Hall", type: "public" },
+        { time: "7:45 PM", title: "Dinner service prep", location: "Kitchen", type: "internal" },
+        { time: "8:30 PM", title: "Dinner service", location: "Cafeteria", type: "public" },
       ]
     },
     {
       date: "Nov 9th",
       day: "Sunday",
       events: [
-        { time: "8:00 AM", title: "Breakfast", location: "Cafeteria", type: "food" },
-        { time: "10:00 AM", title: "Final Submissions Due", location: "Online Portal", type: "admin" },
-        { time: "11:00 AM", title: "Project Demos", location: "Main Hall", type: "presentation" },
-        { time: "1:00 PM", title: "Lunch & Judging", location: "Cafeteria", type: "food" },
-        { time: "3:00 PM", title: "Closing Ceremony", location: "Auditorium", type: "ceremony" },
-        { time: "4:00 PM", title: "Awards & Prizes", location: "Auditorium", type: "ceremony" },
+        { time: "7:00 AM", title: "Breakfast service prep", location: "Kitchen", type: "internal" },
+        { time: "8:00 AM", title: "Breakfast service", location: "Cafeteria", type: "public" },
+        { time: "9:00 AM", title: "Final preparations", location: "Main Hall", type: "public" },
+        { time: "11:00 AM", title: "Project setup", location: "Demo Area", type: "public" },
+        { time: "11:30 AM", title: "Lunch service prep", location: "Kitchen", type: "internal" },
+        { time: "12:30 PM", title: "Lunch service", location: "Cafeteria", type: "public" },
+        { time: "12:45 PM", title: "Sponsor activities", location: "Conference Room", type: "sponsor" },
+        { time: "1:00 PM", title: "Judging begins", location: "Demo Area", type: "public" },
+        { time: "2:30 PM", title: "Sponsor presentation", location: "Main Hall", type: "sponsor" },
+        { time: "3:55 PM", title: "Final submission", location: "Online Portal", type: "internal" },
+        { time: "4:30 PM", title: "Project evaluation", location: "Demo Area", type: "public" },
+        { time: "7:00 PM", title: "Closing ceremony", location: "Auditorium", type: "public" },
       ]
     }
   ]
 
-  // Event type styling - custom dark colors (no reds/yellows)
+  // Event type styling - added internal, public, sponsor types
   const getEventTypeStyle = (type) => {
     const styles = {
+      internal: "bg-gradient-to-r from-[#2c5282] to-[#1a365d]",
+      public: "bg-gradient-to-r from-[#2f855a] to-[#1c4532]",
+      sponsor: "bg-gradient-to-r from-[#d69e2e] to-[#b7791f]",
       admin: "bg-gradient-to-r from-[#2d3748] to-[#1a202c]",
       ceremony: "bg-gradient-to-r from-[#553c9a] to-[#2d1b69]",
       networking: "bg-gradient-to-r from-[#2c5282] to-[#1a365d]",
@@ -64,7 +78,7 @@ const Schedule = () => {
   return (
     <section
       id="schedule"
-      className="w-screen min-h-screen flex flex-col justify-start items-center relative overflow-hidden pixel-bg-schedule py-16 max-[650px]:py-12"
+      className="w-screen min-h-screen flex flex-col justify-start items-center relative overflow-hidden pixel-bg-schedule py-10 max-[650px]:py-20"
     >
       {/* TITLE */}
       <div className="mb-6 max-[650px]:mb-4 mt-4 max-[650px]:mt-2">
@@ -74,7 +88,7 @@ const Schedule = () => {
       </div>
 
       {/* TAB NAVIGATION */}
-      <div className="flex gap-2 mb-6 max-[650px]:mb-4 max-[650px]:gap-1">
+      <div className="flex gap-2 max-[650px]:gap-1">
         {scheduleData.map((day, index) => (
           <button
             key={index}
@@ -92,9 +106,9 @@ const Schedule = () => {
       </div>
 
       {/* TIMELINE CONTAINER */}
-      <div className="w-full max-w-5lg px-4 max-[650px]:px-2 flex-1 flex flex-col justify-center">
+      <div className="w-full max-w-5l px-4 max-[650px]:px-2 flex-1 flex flex-col justify-center">
         <div className="overflow-x-auto p-4">
-          <div className="flex gap-4 pb-4 min-w-max max-[650px]:gap-3">
+          <div className="flex gap-4 min-w-max max-[650px]:gap-3">
             {scheduleData[activeDay].events.map((event, eventIndex) => (
               <div key={eventIndex} className="flex-shrink-0 relative">
                 {/* EVENT CARD */}

@@ -65,8 +65,8 @@ const Faq = () => {
      {/* CONTACT */}
      <div className="mt-4 max-[1350px]:mt-3.5 mx-2">
        <div className="bg-gray-900 text-white px-4 py-3 border-3 border-gray-600 pixel-shadow max-[650px]:px-3 max-[650px]:py-2">
-         <p className="text-center text-sm max-[1350px]:text-xs max-[650px]:text-[20px]">
-           Can't find your answer? Email us at <span className="font-bold">hello@sharkbyte.dev</span>
+         <p className="text-center text-sm max-[1350px]:text-[20px]">
+          Can't find your answer? Email us at <a href="mailto:mdc-north@weareinit.org" className="text-[#8b5cf6] hover:underline">mdc-north@weareinit.org</a>
          </p>
        </div>
      </div>
