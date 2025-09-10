@@ -23,7 +23,7 @@ const Hero = () => {
           </div>
           {/* CONTENT BLOCK */}
           <div className="bg-gray-900 text-white p-3 border-3 border-gray-600 pixel-shadow max-[1350px]:text-sm max-[650px]:text-xs max-[1350px]:p-2.5 max-[650px]:p-1.5">
-            <p className="text-center flex-wrap">
+            <p className="text-center flex-wrap max-[500px]:text-[22px]">
               Miami Dade College - Miami, FL
               <br />
               November 7th - 9th, 2025

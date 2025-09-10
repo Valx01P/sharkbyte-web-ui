@@ -103,15 +103,15 @@ const Schedule = () => {
                 : 'bg-white text-gray-900 border-gray-600'
             }`}
           >
-            <div className="text-sm font-bold max-[650px]:text-xs">{day.date}</div>
-            <div className="text-xs text-gray-500">{day.day}</div>
+            <div className="text-sm font-bold max-[650px]:text-xs max-[390px]:text-[20px]">{day.date}</div>
+            <div className="text-xs text-gray-500 max-[390px]:text-[20px]">{day.day}</div>
           </button>
         ))}
 
         {/* Compact toggle button */}
         <button
           onClick={() => setCompactView(!compactView)}
-          className="px-3 py-2 border-2 border-gray-600 bg-gray-900 text-white text-xs pixel-shadow hover:bg-gray-800 transition-colors"
+          className="px-3 py-2 border-2 border-gray-600 bg-gray-900 text-white text-xs pixel-shadow hover:bg-gray-800 transition-colors max-[390px]:text-[22px]"
         >
           {compactView ? 'Timeline View' : 'Compact List View'}
         </button>
@@ -128,16 +128,16 @@ const Schedule = () => {
                   <div
                     className={`${getEventTypeStyle(
                       event.type
-                    )} text-white p-4 border-3 border-gray-600 pixel-shadow transition-transform duration-300 hover:scale-105 cursor-pointer w-56 max-[650px]:w-48 max-[650px]:p-3`}
+                    )} text-white p-4 border-3 border-gray-600 pixel-shadow transition-transform duration-300 hover:scale-105 cursor-pointer w-56 max-[650px]:w-48 max-[650px]:p-3 max-[500px]:p-1.5 max-[500px]:w-32`}
                   >
                     <div className="flex flex-col gap-2 max-[650px]:gap-1">
-                      <div className="text-lg font-bold text-center max-[1350px]:text-base max-[650px]:text-base">
+                      <div className="text-lg font-bold text-center max-[1350px]:text-base max-[650px]:text-base max-[500px]:text-[22px]">
                         {event.time}
                       </div>
-                      <div className="font-bold text-center max-[1350px]:text-sm max-[650px]:text-sm">
+                      <div className="font-bold text-center max-[1350px]:text-sm max-[650px]:text-sm max-[500px]:text-[24px]">
                         {event.title}
                       </div>
-                      <div className="text-sm text-gray-200 text-center max-[1350px]:text-sm">
+                      <div className="text-sm text-gray-200 text-center max-[1350px]:text-sm max-[500px]:text-[24px]">
                         {event.location}
                       </div>
                     </div>
@@ -157,19 +157,19 @@ const Schedule = () => {
         </div>
       ) : (
         // ---- COMPACT LIST VIEW ----
-        <div className="w-full max-w-xl px-4 max-[650px]:px-2">
-          <ul className="divide-y divide-gray-700 border-2 border-gray-600 pixel-shadow bg-gray-900 pixel-shadow">
+        <div className="w-full max-w-xl px-4 max-[650px]:px-2 flex-1">
+          <ul className="divide-y divide-gray-700 border-2 border-gray-600 pixel-shadow bg-gray-900 pixel-shadow overflow-y-auto max-h-[40vh]">
             {scheduleData[activeDay].events.map((event, i) => (
               <li
                 key={i}
                 className="flex items-center justify-between px-3 py-1.5 text-sm text-white max-[650px]:px-2 max-[650px]:py-1"
               >
-                <div className="flex-shrink-0 w-20 font-bold text-xs text-gray-300">
+                <div className="flex-shrink-0 w-20 font-bold text-xs text-gray-300 max-[500px]:text-[20px] max-[500px]:w-10">
                   {event.time}
                 </div>
                 <div className="flex justify-center flex-col flex-1 px-2">
-                  <div className="font-semibold text-[22px]">{event.title}</div>
-                  <span className="text-[20px] text-gray-400">{event.location}</span>
+                  <div className="font-semibold text-[22px] max-[500px]:text-[19px]">{event.title}</div>
+                  <span className="text-[20px] text-gray-400 max-[500px]:text-[18px]">{event.location}</span>
                 </div>
                 <div
                   className={`ml-2 w-2 h-2 rounded-full ${event.type === 'public'

@@ -38,7 +38,7 @@ export default function Home() {
       </div>
 
       {/* VERTICAL */}
-      <div className="min-h-[300vh] bg-gray-900">
+      <div className="min-h-[300dvh] bg-gray-900">
         <About />
         <Schedule />
         <Faq />

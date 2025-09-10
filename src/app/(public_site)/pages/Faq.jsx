@@ -29,7 +29,7 @@ const Faq = () => {
   }
 
   return (
-    <section id='faq' className="w-screen h-screen flex flex-col justify-center items-center relative overflow-hidden pixel-bg-faq px-4">
+    <section id='faq' className="w-screen min-h-screen flex flex-col justify-center items-center relative overflow-hidden pixel-bg-faq px-4">
       {/* TITLE */}
       <div className="mb-4 max-[650px]:mb-3">
         <div className="bg-gray-900 text-white px-4 py-2 border-3 border-gray-600 pixel-shadow max-[650px]:px-3 max-[650px]:py-1">
@@ -45,16 +45,16 @@ const Faq = () => {
               {/* QUESTION */}
               <button
                 onClick={() => toggleFaq(index)}
-                className="w-full p-3 text-left text-white flex justify-between items-center max-[650px]:p-2"
+                className="w-full p-3 text-left text-white flex justify-between items-center max-[650px]:p-2 max-[500px]:py-1"
               >
-                <span className="font-bold text-sm max-[650px]:text-xs pr-4">{faq.question}</span>
+                <span className="font-bold text-sm max-[650px]:text-xs pr-4 max-[500px]:text-[22px]">{faq.question}</span>
                 <span className={`text-lg transition-transform duration-300 max-[650px]:text-base flex-shrink-0 ${openFaq === index ? 'rotate-45' : ''}`}>+</span>
               </button>
               
               {/* ANSWER */}
               {openFaq === index && (
                 <div className="px-3 pb-3 text-white border-t border-gray-600 max-[650px]:px-2 max-[650px]:pb-2">
-                  <p className="text-gray-200 text-sm max-[650px]:text-xs">{faq.answer}</p>
+                  <p className="mt-1.5 text-gray-200 text-sm max-[650px]:text-xs max-[500px]:text-[19px]">{faq.answer}</p>
                 </div>
               )}
             </div>
@@ -65,7 +65,7 @@ const Faq = () => {
       {/* CONTACT */}
       <div className="mt-4 max-[1350px]:mt-3.5 mx-2">
         <div className="bg-gray-900 text-white px-4 py-3 border-3 border-gray-600 pixel-shadow max-[650px]:px-3 max-[650px]:py-2">
-          <p className="text-center text-sm max-[1350px]:text-[20px]">
+          <p className="text-center text-sm max-[1350px]:text-[20px] max-[500px]:text-[19px]">
             Can't find your answer? Email us at{" "}
             <a
               href="mailto:mdc-north@weareinit.org"
