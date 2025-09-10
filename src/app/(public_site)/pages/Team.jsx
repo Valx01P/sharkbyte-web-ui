@@ -150,9 +150,9 @@ const Team = () => {
      {/* MOBILE TWO-ROW CAROUSEL */}
      <div className="min-[651px]:hidden relative z-10 w-full overflow-x-auto">
        <div className="flex flex-col gap-2">
-         {/* Top row - Regular members */}
+         {/* Top row - First 5 team members */}
          <div className="flex gap-2 px-4" style={{ width: 'max-content' }}>
-           {regularMembers.slice(0, 4).map((member, index) => (
+           {teamMembers.slice(0, 4).map((member, index) => (
              <a 
                key={index} 
                href={member.linkedin} 
@@ -172,11 +172,11 @@ const Team = () => {
              </a>
            ))}
          </div>
-         {/* Bottom row - Directors and remaining members */}
+         {/* Bottom row - Remaining team members */}
          <div className="flex gap-2 px-4 pb-2" style={{ width: 'max-content' }}>
            {teamMembers.slice(4, 9).map((member, index) => (
              <a 
-               key={`reg-${index + 4}`} 
+               key={`bottom-${index + 5}`} 
                href={member.linkedin} 
                target="_blank" 
                rel="noopener noreferrer"
