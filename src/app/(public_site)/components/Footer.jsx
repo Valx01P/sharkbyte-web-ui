@@ -24,7 +24,7 @@ const Footer = () => {
             href="https://weareinit.notion.site/Terms-and-Conditions-SharkByte-2025-2629f4e8ae4e80329c36f65620006db9"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#8b5cf6] transition-colors duration-300"
+            className="hover:text-[#8b5cf6] transition-colors duration-300 text-center flex items-center justify-center"
           >
             SharkByte TOS
           </a>
@@ -32,7 +32,7 @@ const Footer = () => {
             href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#8b5cf6] transition-colors duration-300"
+            className="hover:text-[#8b5cf6] transition-colors duration-300 text-center flex items-center justify-center"
           >
             MLH Code of Conduct
           </a>
@@ -40,7 +40,7 @@ const Footer = () => {
             href="https://github.com/MLH/mlh-policies/blob/main/contest-terms.md"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#8b5cf6] transition-colors duration-300"
+            className="hover:text-[#8b5cf6] transition-colors duration-300 text-center flex items-center justify-center"
           >
             MLH Contest Terms
           </a>
@@ -48,7 +48,7 @@ const Footer = () => {
             href="https://github.com/MLH/mlh-policies/blob/main/privacy-policy.md"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#8b5cf6] transition-colors duration-300"
+            className="hover:text-[#8b5cf6] transition-colors duration-300 text-center flex items-center justify-center"
           >
             MLH Privacy Policy
           </a>
