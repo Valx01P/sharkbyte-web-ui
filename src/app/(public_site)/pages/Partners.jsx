@@ -17,7 +17,7 @@ const Partners = () => {
       {/* COMMUNITY PARTNERS TITLE */}
       <div className="mb-4 max-[650px]:mb-3 relative z-10">
         <div className="bg-gray-900 text-white px-4 py-2 border-3 border-gray-600 pixel-shadow max-[650px]:px-3 max-[650px]:py-1">
-          <h1 className="text-lg font-bold text-center max-[1350px]:text-base max-[650px]:text-xs">Community Partners</h1>
+          <h1 className="text-lg font-bold text-center max-[1350px]:text-base max-[650px]:text-xs max-[500px]:text-[22px]">Community Partners</h1>
         </div>
       </div>
 

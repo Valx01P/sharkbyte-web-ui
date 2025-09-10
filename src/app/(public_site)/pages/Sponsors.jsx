@@ -8,7 +8,7 @@ const Sponsors = () => {
       {/* TITLE */}
       <div className="mb-4 max-[650px]:mb-2 relative z-10">
         <div className="bg-gray-900 text-white px-4 py-2 border-3 border-gray-600 pixel-shadow max-[650px]:px-3 max-[650px]:py-1">
-          <h1 className="text-lg font-bold text-center max-[1350px]:text-base max-[650px]:text-xs">Sponsored By</h1>
+          <h1 className="text-lg font-bold text-center max-[1350px]:text-base max-[650px]:text-xs max-[500px]:text-[22px]">Sponsored By</h1>
         </div>
       </div>
       
@@ -53,7 +53,7 @@ const Sponsors = () => {
         {/* SPONSOR CTA */}
         <div className="w-[550px] relative z-10 mx-2 top-[-85px] max-[650px]:w-[500px] max-[600px]:w-[400px] max-[500px]:w-[360px] max-[390px]:w-[300px]">
           <div className="bg-gray-900 text-white px-2 py-3 border-3 border-gray-600 pixel-shadow max-[650px]:px-3 max-[650px]:py-2">
-            <p className="text-center text-sm max-[1350px]:text-[20px]">
+            <p className="text-center text-sm max-[1350px]:text-[24px] max-[500px]:text-[19px]">
               Want to sponsor? Email us at{" "}
               <a
                 href="mailto:mdc-north@weareinit.org"
