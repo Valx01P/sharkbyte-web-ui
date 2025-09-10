@@ -80,7 +80,7 @@ const Schedule = () => {
   return (
     <section
       id="schedule"
-      className="w-screen min-h-screen flex flex-col justify-start items-center relative overflow-hidden pixel-bg-schedule py-18 max-[1350px]:py-22 max-[650px]:py-32"
+      className="w-screen min-h-screen flex flex-col justify-start items-center relative overflow-hidden pixel-bg-schedule px-4 py-18 max-[1350px]:py-22 max-[650px]:py-32"
     >
       {/* TITLE */}
       <div className="mb-6 max-[650px]:mb-4 mt-4 max-[650px]:mt-2">
@@ -120,7 +120,7 @@ const Schedule = () => {
       {/* SCHEDULE CONTENT */}
       {!compactView ? (
         // ---- TIMELINE VIEW ----
-        <div className="w-full max-w-5l px-4 max-[650px]:px-2 flex-1 flex flex-col justify-center">
+        <div className="w-full max-w-lg max-[650px]:px-2 flex-1 flex flex-col justify-center">
           <div className="overflow-x-auto p-4">
             <div className="flex gap-4 min-w-max max-[650px]:gap-3">
               {scheduleData[activeDay].events.map((event, eventIndex) => (
@@ -157,7 +157,7 @@ const Schedule = () => {
         </div>
       ) : (
         // ---- COMPACT LIST VIEW ----
-        <div className="w-full max-w-xl px-4 max-[650px]:px-2 flex-1">
+        <div className="w-full max-w-lg flex-1">
           <ul className="divide-y divide-gray-700 border-2 border-gray-600 pixel-shadow bg-gray-900 pixel-shadow overflow-y-auto max-h-[40vh]">
             {scheduleData[activeDay].events.map((event, i) => (
               <li
