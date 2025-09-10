@@ -183,8 +183,8 @@ const Team = () => {
        </div>
      </div>
      {/* MOBILE SCROLL INDICATOR */}
-     <div className="min-[651px]:hidden mt-8 text-white font-bold text-sm text-center max-[650px]:text-xs max-[500px]:text-[19px] max-[500px]:mt-4">
-       ← Scroll horizontally to view team →
+     <div className="min-[651px]:hidden mt-8 text-white font-bold text-sm text-center max-[650px]:text-xs max-[500px]:text-[22px] max-[500px]:mt-4">
+       ← Scroll horizontally →
      </div>
    </section>
  )
