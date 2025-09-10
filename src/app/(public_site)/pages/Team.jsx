@@ -5,7 +5,7 @@ const Team = () => {
    {
      name: "Yandel",
      role: "Director",
-     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480603/yandel_f4mugj.png",
+     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757510442/yandel_sqbluu.jpg",
      linkedin: "https://www.linkedin.com/in/yp06/"
    },
    {
@@ -41,7 +41,7 @@ const Team = () => {
    {
      name: "Pablo",
      role: "Web Design",
-     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480601/pablo_sn7fxl.png",
+     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757510442/pablo_rzznjw.jpg",
      linkedin: "https://www.linkedin.com/in/pablovaldes01/"
    },
    {
