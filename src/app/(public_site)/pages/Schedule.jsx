@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 const Schedule = () => {
   const [activeDay, setActiveDay] = useState(0)
-  const [compactView, setCompactView] = useState(false)
+  const [compactView, setCompactView] = useState(true)
 
 
   // Schedule data - updated to match Excel run of show
@@ -157,7 +157,7 @@ const Schedule = () => {
         </div>
       ) : (
         // ---- COMPACT LIST VIEW ----
-        <div className="px-4 max-[650px]:px-0 w-full max-w-lg flex-1">
+        <div className="min-[650px]:px-4 max-[650px]:px-0 w-full max-w-lg flex-1">
           <ul className="divide-y divide-gray-700 border-2 border-gray-600 pixel-shadow bg-gray-900 pixel-shadow overflow-y-auto max-h-[40vh]">
             {scheduleData[activeDay].events.map((event, i) => (
               <li
