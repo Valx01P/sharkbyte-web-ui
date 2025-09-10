@@ -3,6 +3,30 @@
 const Team = () => {
  const teamMembers = [
    {
+     name: "Abigail",
+     role: "Marketing",
+     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480601/abigail_otyeho.png",
+     linkedin: "https://www.linkedin.com/in/abigail-lozano317/"
+   },
+   {
+    name: "Alfredo",
+    role: "Sponsors",
+    image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757515390/alfredo_nvmow9.jpg",
+    linkedin: "https://www.linkedin.com/in/alfredobenites/"
+   },
+   {
+     name: "Daniel",
+     role: "Sponsors",
+     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480600/daniel_jon56g.png",
+     linkedin: "https://www.linkedin.com/in/daniel-rodriguez-3ab841372"
+   },
+   {
+     name: "Jorge",
+     role: "Co-Director",
+     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480602/jorge_oesssr.png",
+     linkedin: "https://www.linkedin.com/in/jorge-rodriguez-27a4a6231/"
+   },
+   {
      name: "Yandel",
      role: "Director",
      image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757510442/yandel_sqbluu.jpg",
@@ -13,24 +37,6 @@ const Team = () => {
      role: "Co-Director",
      image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480602/raul_qycqmw.png",
      linkedin: "https://www.linkedin.com/in/raul02/"
-   },
-   {
-     name: "Abigail",
-     role: "Marketing",
-     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480601/abigail_otyeho.png",
-     linkedin: "https://www.linkedin.com/in/abigail-lozano317/"
-   },
-   {
-     name: "Daniel",
-     role: "Outreach",
-     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480600/daniel_jon56g.png",
-     linkedin: "https://www.linkedin.com/in/daniel-rodriguez-3ab841372"
-   },
-   {
-     name: "Jorge",
-     role: "Outreach",
-     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480602/jorge_oesssr.png",
-     linkedin: "https://www.linkedin.com/in/jorge-rodriguez-27a4a6231/"
    },
    {
      name: "Julianna",
@@ -52,6 +58,14 @@ const Team = () => {
    }
  ]
 
+ // Separate directors from regular members
+ const directors = teamMembers.filter(member => 
+   member.role === "Director" || member.role === "Co-Director"
+ )
+ const regularMembers = teamMembers.filter(member => 
+   member.role !== "Director" && member.role !== "Co-Director"
+ )
+
  return (
    <section id="team" className="w-screen h-screen flex flex-col justify-center items-center relative overflow-hidden pixel-bg-team">
      {/* TITLE */}
@@ -63,9 +77,9 @@ const Team = () => {
 
      {/* DESKTOP TEAM GRID */}
      <div className="max-[650px]:hidden">
-       {/* Top row - 2 members */}
-       <div className="relative z-10 grid grid-cols-2 gap-3">
-         {teamMembers.slice(0, 2).map((member, index) => (
+       {/* Top row - 3 regular members */}
+       <div className="relative z-10 grid grid-cols-3 gap-3">
+         {regularMembers.slice(0, 3).map((member, index) => (
            <a 
              key={index} 
              href={member.linkedin} 
@@ -86,21 +100,21 @@ const Team = () => {
          ))}
        </div>
 
-       {/* Middle row - 3 members */}
-       <div className="relative z-10 grid grid-cols-3 gap-3 mt-3">
-         {teamMembers.slice(2, 5).map((member, index) => (
+       {/* Middle row - Directors with enhanced styling */}
+       <div className="relative z-10 grid grid-cols-3 gap-4 mt-4">
+         {directors.map((member, index) => (
            <a 
              key={index} 
              href={member.linkedin} 
              target="_blank" 
              rel="noopener noreferrer"
-             className="flex justify-center items-center gap-0 flex-col bg-gray-900 text-white px-2 py-1 border-2 border-gray-600 pixel-shadow text-center transition-transform duration-300 hover:animate-[wiggle_2s_ease-in-out_infinite] hover:scale-105 cursor-pointer"
+             className="flex justify-center items-center gap-0 flex-col bg-gray-900 text-white px-3 py-2 border-3 border-gray-600 pixel-shadow text-center transition-transform duration-300 hover:animate-[wiggle_2s_ease-in-out_infinite] hover:scale-105 cursor-pointer shadow-lg"
            >
-             <div className="h-[150px]">
+             <div className="h-[170px]">
               <img 
                 src={member.image} 
                 alt={member.name}
-                className="w-11 h-11 rounded-full mx-auto mb-0.5 mt-0.5 border border-gray-600"
+                className="w-13 h-13 rounded-full mx-auto mb-1 mt-1 border-2 border-gray-600"
               />
               <h3 className="font-bold text-[20px]">{member.name}</h3>
               <p className="text-gray-300 relative top-[-10px] text-[20px]">{member.role}</p>
@@ -109,11 +123,11 @@ const Team = () => {
          ))}
        </div>
 
-       {/* Bottom row - 3 members */}
+       {/* Bottom row - Remaining regular members */}
        <div className="relative z-10 grid grid-cols-3 gap-3 mt-3">
-         {teamMembers.slice(5, 8).map((member, index) => (
+         {regularMembers.slice(3, 6).map((member, index) => (
            <a 
-             key={index} 
+             key={index + 3} 
              href={member.linkedin} 
              target="_blank" 
              rel="noopener noreferrer"
@@ -136,9 +150,9 @@ const Team = () => {
      {/* MOBILE TWO-ROW CAROUSEL */}
      <div className="min-[651px]:hidden relative z-10 w-full overflow-x-auto">
        <div className="flex flex-col gap-2">
-         {/* Top row */}
+         {/* Top row - Regular members */}
          <div className="flex gap-2 px-4" style={{ width: 'max-content' }}>
-           {teamMembers.slice(0, 4).map((member, index) => (
+           {regularMembers.slice(0, 4).map((member, index) => (
              <a 
                key={index} 
                href={member.linkedin} 
@@ -158,11 +172,11 @@ const Team = () => {
              </a>
            ))}
          </div>
-         {/* Bottom row */}
+         {/* Bottom row - Directors and remaining members */}
          <div className="flex gap-2 px-4 pb-2" style={{ width: 'max-content' }}>
-           {teamMembers.slice(4, 8).map((member, index) => (
+           {teamMembers.slice(4, 9).map((member, index) => (
              <a 
-               key={index + 4} 
+               key={`reg-${index + 4}`} 
                href={member.linkedin} 
                target="_blank" 
                rel="noopener noreferrer"
