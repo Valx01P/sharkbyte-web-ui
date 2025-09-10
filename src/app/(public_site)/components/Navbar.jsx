@@ -36,7 +36,7 @@ const Navbar = () => {
             alt="mlh-logo"
             width={200}
             height={150}
-            className="w-full h-full max-[650px]:w-[70px] max-[650px]:h-[125px]"
+            className="w-full h-full max-[650px]:w-[70px] max-[650px]:h-[125px] max-[500px]:relative max-[500px]:left-[-8px]"
           />
         </a>
       }

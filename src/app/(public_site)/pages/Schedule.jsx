@@ -151,7 +151,7 @@ const Schedule = () => {
               ))}
             </div>
           </div>
-          <div className="mt-1 mb-4 text-gray-800 font-bold text-sm text-center max-[650px]:text-xs max-[650px]:mb-0">
+          <div className="mt-1 mb-4 text-gray-800 font-bold text-sm text-center max-[650px]:text-xs max-[650px]:mb-0 max-[500px]:text-[20px]">
             ← Scroll horizontally to view timeline →
           </div>
         </div>
