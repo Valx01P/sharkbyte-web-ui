@@ -120,7 +120,7 @@ const Schedule = () => {
       {/* SCHEDULE CONTENT */}
       {!compactView ? (
         // ---- TIMELINE VIEW ----
-        <div className="w-full max-w-lg max-[650px]:px-2 flex-1 flex flex-col justify-center">
+        <div className="w-full max-w-lg flex-1 flex flex-col justify-center">
           <div className="overflow-x-auto p-4">
             <div className="flex gap-4 min-w-max max-[650px]:gap-3">
               {scheduleData[activeDay].events.map((event, eventIndex) => (
@@ -151,7 +151,7 @@ const Schedule = () => {
               ))}
             </div>
           </div>
-          <div className="mt-1 mb-4 text-gray-800 font-bold text-sm text-center max-[650px]:text-xs max-[650px]:mb-0 max-[500px]:text-[20px]">
+          <div className="mt-1 mb-4 text-gray-800 font-bold text-sm text-center max-[650px]:text-xs max-[650px]:mb-0 max-[500px]:text-[19px]">
             ← Scroll horizontally to view timeline →
           </div>
         </div>
