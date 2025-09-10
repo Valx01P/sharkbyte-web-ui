@@ -153,12 +153,12 @@ const Schedule = () => {
                 key={i}
                 className="flex items-center justify-between px-3 py-1.5 text-sm text-white max-[650px]:px-2 max-[650px]:py-1"
               >
-                <div className="flex-shrink-0 w-20 font-bold text-[23px] max-[750px]:text-[20px] text-gray-300 max-[500px]:text-[20px] max-[500px]:w-10">
+                <div className="flex-shrink-0 w-20 font-bold text-[26px] max-[1050px]:text-[23px] max-[750px]:text-[20px] text-gray-300 max-[500px]:text-[20px] max-[500px]:w-10">
                   {event.time}
                 </div>
                 <div className="flex justify-center flex-col flex-1 px-2">
-                  <div className="font-semibold text-[24px] max-[750px]:text-[20px] max-[500px]:text-[19px]">{event.title}</div>
-                  <span className="text-[22px] max-[750px]:text-[20px] text-gray-400 max-[500px]:text-[18px]">{event.location}</span>
+                  <div className="text-[28px] font-semibold max-[1050px]:text-[24px] max-[750px]:text-[20px] max-[500px]:text-[19px]">{event.title}</div>
+                  <span className="text-[26px] max-[1050px]:text-[22px] max-[750px]:text-[20px] text-gray-400 max-[500px]:text-[18px]">{event.location}</span>
                 </div>
                 <div
                   className={`ml-2 w-2 h-2 rounded-full ${event.type === 'public'
