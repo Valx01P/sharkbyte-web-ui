@@ -73,7 +73,7 @@ const Schedule = () => {
     >
       {/* TITLE */}
       <div className="mx-4 mb-6 max-[650px]:mb-4 mt-4 max-[650px]:mt-2">
-        <div className="bg-gray-900 text-white px-6 py-3 border-3 border-gray-600 pixel-shadow max-[650px]:px-4 max-[650px]:py-2">
+        <div className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white px-6 py-3 border-3 border-gray-600 pixel-shadow max-[650px]:px-4 max-[650px]:py-2">
           <h1 className="text-lg font-bold text-center max-[1350px]:text-base max-[650px]:text-xs max-[500px]:text-[22px]">
             Event Schedule
           </h1>
@@ -88,7 +88,7 @@ const Schedule = () => {
             onClick={() => setActiveDay(index)}
             className={`hover:cursor-pointer px-4 py-2 border-3 pixel-shadow transition-transform duration-300 hover:scale-110 max-[650px]:px-2 max-[650px]:py-1 ${
               activeDay === index
-                ? 'bg-gray-900 text-white border-gray-600'
+                ? 'bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white border-gray-600'
                 : 'bg-white text-gray-900 border-gray-600'
             }`}
           >
@@ -100,7 +100,7 @@ const Schedule = () => {
         {/* Compact toggle button */}
         <button
           onClick={() => setCompactView(!compactView)}
-          className="hover:cursor-pointer px-3 py-2 border-2 border-gray-600 bg-gray-900 text-white text-xs pixel-shadow hover:bg-gray-800 transition-colors max-[390px]:text-[22px] max-[390px]:px-3"
+          className="hover:cursor-pointer px-3 py-2 border-2 border-gray-600 bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white text-xs pixel-shadow hover:bg-gray-800 transition-colors max-[390px]:text-[22px] max-[390px]:px-3"
         >
           {compactView ? 'Timeline View' : 'Compact List View'}
         </button>
@@ -147,18 +147,18 @@ const Schedule = () => {
       ) : (
         // ---- COMPACT LIST VIEW ----
         <div className="min-[650px]:px-4 max-[650px]:px-0 w-full max-w-lg flex-1">
-          <ul className="divide-y divide-gray-700 border-2 border-gray-600 pixel-shadow bg-gray-900 pixel-shadow overflow-y-auto max-h-[40vh]">
+          <ul className="divide-y divide-gray-700 border-2 border-gray-600 pixel-shadow bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 pixel-shadow overflow-y-auto max-h-[40vh]">
             {scheduleData[activeDay].events.map((event, i) => (
               <li
                 key={i}
                 className="flex items-center justify-between px-3 py-1.5 text-sm text-white max-[650px]:px-2 max-[650px]:py-1"
               >
-                <div className="flex-shrink-0 w-20 font-bold text-[26px] max-[1050px]:text-[23px] max-[750px]:text-[20px] text-gray-300 max-[500px]:text-[20px] max-[500px]:w-10">
+                <div className="flex-shrink-0 w-20 font-bold text-[26px] max-[1050px]:text-[23px] max-[650px]:text-[20px] text-gray-300 max-[500px]:text-[20px] max-[500px]:w-10">
                   {event.time}
                 </div>
                 <div className="flex justify-center flex-col flex-1 px-2">
-                  <div className="text-[28px] font-semibold max-[1050px]:text-[24px] max-[750px]:text-[20px] max-[500px]:text-[19px]">{event.title}</div>
-                  <span className="text-[26px] max-[1050px]:text-[22px] max-[750px]:text-[20px] text-gray-400 max-[500px]:text-[18px]">{event.location}</span>
+                  <div className="text-[28px] font-semibold max-[1050px]:text-[24px] max-[650px]:text-[20px] max-[500px]:text-[19px]">{event.title}</div>
+                  <span className="text-[26px] max-[1050px]:text-[22px] max-[650px]:text-[20px] text-gray-400 max-[500px]:text-[18px]">{event.location}</span>
                 </div>
                 <div
                   className={`ml-2 w-2 h-2 rounded-full ${event.type === 'public'

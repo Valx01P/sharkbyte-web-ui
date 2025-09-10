@@ -32,7 +32,7 @@ const Faq = () => {
     <section id='faq' className="w-screen min-h-screen flex flex-col justify-center items-center relative overflow-hidden pixel-bg-faq px-4">
       {/* TITLE */}
       <div className="mb-4 max-[650px]:mb-3">
-        <div className="bg-gray-900 text-white px-4 py-2 border-3 border-gray-600 pixel-shadow max-[650px]:px-3 max-[650px]:py-1">
+        <div className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white px-4 py-2 border-3 border-gray-600 pixel-shadow max-[650px]:px-3 max-[650px]:py-1">
           <h1 className="text-lg font-bold text-center max-[1350px]:text-base max-[650px]:text-xs max-[500px]:text-[22px]">FAQ</h1>
         </div>
       </div>
@@ -41,7 +41,7 @@ const Faq = () => {
       <div className="w-full max-w-lg max-[650px]:max-w-full">
         <div className="space-y-2 max-[650px]:space-y-1">
           {faqData.map((faq, index) => (
-            <div key={index} className={`bg-gray-900 border-2 border-gray-600 pixel-shadow transition-transform duration-300 ${openFaq === index ? '' : 'hover:scale-101'}`}>
+            <div key={index} className={`bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 border-2 border-gray-600 pixel-shadow transition-transform duration-300 ${openFaq === index ? '' : 'hover:scale-101'}`}>
               {/* QUESTION */}
               <button
                 onClick={() => toggleFaq(index)}
@@ -70,7 +70,7 @@ const Faq = () => {
 
       {/* CONTACT */}
       <div className="mt-4 w-full max-w-lg max-[1350px]:mt-3.5 mx-2">
-        <div className="bg-gray-900 text-white px-4 py-3 border-3 border-gray-600 pixel-shadow max-[650px]:px-3 max-[650px]:py-2">
+        <div className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white px-4 py-3 border-3 border-gray-600 pixel-shadow max-[650px]:px-3 max-[650px]:py-2">
           <p className="text-center text-sm max-[1350px]:text-[24px] max-[500px]:text-[19px]">
             Can't find your answer? Email us at{" "}
             <a

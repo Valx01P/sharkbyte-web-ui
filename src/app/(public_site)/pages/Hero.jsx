@@ -22,7 +22,7 @@ const Hero = () => {
             />
           </div>
           {/* CONTENT BLOCK */}
-          <div className="bg-gray-900 text-white p-3 border-3 border-gray-600 pixel-shadow max-[1350px]:text-sm max-[650px]:text-xs max-[1350px]:p-2.5 max-[650px]:p-1.5">
+          <div className="bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white p-3 border-3 border-gray-600 pixel-shadow max-[1350px]:text-sm max-[650px]:text-xs max-[1350px]:p-2.5 max-[650px]:p-1.5">
             <p className="text-center flex-wrap max-[500px]:text-[22px]">
               Miami Dade College - Miami, FL
               <br />
@@ -35,7 +35,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 className="group"
               >
-                <h1 className="relative w-min overflow-hidden bg-gradient-to-l from-[#6366f1] to-[#8b5cf6] px-3 max-[650px]:px-2 border-3 border-gray-600 pixel-shadow text-white">
+                <h1 className="relative w-full overflow-hidden bg-gradient-to-l from-[#6366f1] to-[#8b5cf6] px-3 max-[650px]:px-2 py-1 border-3 border-gray-600 pixel-shadow text-white">
                   <span className="relative z-20 block">Register</span>
                   <span className="pointer-events-none absolute inset-0 z-0 opacity-0 transition-opacity duration-700 ease-out group-hover:opacity-100 bg-gradient-to-r from-[#8b5cf6] to-[#6366f1]"></span>
                   <span className="pointer-events-none absolute -inset-y-3 left-[-100%] z-10 h-[200%] w-[50%] rotate-12 bg-white/30 transition-transform duration-600 ease-out group-hover:translate-x-[420%]"></span>

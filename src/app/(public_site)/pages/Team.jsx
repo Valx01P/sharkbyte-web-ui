@@ -70,7 +70,7 @@ const Team = () => {
    <section id="team" className="w-screen h-screen flex flex-col justify-center items-center relative overflow-hidden pixel-bg-team">
      {/* TITLE */}
      <div className="mb-3 max-[650px]:mb-2 relative z-10">
-       <div className="bg-gray-900 text-white px-4 py-2 border-3 border-gray-600 pixel-shadow max-[650px]:px-3 max-[650px]:py-1">
+       <div className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white px-4 py-2 border-3 border-gray-600 pixel-shadow max-[650px]:px-3 max-[650px]:py-1">
          <h1 className="text-lg font-bold text-center max-[1350px]:text-base max-[650px]:text-xs max-[500px]:text-[22px]">Our Team</h1>
        </div>
      </div>
@@ -85,7 +85,7 @@ const Team = () => {
              href={member.linkedin} 
              target="_blank" 
              rel="noopener noreferrer"
-             className="flex justify-center items-center gap-0 flex-col bg-gray-900 text-white px-2 py-1 border-2 border-gray-600 pixel-shadow text-center transition-transform duration-300 hover:animate-[wiggle_2s_ease-in-out_infinite] hover:scale-105 cursor-pointer"
+             className="flex justify-center items-center gap-0 flex-col bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white px-2 py-1 border-2 border-gray-600 pixel-shadow text-center transition-transform duration-300 hover:animate-[wiggle_2s_ease-in-out_infinite] hover:scale-105 cursor-pointer"
            >
              <div className="h-[150px]">
               <img 
@@ -108,7 +108,7 @@ const Team = () => {
              href={member.linkedin} 
              target="_blank" 
              rel="noopener noreferrer"
-             className="flex justify-center items-center gap-0 flex-col bg-gray-900 text-white px-3 py-2 border-3 border-gray-600 pixel-shadow text-center transition-transform duration-300 hover:animate-[wiggle_2s_ease-in-out_infinite] hover:scale-105 cursor-pointer shadow-lg"
+             className="flex justify-center items-center gap-0 flex-col bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white px-3 py-2 border-3 border-gray-600 pixel-shadow text-center transition-transform duration-300 hover:animate-[wiggle_2s_ease-in-out_infinite] hover:scale-105 cursor-pointer shadow-lg"
            >
              <div className="h-[170px]">
               <img 
@@ -131,7 +131,7 @@ const Team = () => {
              href={member.linkedin} 
              target="_blank" 
              rel="noopener noreferrer"
-             className="flex justify-center items-center gap-0 flex-col bg-gray-900 text-white px-2 py-1 border-2 border-gray-600 pixel-shadow text-center transition-transform duration-300 hover:animate-[wiggle_2s_ease-in-out_infinite] hover:scale-105 cursor-pointer"
+             className="flex justify-center items-center gap-0 flex-col bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white px-2 py-1 border-2 border-gray-600 pixel-shadow text-center transition-transform duration-300 hover:animate-[wiggle_2s_ease-in-out_infinite] hover:scale-105 cursor-pointer"
            >
              <div className="h-[150px]">
               <img 
@@ -158,7 +158,7 @@ const Team = () => {
                href={member.linkedin} 
                target="_blank" 
                rel="noopener noreferrer"
-               className="flex justify-center items-center gap-0 flex-col bg-gray-900 text-white px-2 py-1 border-2 border-gray-600 pixel-shadow text-center transition-transform duration-300 hover:animate-[wiggle_2s_ease-in-out_infinite] hover:scale-105 cursor-pointer flex-shrink-0"
+               className="flex justify-center items-center gap-0 flex-col bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white px-2 py-1 border-2 border-gray-600 pixel-shadow text-center transition-transform duration-300 hover:animate-[wiggle_2s_ease-in-out_infinite] hover:scale-105 cursor-pointer flex-shrink-0"
              >
                <div className="h-[150px]">
                 <img 
@@ -180,7 +180,7 @@ const Team = () => {
                href={member.linkedin} 
                target="_blank" 
                rel="noopener noreferrer"
-               className="flex justify-center items-center gap-0 flex-col bg-gray-900 text-white px-2 py-1 border-2 border-gray-600 pixel-shadow text-center transition-transform duration-300 hover:animate-[wiggle_2s_ease-in-out_infinite] hover:scale-105 cursor-pointer flex-shrink-0"
+               className="flex justify-center items-center gap-0 flex-col bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white px-2 py-1 border-2 border-gray-600 pixel-shadow text-center transition-transform duration-300 hover:animate-[wiggle_2s_ease-in-out_infinite] hover:scale-105 cursor-pointer flex-shrink-0"
              >
                <div className="h-[150px]">
                 <img 

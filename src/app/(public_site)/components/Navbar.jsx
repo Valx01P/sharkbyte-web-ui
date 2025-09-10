@@ -26,7 +26,7 @@ const Navbar = () => {
   }
 
   return (
-   <nav className="fixed top-0 z-10 h-[60px] w-full bg-gray-900 text-white pixel-shadow-2">
+   <nav className="bg-gradient-to-b from-gray-950 via-gray-950 to-gray-900 fixed top-0 z-10 h-[60px] w-full text-white pixel-shadow-2">
      <div className="flex justify-between h-full relative px-4 max-[1026px]:px-0">
       {
         (pathname === '/') &&
@@ -102,7 +102,7 @@ const Navbar = () => {
              ></div>
              
              {/* Sidebar menu */}
-             <div className={`fixed top-0 right-0 h-dvh w-full max-w-[350px] bg-gray-900 text-white z-50 transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+             <div className={`fixed top-0 right-0 h-dvh w-full max-w-[350px] bg-gradient-to-r from-gray-900 via-gray-950 to-gray-950 text-white z-50 transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                {/* Close button */}
                <div className="flex justify-end p-4">
                  <Image 
