@@ -12,14 +12,14 @@ const Socials = () => {
       <div className="flex flex-col items-center">
 
         {/* STAY UPDATED */}
-        <div className="mb-12 max-[650px]:mb-8">
+        <div className="mb-8">
           <div className="bg-gray-900 text-white px-6 py-3 border-3 border-gray-600 pixel-shadow max-[650px]:px-4 max-[650px]:py-2">
             <h1 className="text-lg font-bold text-center max-[1350px]:text-base max-[650px]:text-sm">Stay updated</h1>
           </div>
         </div>
 
         {/* SOCIAL ICONS */}
-        <div className="flex gap-6 mb-12 max-[650px]:gap-4 max-[650px]:mb-8">
+        <div className="flex gap-6 mb-8 max-[650px]:gap-4">
           <a href="https://discord.com/invite/init" target="_blank" rel="noopener noreferrer" className="bg-gray-900 p-4 border-3 border-gray-600 pixel-shadow transition-transform duration-300 hover:scale-110 cursor-pointer max-[650px]:p-3">
             <svg className="w-8 h-8 text-white max-[650px]:w-6 max-[650px]:h-6" stroke="currentColor" fill="currentColor" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853a1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83a1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"></path></svg>
           </a>
@@ -36,7 +36,7 @@ const Socials = () => {
           href="https://airtable.com/appY1e4YbYhqNWdpE/shr5bPimkY7ck4v88"
           target="_blank"
           rel="noopener noreferrer"
-          className="group mb-6"
+          className="group mb-4"
         >
           <h1 className="relative w-min overflow-hidden bg-gradient-to-l from-[#6366f1] to-[#8b5cf6] px-6 py-3 border-3 border-gray-600 pixel-shadow text-white">
             <span
@@ -52,7 +52,7 @@ const Socials = () => {
         </a>
 
         {/* CONTRIBUTOR SECTION */}
-        <div className="flex flex-col items-center text-center mt-4 max-[650px]:px-4">
+        <div className="flex flex-col items-center text-center mt-2 max-[650px]:px-4">
           <h2 className="font-extrabold text-white text-[30px] max-[650px]:text-[26px] max-[650px]:font-normal mb-2">
             Interested in volunteering, mentoring, or judging?
           </h2>
