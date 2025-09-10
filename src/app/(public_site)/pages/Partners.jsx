@@ -27,6 +27,8 @@ const Partners = () => {
           {partners.map((partner, index) => (
             <a 
               href={partner[1]}
+              target="_blank"
+              rel="noopener noreferrer"
               key={index} 
               className="text-sm font-medium flex justify-center items-center text-white hover:text-[#8b5cf6] transition-colors duration-300 cursor-pointer max-[650px]:text-xs max-[500px]:text-[20px] max-[500px]:py-0.5"
             >
