@@ -1,3 +1,8 @@
-npx husky install
+Git clone the project,
+`https://github.com/Valx01P/sharkbyte-web-ui.git`
 
-npx husky add .husky/pre-commit "npm run format"
+Install the project dependancies,
+`npm install`
+
+Start the local development server,
+`npm run dev`
