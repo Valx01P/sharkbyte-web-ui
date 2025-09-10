@@ -78,7 +78,7 @@ const Schedule = () => {
   return (
     <section
       id="schedule"
-      className="w-screen min-h-screen flex flex-col justify-start items-center relative overflow-hidden pixel-bg-schedule py-10 max-[650px]:py-20"
+      className="w-screen min-h-screen flex flex-col justify-start items-center relative overflow-hidden pixel-bg-schedule py-18 max-[650px]:py-32"
     >
       {/* TITLE */}
       <div className="mb-6 max-[650px]:mb-4 mt-4 max-[650px]:mt-2">

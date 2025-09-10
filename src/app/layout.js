@@ -1,7 +1,7 @@
 import localFont from 'next/font/local'
 import Navbar from '@/app/(public_site)/components/Navbar'
 import Footer from '@/app/(public_site)/components/Footer'
-import SocialsOverlay from '@/app/(public_site)/components/SocialsOverlay'
+import { MobileMenuProvider } from '@/context/MobileMenuContext'
 import './globals.css'
 
 export const VT323 = localFont({
@@ -33,11 +33,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="overflow-x-hidden">
-      <body className={`antialiased overflow-x-hidden`}>
-        <Navbar />
-        {/* <SocialsOverlay /> */}
-        {children}
-        <Footer />
+      <body className="antialiased overflow-x-hidden">
+        <MobileMenuProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </MobileMenuProvider>
       </body>
     </html>
   )

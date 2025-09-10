@@ -19,7 +19,7 @@ const Sponsors = () => {
             <div className="flex justify-center items-center gap-6">
               <a href="https://www.mdc.edu/north/" target="_blank" rel="noopener noreferrer">
                 <Image
-                  src={"/images/sponsors/mdc.png"}
+                  src={"https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480616/mdc_ijuvcd.png"}
                   height={190}
                   width={190}
                   alt="mdc_north_logo"
@@ -28,7 +28,7 @@ const Sponsors = () => {
               </a>
               <a href="https://www.mdc.edu/entec/" target="_blank" rel="noopener noreferrer">
                 <Image
-                  src={"/images/sponsors/entec.png"}
+                  src={"https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480615/entec_tjnwm3.png"}
                   height={190}
                   width={190}
                   alt="entec_mdc_logo"
@@ -39,7 +39,7 @@ const Sponsors = () => {
             <div>
               <a href="https://www.roocapital.com/" target="_blank" rel="noopener noreferrer">
                 <Image
-                  src={"/images/sponsors/roo_capital.png"}
+                  src={"https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480616/roo_capital_zqae68.png"}
                   height={230}
                   width={230}
                   alt="roo_capital_logo"

@@ -97,36 +97,36 @@ section {
 }
 
 .pixel-bg-hero {
-  background-image: url('/images/hero.png');
+  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480564/hero_z1wibm.png');
   background-position: right center;
 }
 
 .pixel-bg-stats {
-  background-image: url('/images/stats.png');
+  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480566/stats_aetoll.png');
   background-position: left center;
 }
 
 .pixel-bg-about {
-  background-image: url('/images/about.png');
+  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480564/about_ok66mt.png');
 }
 
 .pixel-bg-schedule {
-  background-image: url('/images/schedule.png');
+  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480565/schedule_uelugo.png');
 }
 
 .pixel-bg-faq {
-  background-image: url('/images/faq.png');
+  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480564/faq_qbkkst.png');
 }
 
 .pixel-bg-sponsors {
-  background-image: url('/images/sponsors.png');
+  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480565/sponsors_izab1u.png');
 }
 
 .pixel-bg-sponsors::after {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('/images/rock-foreground.png');
+  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480564/rock-foreground_zelxd0.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right center;
@@ -138,15 +138,15 @@ section {
 }
 
 .pixel-bg-sponsors-cta {
-  background-image: url('/images/sponsors-cta.png');
+  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480565/sponsors-cta_fepu1x.png');
 }
 
 .pixel-bg-team {
-  background-image: url('/images/team.png');
+  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480566/team_uc8ri2.png');
 }
 
 .pixel-bg-socials {
-  background-image: url('/images/socials.png');
+  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480565/socials_pahir6.png');
 }
 
 /* Mobile: keep visual “seam” by locking each half */

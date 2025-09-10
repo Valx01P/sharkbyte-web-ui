@@ -22,7 +22,7 @@ const Partners = () => {
       </div>
 
       {/* PARTNERS GRID */}
-      <div className="p-2 relative z-10 w-full max-w-xl bg-gray-900 text-white border-3 border-gray-600 pixel-shadow">
+      <div className="max-w-[600px] p-4 relative z-10 w-full bg-gray-900 text-white border-3 border-gray-600 pixel-shadow">
         <div className="grid grid-cols-3 gap-4 text-center max-[1350px]:gap-3 max-[650px]:grid-cols-2 max-[650px]:gap-2">
           {partners.map((partner, index) => (
             <a 

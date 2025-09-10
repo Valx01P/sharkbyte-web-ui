@@ -5,49 +5,49 @@ const Team = () => {
    {
      name: "Yandel",
      role: "Director",
-     image: "/images/team/yandel.png",
+     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480603/yandel_f4mugj.png",
      linkedin: "https://www.linkedin.com/in/yp06/"
    },
    {
      name: "Raul",
      role: "Co-Director",
-     image: "/images/team/raul.png",
+     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480602/raul_qycqmw.png",
      linkedin: "https://www.linkedin.com/in/raul02/"
    },
    {
      name: "Abigail",
      role: "Marketing",
-     image: "/images/team/abigail.png",
+     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480601/abigail_otyeho.png",
      linkedin: "https://www.linkedin.com/in/abigail-lozano317/"
    },
    {
      name: "Daniel",
      role: "Outreach",
-     image: "/images/team/daniel.png",
+     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480600/daniel_jon56g.png",
      linkedin: "https://www.linkedin.com/in/daniel-rodriguez-3ab841372"
    },
    {
      name: "Jorge",
      role: "Outreach",
-     image: "/images/team/jorge.png",
+     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480602/jorge_oesssr.png",
      linkedin: "https://www.linkedin.com/in/jorge-rodriguez-27a4a6231/"
    },
    {
      name: "Julianna",
      role: "Marketing",
-     image: "/images/team/julianna.png",
+     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480604/julianna_vfgkdg.png",
      linkedin: "https://www.linkedin.com/in/julianna-chii/"
    },
    {
      name: "Pablo",
      role: "Web Design",
-     image: "/images/team/pablo.png",
+     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480601/pablo_sn7fxl.png",
      linkedin: "https://www.linkedin.com/in/pablovaldes01/"
    },
    {
      name: "Santiago",
      role: "Sponsors",
-     image: "/images/team/santiago.png",
+     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480602/santiago_caq1e6.png",
      linkedin: "https://www.linkedin.com/in/santiago-padron-62922526b/"
    }
  ]
@@ -183,7 +183,7 @@ const Team = () => {
        </div>
      </div>
      {/* MOBILE SCROLL INDICATOR */}
-     <div className="min-[651px]:hidden mt-3 text-gray-800 font-bold text-sm text-center max-[650px]:text-xs">
+     <div className="min-[651px]:hidden mt-8 text-white font-bold text-sm text-center max-[650px]:text-xs">
        ← Scroll horizontally to view team →
      </div>
    </section>

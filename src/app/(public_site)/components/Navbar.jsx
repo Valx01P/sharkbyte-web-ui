@@ -2,38 +2,30 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
-import { usePathname } from 'next/navigation'
-import { useRouter } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
+import { useMobileMenu } from '@/context/MobileMenuContext'
 
 const Navbar = () => {
- const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
- const pathname = usePathname()
- const router = useRouter()
+  const { isMobileMenuOpen, setIsMobileMenuOpen } = useMobileMenu()
+  const pathname = usePathname()
+  const router = useRouter()
 
- const toggleMobileMenu = () => {
-   setIsMobileMenuOpen(!isMobileMenuOpen)
- }
+  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen)
 
- const scrollToSection = (sectionId) => {
-   if (pathname !== '/') {
-     // Navigate home first, then scroll after navigation
-     router.push('/')
-     setTimeout(() => {
-       const element = document.getElementById(sectionId)
-       if (element) {
-         element.scrollIntoView({ behavior: 'smooth' })
-       }
-     }, 100)
-   } else {
-     const element = document.getElementById(sectionId)
-     if (element) {
-       element.scrollIntoView({ behavior: 'smooth' })
-     }
-   }
- }
+  const scrollToSection = (sectionId) => {
+    if (pathname !== '/') {
+      router.push('/')
+      setTimeout(() => {
+        const element = document.getElementById(sectionId)
+        if (element) element.scrollIntoView({ behavior: 'smooth' })
+      }, 100)
+    } else {
+      const element = document.getElementById(sectionId)
+      if (element) element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
- return (
+  return (
    <nav className="fixed top-0 z-10 h-[60px] w-full bg-gray-900 text-white pixel-shadow-2">
      <div className="flex justify-between h-full relative px-4 max-[1026px]:px-0">
       {
@@ -154,7 +146,7 @@ const Navbar = () => {
 
      </div>
    </nav>
- )
+  )
 }
 
 export default Navbar
