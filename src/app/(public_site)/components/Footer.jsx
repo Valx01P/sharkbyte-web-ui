@@ -16,14 +16,18 @@ const Footer = () => {
        <div className= "flex gap-6 max-[750px]:gap-4 text-[20px] pt-[3px]">
         <a
           href="https://weareinit.notion.site/Terms-and-Conditions-SharkByte-2025-2629f4e8ae4e80329c36f65620006db9"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hover:text-[#8b5cf6] transition-colors duration-300"
         >
           SharkByte TOS
         </a>
         <a
           href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md"
-          className="hover:text-[#8b5cf6] transition-colors duration-300"  
-         > 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-[#8b5cf6] transition-colors duration-300"
+        >
           MLH Code of Conduct
         </a>
        </div>
