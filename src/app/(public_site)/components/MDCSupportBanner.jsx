@@ -58,12 +58,12 @@ const MDCSupportBanner = () => {
         fixed flex justify-center items-center bottom-4 right-4
         transition-all duration-[1200ms] ease-in-out
         hover:bg-top
-        text-white px-3 py-2.5 max-[1350px]:px-3 max-[1350px]:py-2.5
-        rounded-lg z-30 border-3 border-gray-900
+        text-white px-3.5 py-2.5 max-[1350px]:py-2 max-[1350px]:px-3
+        max-[650px]:py-2 rounded-lg z-30 border-3 border-gray-900
         pixel-shadow cursor-pointer
       "
     >
-      <span className="text-[22px] font-medium max-[1350px]:text-[21px] max-[650px]:text-[18px]">
+      <span className="text-[24px] font-medium max-[1350px]:text-[22px] max-[650px]:text-[20px]">
         supported by MDC 💙
       </span>
     </a>
