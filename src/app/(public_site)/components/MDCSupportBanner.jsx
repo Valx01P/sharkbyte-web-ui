@@ -63,7 +63,7 @@ const MDCSupportBanner = () => {
         pixel-shadow cursor-pointer
       "
     >
-      <span className="text-[26px] font-medium max-[1350px]:text-[24px] max-[650px]:text-[18px]">
+      <span className="text-[22px] font-medium max-[1350px]:text-[21px] max-[650px]:text-[18px]">
         supported by MDC 💙
       </span>
     </a>
