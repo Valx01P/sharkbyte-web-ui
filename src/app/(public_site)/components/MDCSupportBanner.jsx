@@ -60,7 +60,7 @@ const MDCSupportBanner = () => {
         hover:bg-top
         text-white px-3.5 py-2.5 max-[1350px]:py-2 max-[1350px]:px-3
         max-[650px]:py-2 rounded-lg z-30 border-3 border-gray-900
-        pixel-shadow cursor-pointer
+        pixel-shadow cursor-pointer max-[300px]:hidden
       "
     >
       <span className="text-[24px] font-medium max-[1350px]:text-[22px] max-[650px]:text-[20px]">

@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="flex justify-around items-center w-full">
 
         {/* LEFT SIDE */}
-        <div className="px-8">
+        <div className="px-8 max-[650px]:px-3">
           {/* LOGO */}
           <div className="flex justify-center items-center z-10">
             <Image
@@ -18,13 +18,13 @@ const Hero = () => {
               width={200}
               height={200}
               priority
-              className="w-40 h-auto bg-transparent max-[650px]:w-32"
+              className="w-40 h-auto bg-transparent max-[650px]:w-32 max-[420px]:w-[260px]"
             />
           </div>
           {/* CONTENT BLOCK */}
-          <div className="bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white p-3 border-3 border-gray-600 pixel-shadow max-[1350px]:text-sm max-[650px]:text-xs max-[1350px]:p-2.5 max-[650px]:p-1.5">
+          <div className="bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white p-3 px-5 border-3 border-gray-600 pixel-shadow max-[1350px]:text-sm max-[650px]:text-xs max-[1350px]:py-2.5 max-[1350px]:px-4 max-[650px]:p-2 max-[650px]:px-3.5 max-[420px]:px-2">
             <p className="text-center flex-wrap max-[500px]:text-[22px]">
-              Miami Dade College - Miami, FL
+              MDC North Campus - Miami, FL
               <br />
               November 7th - 9th, 2025
             </p>

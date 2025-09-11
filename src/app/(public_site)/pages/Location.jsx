@@ -99,7 +99,7 @@ const Location = () => {
             <div className="flex justify-start -mt-0 relative z-5">
               <button
                 onClick={() => setIsExpanded(!isExpanded)}
-                className="bg-black/80 hover:bg-black/90 text-white px-4 py-0.5 rounded-b-lg transition-all duration-200 shadow-lg"
+                className="cursor-pointer bg-black/80 hover:bg-black/90 text-white px-4 py-0.5 rounded-b-lg transition-all duration-200 shadow-lg"
                 title={isExpanded ? "Collapse map" : "Expand map"}
               >
                 <svg 
@@ -273,7 +273,7 @@ const Location = () => {
       {/* LOCATION INFO */}
       <div className="mx-4 max-[650px]:mx-1 mb-4 text-center">
         <div className="text-gray-900 text-base font-semibold max-[650px]:text-xs max-[500px]:text-[22px] max-[300px]:text-[20px]">
-          Building 400 / 14 - Gym
+          School of Justice Building
         </div>
         <div className="text-gray-800 text-base font-semibold max-[650px]:text-xs max-[500px]:text-[22px] max-[300px]:text-[20px]">
           Miami Dade College, North Campus
