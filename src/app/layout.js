@@ -1,6 +1,7 @@
 import localFont from 'next/font/local'
 import Navbar from '@/app/(public_site)/components/Navbar'
 import Footer from '@/app/(public_site)/components/Footer'
+import MDCSupportBanner from '@/app/(public_site)/components/MDCSupportBanner'
 import { MobileMenuProvider } from '@/context/MobileMenuContext'
 import './globals.css'
 
@@ -130,6 +131,7 @@ export default function RootLayout({ children }) {
       <body className="antialiased overflow-x-hidden">
         <MobileMenuProvider>
           <Navbar />
+          <MDCSupportBanner />
           {children}
           <Footer />
         </MobileMenuProvider>
