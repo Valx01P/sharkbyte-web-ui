@@ -12,46 +12,40 @@ const Sponsors = () => {
         </div>
       </div>
       
-      <div className="relative flex justify-center items-center flex-col">
+      <div className="w-full max-w-lg relative flex justify-center items-center flex-col mb-8">
         {/* SPONSORS GRID */}
-        <div className="relative z-10 w-[550px] max-[650px]:w-[500px] max-[600px]:w-[400px] max-[500px]:w-[360px] max-[390px]:w-[300px] max-w-xl mb-4 max-[650px]:mb-2">
-          <div className="flex pt-2.5 max-[850px]:pt-1.5 border-3 justify-center items-center flex-col border-gray-600 pixel-shadow bg-gradient-to-br from-white to-gray-300 text-black text-center relative">
-            <div className="flex justify-center items-center gap-6">
-              <a href="https://www.mdc.edu/north/" target="_blank" rel="noopener noreferrer">
-                <Image
-                  src={"https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480616/mdc_ijuvcd.png"}
-                  height={190}
-                  width={190}
-                  alt="mdc_north_logo"
-                  className="max-[650px]:w-[170px] max-[600px]:w-[140px] max-[500px]:w-[120px] max-[390px]:w-[100px] transition-transform duration-300 hover:scale-105"
-                />
-              </a>
-              <a href="https://www.mdc.edu/entec/" target="_blank" rel="noopener noreferrer">
-                <Image
-                  src={"https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480615/entec_tjnwm3.png"}
-                  height={190}
-                  width={190}
-                  alt="entec_mdc_logo"
-                  className="max-[650px]:w-[170px] max-[600px]:w-[140px] max-[500px]:w-[120px] max-[390px]:w-[100px] transition-transform duration-300 hover:scale-105"
-                />
-              </a>
-            </div>
-            <div>
-              <a href="https://www.roocapital.com/" target="_blank" rel="noopener noreferrer">
-                <Image
-                  src={"https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480616/roo_capital_zqae68.png"}
-                  height={230}
-                  width={230}
-                  alt="roo_capital_logo"
-                  className="relative top-[-40px] max-[650px]:w-[190px] max-[500px]:w-[170px] max-[390px]:w-[150px] max-[650px]:pb-1 max-[600px]:w-[160px] max-[600px]:pb-2 transition-transform duration-300 hover:scale-110"
-                />
-              </a>
-            </div>
-          </div>
+        <div className="flex flex-wrap justify-center items-center gap-2 relative py-4 z-10 mb-4 max-[650px]:mb-2 max-w-full">
+          <a href="https://www.mdc.edu/north/" target="_blank" rel="noopener noreferrer" className="flex justify-center items-center border-3 border-gray-600 pixel-shadow bg-gradient-to-br from-white to-gray-300 py-2 min-h-[230px] min-w-[230px] max-[800px]:min-w-[200px] max-[800px]:min-h-[200px] max-[700px]:min-w-[130px] max-[700px]:min-h-[130px] flex-shrink-0">
+            <Image
+              src={"https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480616/mdc_ijuvcd.png"}
+              height={140}
+              width={140}
+              alt="mdc_north_logo"
+              className="max-[800px]:w-[120px] max-[700px]:w-[100px] transition-transform duration-300 hover:scale-105"
+            />
+          </a>
+          <a href="https://www.mdc.edu/entec/" target="_blank" rel="noopener noreferrer" className="flex justify-center items-center border-3 border-gray-600 pixel-shadow bg-gradient-to-br from-white to-gray-300 py-2 min-h-[230px] min-w-[230px] max-[800px]:min-w-[200px] max-[800px]:min-h-[200px] max-[700px]:min-w-[130px] max-[700px]:min-h-[130px] max-[700px]:py-0 flex-shrink-0">
+            <Image
+              src={"https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480615/entec_tjnwm3.png"}
+              height={140}
+              width={140}
+              alt="entec_mdc_logo"
+              className="max-[800px]:w-[120px] max-[700px]:w-[100px] transition-transform duration-300 hover:scale-105"
+            />
+          </a>
+          <a href="https://www.roocapital.com/" target="_blank" rel="noopener noreferrer" className="flex justify-center items-center border-3 border-gray-600 pixel-shadow bg-gradient-to-br from-white to-gray-300 py-2 min-h-[230px] min-w-[230px] max-[800px]:min-w-[200px] max-[800px]:min-h-[200px] max-[700px]:min-w-[130px] max-[700px]:min-h-[130px] max-[700px]:py-0 flex-shrink-0">
+            <Image
+              src={"https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480616/roo_capital_zqae68.png"}
+              height={190}
+              width={190}
+              alt="roo_capital_logo"
+              className="max-[800px]:w-[160px] max-[800px]:h-[140px] max-[700px]:w-[130px] max-[700px]:h-[130px] transition-transform duration-300 hover:scale-110"
+            />
+          </a>
         </div>
         
         {/* SPONSOR CTA */}
-        <div className="w-[550px] relative z-10 mx-2 top-[-85px] max-[650px]:w-[500px] max-[600px]:w-[400px] max-[500px]:w-[360px] max-[390px]:w-[300px]">
+        <div className="w-[550px] relative z-10 mx-2 max-[650px]:w-[500px] max-[600px]:w-[400px] max-[500px]:w-[360px] max-[390px]:w-[300px]">
           <div className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white px-2 py-3 border-3 border-gray-600 pixel-shadow max-[650px]:px-3 max-[650px]:py-2">
             <p className="text-center text-sm max-[1350px]:text-[24px] max-[500px]:text-[19px]">
               Want to sponsor? Email us at{" "}
