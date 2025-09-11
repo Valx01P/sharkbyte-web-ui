@@ -105,74 +105,76 @@ const Schedule = () => {
           {compactView ? 'Timeline View' : 'Compact List View'}
         </button>
       </div>
-
-      {/* SCHEDULE CONTENT */}
-      {!compactView ? (
-        // ---- TIMELINE VIEW ----
-        <div className="mx-4 w-full max-w-lg flex-1 flex flex-col justify-center">
-          <div className="overflow-x-auto p-4">
-            <div className="flex gap-4 min-w-max max-[650px]:gap-3">
-              {scheduleData[activeDay].events.map((event, eventIndex) => (
-                <div key={eventIndex} className="flex-shrink-0 relative">
-                  <div
-                    className={`${getEventTypeStyle(
-                      event.type
-                    )} text-white p-4 border-3 border-gray-600 pixel-shadow transition-transform duration-300 hover:scale-102 w-56 max-[750px]:w-48 max-[750px]:p-3 max-[500px]:p-1.5 max-[500px]:w-32`}
-                  >
-                    <div className="flex flex-col gap-2 max-[650px]:gap-1">
-                      <div className="text-sm font-bold text-center max-[1350px]:text-sm max-[750px]:text-[22px]">
-                        {event.time}
-                      </div>
-                      <div className="font-bold text-center max-[1350px]:text-sm max-[750px]:text-[24px]">
-                        {event.title}
-                      </div>
-                      <div className="text-sm text-gray-200 text-center max-[750px]:text-[24px]">
-                        {event.location}
+      
+      <div className='flex w-full items-center justify-center min-[650px]:px-4 max-[650px]:px-0'>
+        {/* SCHEDULE CONTENT */}
+        {!compactView ? (
+          // ---- TIMELINE VIEW ----
+          <div className="mx-4 w-full max-w-lg flex-1 flex flex-col justify-center">
+            <div className="overflow-x-auto p-4">
+              <div className="flex gap-4 min-w-max max-[650px]:gap-3">
+                {scheduleData[activeDay].events.map((event, eventIndex) => (
+                  <div key={eventIndex} className="flex-shrink-0 relative">
+                    <div
+                      className={`${getEventTypeStyle(
+                        event.type
+                      )} text-white p-4 border-3 border-gray-600 pixel-shadow transition-transform duration-300 hover:scale-102 w-56 max-[750px]:w-48 max-[750px]:p-3 max-[500px]:p-1.5 max-[500px]:w-32`}
+                    >
+                      <div className="flex flex-col gap-2 max-[650px]:gap-1">
+                        <div className="text-sm font-bold text-center max-[1350px]:text-sm max-[750px]:text-[22px]">
+                          {event.time}
+                        </div>
+                        <div className="font-bold text-center max-[1350px]:text-sm max-[750px]:text-[24px]">
+                          {event.title}
+                        </div>
+                        <div className="text-sm text-gray-200 text-center max-[750px]:text-[24px]">
+                          {event.location}
+                        </div>
                       </div>
                     </div>
+                    {eventIndex < scheduleData[activeDay].events.length - 1 && (
+                      <div className="absolute -right-2 top-1/2 transform -translate-y-1/2 text-gray-600 text-2lg max-[650px]:text-lg max-[650px]:-right-1.5">
+                        →
+                      </div>
+                    )}
                   </div>
-                  {eventIndex < scheduleData[activeDay].events.length - 1 && (
-                    <div className="absolute -right-2 top-1/2 transform -translate-y-1/2 text-gray-600 text-2lg max-[650px]:text-lg max-[650px]:-right-1.5">
-                      →
-                    </div>
-                  )}
-                </div>
-              ))}
+                ))}
+              </div>
+            </div>
+            <div className="mx-4 mt-1 mb-4 text-gray-800 font-bold text-sm text-center max-[650px]:text-xs max-[650px]:mb-0 max-[500px]:text-[22px]">
+              ← Scroll horizontally →
             </div>
           </div>
-          <div className="mx-4 mt-1 mb-4 text-gray-800 font-bold text-sm text-center max-[650px]:text-xs max-[650px]:mb-0 max-[500px]:text-[22px]">
-            ← Scroll horizontally →
+        ) : (
+          // ---- COMPACT LIST VIEW ----
+          <div className="w-full max-w-lg flex-1">
+            <ul className="divide-y divide-gray-700 border-2 border-gray-600 pixel-shadow bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 pixel-shadow overflow-y-auto max-h-[40vh]">
+              {scheduleData[activeDay].events.map((event, i) => (
+                <li
+                  key={i}
+                  className="flex items-center justify-between px-3 py-1.5 text-sm text-white max-[650px]:px-2 max-[650px]:py-1"
+                >
+                  <div className="flex-shrink-0 w-20 font-bold text-[26px] max-[1050px]:text-[23px] max-[650px]:text-[20px] text-gray-300 max-[500px]:text-[20px] max-[500px]:w-10">
+                    {event.time}
+                  </div>
+                  <div className="flex justify-center flex-col flex-1 px-2">
+                    <div className="text-[28px] font-semibold max-[1050px]:text-[24px] max-[650px]:text-[20px] max-[500px]:text-[19px]">{event.title}</div>
+                    <span className="text-[26px] max-[1050px]:text-[22px] max-[650px]:text-[20px] text-gray-400 max-[500px]:text-[18px]">{event.location}</span>
+                  </div>
+                  <div
+                    className={`ml-2 w-2 h-2 rounded-full ${event.type === 'public'
+                      ? 'bg-green-400'
+                      : event.type === 'sponsor'
+                      ? 'bg-yellow-400'
+                      : 'bg-blue-400'
+                    }`}
+                  ></div>
+                </li>
+              ))}
+            </ul>
           </div>
-        </div>
-      ) : (
-        // ---- COMPACT LIST VIEW ----
-        <div className="min-[650px]:px-4 max-[650px]:px-0 w-full max-w-lg flex-1">
-          <ul className="divide-y divide-gray-700 border-2 border-gray-600 pixel-shadow bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 pixel-shadow overflow-y-auto max-h-[40vh]">
-            {scheduleData[activeDay].events.map((event, i) => (
-              <li
-                key={i}
-                className="flex items-center justify-between px-3 py-1.5 text-sm text-white max-[650px]:px-2 max-[650px]:py-1"
-              >
-                <div className="flex-shrink-0 w-20 font-bold text-[26px] max-[1050px]:text-[23px] max-[650px]:text-[20px] text-gray-300 max-[500px]:text-[20px] max-[500px]:w-10">
-                  {event.time}
-                </div>
-                <div className="flex justify-center flex-col flex-1 px-2">
-                  <div className="text-[28px] font-semibold max-[1050px]:text-[24px] max-[650px]:text-[20px] max-[500px]:text-[19px]">{event.title}</div>
-                  <span className="text-[26px] max-[1050px]:text-[22px] max-[650px]:text-[20px] text-gray-400 max-[500px]:text-[18px]">{event.location}</span>
-                </div>
-                <div
-                  className={`ml-2 w-2 h-2 rounded-full ${event.type === 'public'
-                    ? 'bg-green-400'
-                    : event.type === 'sponsor'
-                    ? 'bg-yellow-400'
-                    : 'bg-blue-400'
-                  }`}
-                ></div>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+        )}
+      </div>
     </section>
   )
 }

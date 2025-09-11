@@ -6,10 +6,11 @@ const Partners = () => {
     ["INIT Pro", "https://www.linkedin.com/company/init-pro"],
     ["Knight Foundation", "https://knightfoundation.org/community/miami/"],
     ["Lab22c", "https://lab22c.com/"],
+    ["MLH", "https://mlh.io/"],
     ["City of Miami", "https://www.miami.gov/Home"],
     ["Miami Tech Works", "https://miamitechworks.org/"],
     ["Momentum Miami", "https://www.momentum.miami/"],
-    ["Entec MDC", "https://www.mdc.edu/entec/"],
+    ["Entec MDC", "https://www.mdc.edu/entec/"]
   ]
 
   return (
