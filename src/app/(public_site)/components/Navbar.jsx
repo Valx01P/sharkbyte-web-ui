@@ -53,9 +53,9 @@ const Navbar = () => {
       <div className='max-[1026px]:hidden flex items-center w-min px-4 max-[1350px]:px-2'>
         {/* Nav Links */}
         <ul className="flex justify-center items-center gap-6 w-full max-[1350px]:gap-4">
-          <button onClick={() => scrollToSection('home')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full max-[1350px]:text-sm cursor-pointer">Home</button>
           <button onClick={() => scrollToSection('about')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full max-[1350px]:text-sm cursor-pointer">About</button>
           <button onClick={() => scrollToSection('schedule')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full max-[1350px]:text-sm cursor-pointer">Schedule</button>
+          <button onClick={() => scrollToSection('location')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full max-[1350px]:text-sm cursor-pointer">Location</button>
           <button onClick={() => scrollToSection('faq')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full max-[1350px]:text-sm cursor-pointer">FAQ</button>
           <button onClick={() => scrollToSection('sponsors')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full max-[1350px]:text-sm cursor-pointer">Sponsors</button>
         </ul>
@@ -119,9 +119,9 @@ const Navbar = () => {
                <div className="flex flex-col items-end pr-8 space-y-6">
                  {/* Nav Links */}
                  <div className="flex flex-col items-end space-y-4">
-                   <button onClick={() => { scrollToSection('home'); setIsMobileMenuOpen(false); }} className="text-right relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Home</button>
                    <button onClick={() => { scrollToSection('about'); setIsMobileMenuOpen(false); }} className="text-right relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">About</button>
                    <button onClick={() => { scrollToSection('schedule'); setIsMobileMenuOpen(false); }} className="text-right relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Schedule</button>
+                   <button onClick={() => { scrollToSection('location'); setIsMobileMenuOpen(false); }} className="text-right relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Location</button>
                    <button onClick={() => { scrollToSection('faq'); setIsMobileMenuOpen(false); }} className="text-right relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">FAQ</button>
                    <button onClick={() => { scrollToSection('sponsors'); setIsMobileMenuOpen(false); }} className="text-right relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Sponsors</button>
                  </div>

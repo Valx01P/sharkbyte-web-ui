@@ -56,47 +56,51 @@ const Location = () => {
       case 0:
         // MDC Interactive Map
         return (
-          <div className="relative w-full max-w-lg overflow-hidden">
-            <div className={`relative ${containerHeight} transition-all duration-300 ease-in-out`}>
-              <iframe
-                src='https://clients.mapsindoors.com/miamidadecollege/cd5ee2abc27c4ea8876a331a/search'
-                className="w-full h-full"
-                {...commonIframeProps}
-              />
-              
-              {/* Overlay Controls */}
-              <div className="absolute top-0 right-0 flex gap-0 z-5">
-                <button
-                  onClick={openInNewTab}
-                  className="w-5 h-5 cursor-pointer bg-black/60 hover:bg-black/80 text-white flex items-center justify-center transition-all duration-200 backdrop-blur-sm"
-                  title="Open in new tab"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                    <polyline points="15,3 21,3 21,9"/>
-                    <line x1="10" y1="14" x2="21" y2="3"/>
-                  </svg>
-                </button>
+          <div className="relative w-full max-w-lg">
+            {/* Map container wrapper */}
+            <div className="relative overflow-hidden">
+              {/* Inner container with black background for loading state */}
+              <div className={`relative ${containerHeight} transition-all duration-300 ease-in-out bg-black`}>
+                <iframe
+                  src='https://clients.mapsindoors.com/miamidadecollege/cd5ee2abc27c4ea8876a331a/search'
+                  className="w-full h-full relative z-[1]"
+                  {...commonIframeProps}
+                />
                 
-                <button
-                  onClick={() => {
-                    const iframe = document.querySelector('iframe')
-                    if (iframe && iframe.requestFullscreen) {
-                      iframe.requestFullscreen()
-                    }
-                  }}
-                  className="w-5 h-5 cursor-pointer bg-black/60 hover:bg-black/80 text-white flex items-center justify-center transition-all duration-200 backdrop-blur-sm"
-                  title="Fullscreen"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
-                  </svg>
-                </button>
+                {/* Overlay Controls */}
+                <div className="absolute top-0 right-0 flex gap-0 z-10">
+                  <button
+                    onClick={openInNewTab}
+                    className="w-5 h-5 cursor-pointer bg-black/60 hover:bg-black/80 text-white flex items-center justify-center transition-all duration-200 backdrop-blur-sm"
+                    title="Open in new tab"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                      <polyline points="15,3 21,3 21,9"/>
+                      <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                  </button>
+                  
+                  <button
+                    onClick={() => {
+                      const iframe = document.querySelector('iframe')
+                      if (iframe && iframe.requestFullscreen) {
+                        iframe.requestFullscreen()
+                      }
+                    }}
+                    className="w-5 h-5 cursor-pointer bg-black/60 hover:bg-black/80 text-white flex items-center justify-center transition-all duration-200 backdrop-blur-sm"
+                    title="Fullscreen"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
             
-            {/* Expand/Collapse Button */}
-            <div className="flex justify-start -mt-0 relative z-5">
+            {/* Expand/Collapse Button - Outside the container with black background */}
+            <div className="flex justify-start relative z-20">
               <button
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="cursor-pointer bg-black/80 hover:bg-black/90 text-white px-4 py-0.5 rounded-b-lg transition-all duration-200 shadow-lg"
@@ -121,50 +125,54 @@ const Location = () => {
       case 1:
         // Google Map
         return (
-          <div className="relative w-full max-w-lg overflow-hidden">
-            <div className={`relative ${containerHeight} transition-all duration-300 ease-in-out`}>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.033039379458!2d-80.24827804517018!3d25.879864182976842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0391b7d8ae9%3A0x412412fc3d70a127!2sJohn%20F.%20Kennedy%20Center%2C%20Kennedy%20Dr%2C%20Miami%2C%20FL%2033167!5e0!3m2!1sen!2sus!4v1757597869517!5m2!1sen!2sus"
-                className="w-full h-full"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-              
-              {/* Overlay Controls */}
-              <div className="absolute top-0 right-0 flex gap-0 z-5">
-                <button
-                  onClick={openInNewTab}
-                  className="w-5 h-5 cursor-pointer bg-black/60 hover:bg-black/80 text-white flex items-center justify-center transition-all duration-200 backdrop-blur-sm"
-                  title="Open in new tab"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                    <polyline points="15,3 21,3 21,9"/>
-                    <line x1="10" y1="14" x2="21" y2="3"/>
-                  </svg>
-                </button>
+          <div className="relative w-full max-w-lg">
+            {/* Map container wrapper */}
+            <div className="relative overflow-hidden">
+              {/* Inner container with black background for loading state */}
+              <div className={`relative ${containerHeight} transition-all duration-300 ease-in-out bg-black`}>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.033039379458!2d-80.24827804517018!3d25.879864182976842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0391b7d8ae9%3A0x412412fc3d70a127!2sJohn%20F.%20Kennedy%20Center%2C%20Kennedy%20Dr%2C%20Miami%2C%20FL%2033167!5e0!3m2!1sen!2sus!4v1757597869517!5m2!1sen!2sus"
+                  className="w-full h-full relative z-[1]"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
                 
-                <button
-                  onClick={() => {
-                    const iframe = document.querySelector('iframe')
-                    if (iframe && iframe.requestFullscreen) {
-                      iframe.requestFullscreen()
-                    }
-                  }}
-                  className="w-5 h-5 cursor-pointer bg-black/60 hover:bg-black/80 text-white flex items-center justify-center transition-all duration-200 backdrop-blur-sm"
-                  title="Fullscreen"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
-                  </svg>
-                </button>
+                {/* Overlay Controls */}
+                <div className="absolute top-0 right-0 flex gap-0 z-10">
+                  <button
+                    onClick={openInNewTab}
+                    className="w-5 h-5 cursor-pointer bg-black/60 hover:bg-black/80 text-white flex items-center justify-center transition-all duration-200 backdrop-blur-sm"
+                    title="Open in new tab"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                      <polyline points="15,3 21,3 21,9"/>
+                      <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                  </button>
+                  
+                  <button
+                    onClick={() => {
+                      const iframe = document.querySelector('iframe')
+                      if (iframe && iframe.requestFullscreen) {
+                        iframe.requestFullscreen()
+                      }
+                    }}
+                    className="w-5 h-5 cursor-pointer bg-black/60 hover:bg-black/80 text-white flex items-center justify-center transition-all duration-200 backdrop-blur-sm"
+                    title="Fullscreen"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
             
-            {/* Expand/Collapse Button */}
-            <div className="flex justify-start -mt-0 relative z-5">
+            {/* Expand/Collapse Button - Outside the container with black background */}
+            <div className="flex justify-start relative z-20">
               <button
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="cursor-pointer bg-black/80 hover:bg-black/90 text-white px-4 py-0.5 rounded-b-lg transition-all duration-200 shadow-lg"
@@ -189,47 +197,51 @@ const Location = () => {
       case 2:
         // Campus Layout/Directions
         return (
-          <div className="relative w-full max-w-lg overflow-hidden">
-            <div className={`relative ${containerHeight} transition-all duration-300 ease-in-out`}>
-              <iframe
-                src="https://www.mdc.edu/north/campus-information/directions.aspx"
-                className="w-full h-full"
-                {...commonIframeProps}
-              />
-              
-              {/* Overlay Controls */}
-              <div className="absolute top-0 right-0 flex gap-0 z-5">
-                <button
-                  onClick={openInNewTab}
-                  className="w-5 h-5 cursor-pointer bg-black/60 hover:bg-black/80 text-white flex items-center justify-center transition-all duration-200 backdrop-blur-sm"
-                  title="Open in new tab"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                    <polyline points="15,3 21,3 21,9"/>
-                    <line x1="10" y1="14" x2="21" y2="3"/>
-                  </svg>
-                </button>
+          <div className="relative w-full max-w-lg">
+            {/* Map container wrapper */}
+            <div className="relative overflow-hidden">
+              {/* Inner container with black background for loading state */}
+              <div className={`relative ${containerHeight} transition-all duration-300 ease-in-out bg-black`}>
+                <iframe
+                  src="https://www.mdc.edu/north/campus-information/directions.aspx"
+                  className="w-full h-full relative z-[1]"
+                  {...commonIframeProps}
+                />
                 
-                <button
-                  onClick={() => {
-                    const iframe = document.querySelector('iframe')
-                    if (iframe && iframe.requestFullscreen) {
-                      iframe.requestFullscreen()
-                    }
-                  }}
-                  className="w-5 h-5 cursor-pointer bg-black/60 hover:bg-black/80 text-white flex items-center justify-center transition-all duration-200 backdrop-blur-sm"
-                  title="Fullscreen"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
-                  </svg>
-                </button>
+                {/* Overlay Controls */}
+                <div className="absolute top-0 right-0 flex gap-0 z-10">
+                  <button
+                    onClick={openInNewTab}
+                    className="w-5 h-5 cursor-pointer bg-black/60 hover:bg-black/80 text-white flex items-center justify-center transition-all duration-200 backdrop-blur-sm"
+                    title="Open in new tab"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                      <polyline points="15,3 21,3 21,9"/>
+                      <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                  </button>
+                  
+                  <button
+                    onClick={() => {
+                      const iframe = document.querySelector('iframe')
+                      if (iframe && iframe.requestFullscreen) {
+                        iframe.requestFullscreen()
+                      }
+                    }}
+                    className="w-5 h-5 cursor-pointer bg-black/60 hover:bg-black/80 text-white flex items-center justify-center transition-all duration-200 backdrop-blur-sm"
+                    title="Fullscreen"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
             
-            {/* Expand/Collapse Button */}
-            <div className="flex justify-start -mt-0 relative z-5">
+            {/* Expand/Collapse Button - Outside the container with black background */}
+            <div className="flex justify-start relative z-20">
               <button
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="cursor-pointer bg-black/80 hover:bg-black/90 text-white px-4 py-0.5 rounded-b-lg transition-all duration-200 shadow-lg"
