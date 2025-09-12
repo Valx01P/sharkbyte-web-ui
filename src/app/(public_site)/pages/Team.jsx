@@ -93,7 +93,7 @@ const Team = () => {
       </div>
 
       {/* DESKTOP TWO-ROW CAROUSEL */}
-      <div className="max-[650px]:hidden relative z-10 w-full max-w-[700px] overflow-hidden">
+      <div className="max-[650px]:hidden relative z-10 border-x-8 border-x-gray-900 w-full max-w-[700px] overflow-hidden">
         <div className="flex flex-col">
           {/* TOP ROW */}
           <div className="marquee overflow-hidden">
