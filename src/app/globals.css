@@ -84,6 +84,7 @@ section {
 .pixel-bg-stats,
 .pixel-bg-about,
 .pixel-bg-schedule,
+.pixel-bg-location
 .pixel-bg-faq,
 .pixel-bg-sponsors,
 .pixel-bg-sponsors-cta,
@@ -112,6 +113,10 @@ section {
 
 .pixel-bg-schedule {
   background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480565/schedule_uelugo.png');
+}
+
+.pixel-bg-location {
+  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757688633/transition-bg_oig0zs.png');
 }
 
 .pixel-bg-faq {
