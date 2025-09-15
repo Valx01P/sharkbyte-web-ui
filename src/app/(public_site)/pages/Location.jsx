@@ -283,14 +283,14 @@ const Location = () => {
       </div>
 
       {/* LOCATION INFO */}
-      <div className="mx-4 max-[650px]:mx-1 mb-4 text-center">
-        <div className="text-gray-900 text-base font-semibold max-[650px]:text-xs max-[500px]:text-[22px] max-[300px]:text-[20px]">
+      <div className="mx-4 max-[650px]:mx-1 mb-4 text-center py-3 px-5 max-[650px]:px-4 max-[500px]:px-3 max-[300px]:px-2 bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 border-3 border-gray-600 pixel-shadow">
+        <div className="text-white text-sm max-[650px]:text-xs max-[500px]:text-[22px] max-[300px]:text-[20px]">
           School of Justice Building
         </div>
-        <div className="text-gray-800 text-base font-semibold max-[650px]:text-xs max-[500px]:text-[22px] max-[300px]:text-[20px]">
+        <div className="text-white text-sm max-[650px]:text-xs max-[500px]:text-[22px] max-[300px]:text-[20px]">
           Miami Dade College, North Campus
         </div>
-        <div className="text-gray-900 text-base font-semibold max-[650px]:text-xs max-[500px]:text-[22px] max-[300px]:text-[20px]">
+        <div className="text-white text-sm max-[650px]:text-xs max-[500px]:text-[22px] max-[300px]:text-[20px]">
           Florida, United States
         </div>
       </div>

@@ -158,8 +158,8 @@ const Schedule = () => {
                     {event.time}
                   </div>
                   <div className="flex justify-center flex-col flex-1 px-2">
-                    <div className="text-[28px] font-semibold max-[1050px]:text-[24px] max-[650px]:text-[20px] max-[500px]:text-[19px]">{event.title}</div>
-                    <span className="text-[26px] max-[1050px]:text-[22px] max-[650px]:text-[20px] text-gray-400 max-[500px]:text-[18px]">{event.location}</span>
+                    <div className="text-[26px] font-semibold max-[1050px]:text-[24px] max-[650px]:text-[20px] max-[500px]:text-[19px]">{event.title}</div>
+                    <span className="text-[24px] max-[1050px]:text-[22px] max-[650px]:text-[20px] text-gray-400 max-[500px]:text-[18px]">{event.location}</span>
                   </div>
                   <div
                     className={`ml-2 w-2 h-2 rounded-full ${event.type === 'public'
