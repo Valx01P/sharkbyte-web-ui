@@ -7,43 +7,67 @@ const Schedule = () => {
   const [compactView, setCompactView] = useState(true)
 
 // Schedule data - public and sponsor events only
-  const scheduleData = [
+  // const scheduleData = [
+  //   {
+  //     date: "Nov 7th",
+  //     day: "Friday",
+  //     events: [
+  //       { time: "5:00 PM", title: "Opening Ceremony", location: "Main Hall", type: "public" },
+  //       { time: "8:00 PM", title: "Dinner service", location: "Cafeteria", type: "public" },
+  //     ]
+  //   },
+  //   {
+  //     date: "Nov 8th",
+  //     day: "Saturday",
+  //     events: [
+  //       { time: "7:00 AM", title: "Breakfast service", location: "Cafeteria", type: "public" },
+  //       { time: "8:00 AM", title: "Sponsor event", location: "Conference Room", type: "sponsor" },
+  //       { time: "8:30 AM", title: "Morning activities", location: "Main Hall", type: "public" },
+  //       { time: "10:00 AM", title: "Workshop session", location: "Room 205", type: "public" },
+  //       { time: "11:00 AM", title: "Networking break", location: "Lobby", type: "public" },
+  //       { time: "12:00 PM", title: "Lunch service", location: "Cafeteria", type: "public" },
+  //       { time: "2:00 PM", title: "MDC table", location: "Main Hall", type: "public" },
+  //       { time: "2:15 PM", title: "ROO Capital", location: "Main Hall", type: "public" },
+  //       { time: "8:30 PM", title: "Dinner service", location: "Cafeteria", type: "public" },
+  //     ]
+  //   },
+  //   {
+  //     date: "Nov 9th",
+  //     day: "Sunday",
+  //     events: [
+  //       { time: "8:00 AM", title: "Breakfast service", location: "Cafeteria", type: "public" },
+  //       { time: "9:00 AM", title: "Final preparations", location: "Main Hall", type: "public" },
+  //       { time: "11:00 AM", title: "Project setup", location: "Demo Area", type: "public" },
+  //       { time: "12:30 PM", title: "Lunch service", location: "Cafeteria", type: "public" },
+  //       { time: "12:45 PM", title: "Sponsor activities", location: "Conference Room", type: "sponsor" },
+  //       { time: "1:00 PM", title: "Judging begins", location: "Demo Area", type: "public" },
+  //       { time: "2:30 PM", title: "Sponsor presentation", location: "Main Hall", type: "sponsor" },
+  //       { time: "4:30 PM", title: "Project evaluation", location: "Demo Area", type: "public" },
+  //       { time: "7:00 PM", title: "Closing ceremony", location: "Auditorium", type: "public" },
+  //     ]
+  //   }
+  // ]
+
+ const scheduleData = [
     {
       date: "Nov 7th",
       day: "Friday",
       events: [
-        { time: "5:00 PM", title: "Opening Ceremony", location: "Main Hall", type: "public" },
-        { time: "8:00 PM", title: "Dinner service", location: "Cafeteria", type: "public" },
+        { time: "-:--", title: "TBA", location: "TBA", type: "public" },
       ]
     },
     {
       date: "Nov 8th",
       day: "Saturday",
       events: [
-        { time: "7:00 AM", title: "Breakfast service", location: "Cafeteria", type: "public" },
-        { time: "8:00 AM", title: "Sponsor event", location: "Conference Room", type: "sponsor" },
-        { time: "8:30 AM", title: "Morning activities", location: "Main Hall", type: "public" },
-        { time: "10:00 AM", title: "Workshop session", location: "Room 205", type: "public" },
-        { time: "11:00 AM", title: "Networking break", location: "Lobby", type: "public" },
-        { time: "12:00 PM", title: "Lunch service", location: "Cafeteria", type: "public" },
-        { time: "2:00 PM", title: "MDC table", location: "Main Hall", type: "public" },
-        { time: "2:15 PM", title: "ROO Capital", location: "Main Hall", type: "public" },
-        { time: "8:30 PM", title: "Dinner service", location: "Cafeteria", type: "public" },
+        { time: "-:--", title: "TBA", location: "TBA", type: "public" },
       ]
     },
     {
       date: "Nov 9th",
       day: "Sunday",
       events: [
-        { time: "8:00 AM", title: "Breakfast service", location: "Cafeteria", type: "public" },
-        { time: "9:00 AM", title: "Final preparations", location: "Main Hall", type: "public" },
-        { time: "11:00 AM", title: "Project setup", location: "Demo Area", type: "public" },
-        { time: "12:30 PM", title: "Lunch service", location: "Cafeteria", type: "public" },
-        { time: "12:45 PM", title: "Sponsor activities", location: "Conference Room", type: "sponsor" },
-        { time: "1:00 PM", title: "Judging begins", location: "Demo Area", type: "public" },
-        { time: "2:30 PM", title: "Sponsor presentation", location: "Main Hall", type: "sponsor" },
-        { time: "4:30 PM", title: "Project evaluation", location: "Demo Area", type: "public" },
-        { time: "7:00 PM", title: "Closing ceremony", location: "Auditorium", type: "public" },
+        { time: "-:--", title: "TBA", location: "TBA", type: "public" },
       ]
     }
   ]
