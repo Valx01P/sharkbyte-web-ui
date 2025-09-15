@@ -47,7 +47,7 @@ const Sponsors = () => {
               src={"https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757706321/redbull_ouhiwo.svg"}
               height={190}
               width={190}
-              alt="roo_capital_logo"
+              alt="redbull_logo"
               className="max-[800px]:w-[160px] max-[800px]:h-[140px] max-[700px]:w-[120px] max-[700px]:h-[120px] transition-transform duration-300 hover:scale-110 max-[700px]:hover:scale-100"
             />
           </a>
