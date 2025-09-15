@@ -68,7 +68,7 @@ const Location = () => {
                 />
                 
                 {/* Overlay Controls */}
-                <div className="absolute top-0 right-0 flex gap-0 z-10">
+                <div className="absolute top-0 right-0 flex gap-0 z-5">
                   <button
                     onClick={openInNewTab}
                     className="w-5 h-5 cursor-pointer bg-black/60 hover:bg-black/80 text-white flex items-center justify-center transition-all duration-200 backdrop-blur-sm"
@@ -100,7 +100,7 @@ const Location = () => {
             </div>
             
             {/* Expand/Collapse Button - Outside the container with black background */}
-            <div className="flex justify-start relative z-20">
+            <div className="flex justify-start relative z-5">
               <button
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="cursor-pointer bg-black/80 hover:bg-black/90 text-white px-4 py-0.5 rounded-b-lg transition-all duration-200 shadow-lg"
@@ -140,7 +140,7 @@ const Location = () => {
                 />
                 
                 {/* Overlay Controls */}
-                <div className="absolute top-0 right-0 flex gap-0 z-10">
+                <div className="absolute top-0 right-0 flex gap-0 z-5">
                   <button
                     onClick={openInNewTab}
                     className="w-5 h-5 cursor-pointer bg-black/60 hover:bg-black/80 text-white flex items-center justify-center transition-all duration-200 backdrop-blur-sm"
@@ -172,7 +172,7 @@ const Location = () => {
             </div>
             
             {/* Expand/Collapse Button - Outside the container with black background */}
-            <div className="flex justify-start relative z-20">
+            <div className="flex justify-start relative z-5">
               <button
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="cursor-pointer bg-black/80 hover:bg-black/90 text-white px-4 py-0.5 rounded-b-lg transition-all duration-200 shadow-lg"
@@ -209,7 +209,7 @@ const Location = () => {
                 />
                 
                 {/* Overlay Controls */}
-                <div className="absolute top-0 right-0 flex gap-0 z-10">
+                <div className="absolute top-0 right-0 flex gap-0 z-5">
                   <button
                     onClick={openInNewTab}
                     className="w-5 h-5 cursor-pointer bg-black/60 hover:bg-black/80 text-white flex items-center justify-center transition-all duration-200 backdrop-blur-sm"
@@ -241,7 +241,7 @@ const Location = () => {
             </div>
             
             {/* Expand/Collapse Button - Outside the container with black background */}
-            <div className="flex justify-start relative z-20">
+            <div className="flex justify-start relative z-5">
               <button
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="cursor-pointer bg-black/80 hover:bg-black/90 text-white px-4 py-0.5 rounded-b-lg transition-all duration-200 shadow-lg"
