@@ -10,7 +10,8 @@ const Partners = () => {
     ["City of Miami", "https://www.miami.gov/Home"],
     ["Miami Tech Works", "https://miamitechworks.org/"],
     ["Momentum Miami", "https://www.momentum.miami/"],
-    ["Entec MDC", "https://www.mdc.edu/entec/"]
+    ["Entec MDC", "https://www.mdc.edu/entec/"],
+    ["Init National", ""]
   ]
 
   return (
@@ -24,7 +25,7 @@ const Partners = () => {
 
       {/* PARTNERS GRID */}
       <div className="max-w-[600px] p-4 relative z-10 w-full bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white border-3 border-gray-600 pixel-shadow max-[500px]:p-2">
-        <div className="grid grid-cols-3 gap-4 text-center max-[1350px]:gap-3 max-[650px]:grid-cols-2 max-[650px]:gap-2">
+        <div className="grid grid-cols-4 gap-4 text-center max-[1350px]:gap-3 max-[650px]:grid-cols-3 max-[650px]:gap-2">
           {partners.map((partner, index) => (
             <a 
               href={partner[1]}

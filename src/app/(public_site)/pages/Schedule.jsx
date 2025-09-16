@@ -6,86 +6,69 @@ const Schedule = () => {
   const [activeDay, setActiveDay] = useState(0)
   const [compactView, setCompactView] = useState(true)
 
-// Schedule data - public and sponsor events only
-  // const scheduleData = [
-  //   {
-  //     date: "Nov 7th",
-  //     day: "Friday",
-  //     events: [
-  //       { time: "5:00 PM", title: "Opening Ceremony", location: "Main Hall", type: "public" },
-  //       { time: "8:00 PM", title: "Dinner service", location: "Cafeteria", type: "public" },
-  //     ]
-  //   },
-  //   {
-  //     date: "Nov 8th",
-  //     day: "Saturday",
-  //     events: [
-  //       { time: "7:00 AM", title: "Breakfast service", location: "Cafeteria", type: "public" },
-  //       { time: "8:00 AM", title: "Sponsor event", location: "Conference Room", type: "sponsor" },
-  //       { time: "8:30 AM", title: "Morning activities", location: "Main Hall", type: "public" },
-  //       { time: "10:00 AM", title: "Workshop session", location: "Room 205", type: "public" },
-  //       { time: "11:00 AM", title: "Networking break", location: "Lobby", type: "public" },
-  //       { time: "12:00 PM", title: "Lunch service", location: "Cafeteria", type: "public" },
-  //       { time: "2:00 PM", title: "MDC table", location: "Main Hall", type: "public" },
-  //       { time: "2:15 PM", title: "ROO Capital", location: "Main Hall", type: "public" },
-  //       { time: "8:30 PM", title: "Dinner service", location: "Cafeteria", type: "public" },
-  //     ]
-  //   },
-  //   {
-  //     date: "Nov 9th",
-  //     day: "Sunday",
-  //     events: [
-  //       { time: "8:00 AM", title: "Breakfast service", location: "Cafeteria", type: "public" },
-  //       { time: "9:00 AM", title: "Final preparations", location: "Main Hall", type: "public" },
-  //       { time: "11:00 AM", title: "Project setup", location: "Demo Area", type: "public" },
-  //       { time: "12:30 PM", title: "Lunch service", location: "Cafeteria", type: "public" },
-  //       { time: "12:45 PM", title: "Sponsor activities", location: "Conference Room", type: "sponsor" },
-  //       { time: "1:00 PM", title: "Judging begins", location: "Demo Area", type: "public" },
-  //       { time: "2:30 PM", title: "Sponsor presentation", location: "Main Hall", type: "sponsor" },
-  //       { time: "4:30 PM", title: "Project evaluation", location: "Demo Area", type: "public" },
-  //       { time: "7:00 PM", title: "Closing ceremony", location: "Auditorium", type: "public" },
-  //     ]
-  //   }
-  // ]
-
- const scheduleData = [
+  // Schedule data - public and sponsor events only
+  const scheduleData = [
     {
       date: "Nov 7th",
       day: "Friday",
       events: [
-        { time: "-:--", title: "TBA", location: "TBA", type: "public" },
+        { time: "5:00 PM", title: "Check in", location: "Main Entrance", type: "public" },
+        { time: "6:00 PM", title: "Dinner", location: "Cafeteria", type: "public" },
+        { time: "9:30 PM", title: "Start hacking ANNOUNCEMENT", location: "Main Hall", type: "public" },
       ]
     },
     {
       date: "Nov 8th",
       day: "Saturday",
       events: [
-        { time: "-:--", title: "TBA", location: "TBA", type: "public" },
+        { time: "7:00 AM", title: "Breakfast service", location: "Cafeteria", type: "public" },
+        { time: "12:00 PM", title: "Lunch service", location: "Cafeteria", type: "public" },
+        { time: "3:15 PM", title: "Idea Center Workshop (Not Final)", location: "Workshop Room", type: "public" },
+        { time: "8:30 PM", title: "Dinner service", location: "Cafeteria", type: "public" },
       ]
     },
     {
       date: "Nov 9th",
       day: "Sunday",
       events: [
-        { time: "-:--", title: "TBA", location: "TBA", type: "public" },
+        { time: "7:00 AM", title: "Breakfast service", location: "Cafeteria", type: "public" },
+        { time: "12:30 PM", title: "Lunch service", location: "Cafeteria", type: "public" },
+        { time: "3:30 PM", title: "Begin projects evaluation", location: "Demo Area", type: "public" },
+        { time: "7:00 PM", title: "Closing ceremony", location: "Auditorium", type: "public" },
       ]
     }
   ]
 
+//  const scheduleData = [
+//     {
+//       date: "Nov 7th",
+//       day: "Friday",
+//       events: [
+//         { time: "-:--", title: "TBA", location: "TBA", type: "public" },
+//       ]
+//     },
+//     {
+//       date: "Nov 8th",
+//       day: "Saturday",
+//       events: [
+//         { time: "-:--", title: "TBA", location: "TBA", type: "public" },
+//       ]
+//     },
+//     {
+//       date: "Nov 9th",
+//       day: "Sunday",
+//       events: [
+//         { time: "-:--", title: "TBA", location: "TBA", type: "public" },
+//       ]
+//     }
+//   ]
+
   // Event type styling - added internal, public, sponsor types
   const getEventTypeStyle = (type) => {
     const styles = {
-      internal: "bg-gradient-to-r from-[#2c5282] to-[#1a365d]",
-      public: "bg-gradient-to-r from-[#2f855a] to-[#1c4532]",
-      sponsor: "bg-gradient-to-r from-[#d69e2e] to-[#b7791f]",
-      admin: "bg-gradient-to-r from-[#2d3748] to-[#1a202c]",
-      ceremony: "bg-gradient-to-r from-[#553c9a] to-[#2d1b69]",
-      networking: "bg-gradient-to-r from-[#2c5282] to-[#1a365d]",
-      food: "bg-gradient-to-r from-[#2f855a] to-[#1c4532]",
-      coding: "bg-gradient-to-r from-[#4a5568] to-[#2d3748]",
-      workshop: "bg-gradient-to-r from-[#38b2ac] to-[#285e61]",
-      mentorship: "bg-gradient-to-r from-[#5a67d8] to-[#3c366b]",
-      presentation: "bg-gradient-to-r from-[#b83280] to-[#702459]",
+      internal: "bg-gradient-to-r from-[#8b5cf6] to-[#851e99]",
+      public: "bg-gradient-to-r from-[#5067da] to-[#2f45b0]",
+      sponsor: "bg-gradient-to-r from-[#6b41cc] to-[#451f9f]",
     }
     return styles[type] || "bg-gradient-to-r from-[#2d3748] to-[#1a202c]"
   }
@@ -96,11 +79,17 @@ const Schedule = () => {
       className="w-screen min-h-screen flex flex-col justify-start items-center relative overflow-hidden pixel-bg-schedule py-18 max-[1350px]:py-22 max-[650px]:py-32"
     >
       {/* TITLE */}
-      <div className="mx-4 mb-6 max-[650px]:mb-4 mt-4 max-[650px]:mt-2">
+      <div className="mx-4 mb-4 max-[650px]:mb-2">
         <div className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white px-6 py-3 border-3 border-gray-600 pixel-shadow max-[650px]:px-4 max-[650px]:py-2">
           <h1 className="text-lg font-bold text-center max-[1350px]:text-base max-[650px]:text-xs max-[500px]:text-[22px]">
             Event Schedule
           </h1>
+        </div>
+      </div>
+
+      <div className="mb-4 max-[650px]:mb-2 text-center py-3 px-5 max-[650px]:px-4 max-[500px]:px-3 max-[300px]:px-2 bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 border-3 border-gray-600 pixel-shadow">
+        <div className="text-white text-sm max-[650px]:text-xs max-[500px]:text-[22px] max-[300px]:text-[20px]">
+          Schedule subject to change
         </div>
       </div>
 
@@ -124,7 +113,7 @@ const Schedule = () => {
         {/* Compact toggle button */}
         <button
           onClick={() => setCompactView(!compactView)}
-          className="hover:cursor-pointer px-3 py-2 border-2 border-gray-600 bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white text-xs pixel-shadow hover:bg-gray-800 transition-colors max-[390px]:text-[22px] max-[390px]:px-3"
+          className="max-[527px]:mt-1 hover:cursor-pointer px-3 py-2 border-2 border-gray-600 bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white text-xs pixel-shadow hover:bg-gray-800 transition-colors max-[390px]:text-[22px] max-[390px]:px-3"
         >
           {compactView ? 'Timeline View' : 'Compact List View'}
         </button>

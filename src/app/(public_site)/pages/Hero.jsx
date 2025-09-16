@@ -22,9 +22,11 @@ const Hero = () => {
             />
           </div>
           {/* CONTENT BLOCK */}
-          <div className="bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white p-3 px-5 border-3 border-gray-600 pixel-shadow max-[1350px]:text-sm max-[650px]:text-xs max-[1350px]:py-2.5 max-[1350px]:px-4 max-[650px]:p-2 max-[650px]:px-3.5 max-[420px]:px-2">
+          <div className="bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white p-3 px-6 border-3 border-gray-600 pixel-shadow max-[1350px]:text-sm max-[650px]:text-xs max-[1350px]:py-2.5 max-[1350px]:px-5 max-[650px]:p-2 max-[650px]:px-3.5 max-[420px]:px-2">
             <p className="text-center flex-wrap max-[500px]:text-[22px]">
-              MDC North Campus - Miami, FL
+              Miami Dade College,
+              <br />
+              North Campus | Miami, FL
               <br />
               November 7th - 9th, 2025
             </p>
