@@ -6,7 +6,7 @@ const Socials = () => {
   const { isMobileMenuOpen } = useMobileMenu()
 
   return (
-    <section id='socials' className="w-screen h-screen flex flex-col justify-center items-center relative overflow-hidden pixel-bg-socials p-4">
+    <section id='socials' className="w-screen min-h-[100dvh] flex flex-col justify-center items-center relative overflow-hidden pixel-bg-socials p-4">
       
       {/* Main content wrapper for centering */}
       <div className="flex flex-col items-center">

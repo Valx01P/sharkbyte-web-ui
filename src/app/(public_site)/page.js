@@ -12,6 +12,7 @@ import Faq from './pages/Faq'
 import Sponsors from './pages/Sponsors'
 import Partners from './pages/Partners'
 import Team from './pages/Team'
+import Faculty from './pages/Faculty'
 import Socials from './pages/Socials'
 
 export default function Home() {
@@ -56,7 +57,8 @@ export default function Home() {
       </div>
 
       {/* VERTICAL */}
-      <div className="min-h-screen bg-gray-900">
+      <div className="min-h-[200dvh] bg-gray-900">
+        <Faculty />
         <Socials />
       </div>
     </main>

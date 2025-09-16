@@ -89,6 +89,7 @@ section {
 .pixel-bg-sponsors,
 .pixel-bg-sponsors-cta,
 .pixel-bg-team,
+.pixel-bg-faculty,
 .pixel-bg-socials {
   background-repeat: no-repeat;
   background-size: cover;
@@ -150,8 +151,12 @@ section {
   background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480566/team_uc8ri2.png');
 }
 
+.pixel-bg-faculty {
+  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1758031963/shark_zm0sqv.gif');
+}
+
 .pixel-bg-socials {
-  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480565/socials_pahir6.png');
+  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1758032778/socials_pahir6.png');
 }
 
 /* Mobile: keep visual “seam” by locking each half */
