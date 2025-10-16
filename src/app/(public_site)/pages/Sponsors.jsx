@@ -87,7 +87,7 @@ const Sponsors = () => {
       href={sponsor.href} 
       target="_blank" 
       rel="noopener noreferrer" 
-      className="my-1.5 flex justify-center items-center transition-transform duration-300 hover:scale-110 border-3 border-gray-600 pixel-shadow bg-gradient-to-br from-white to-gray-300 py-2 min-h-[220px] min-w-[220px] max-[1350px]:min-w-[200px] max-[1350px]:min-h-[200px] max-[1050px]:min-w-[180px] max-[1050px]:min-h-[180px] max-[700px]:min-w-[140px] max-[700px]:min-h-[140px] max-[700px]:py-0 flex-shrink-0"
+      className="my-1.5 flex justify-center items-center transition-transform duration-300 hover:scale-110 border-3 border-gray-600 pixel-shadow bg-gradient-to-br from-white to-gray-300 py-2 min-h-[260px] min-w-[260px] max-[1350px]:min-w-[240px] max-[1350px]:min-h-[240px] max-[1050px]:min-w-[210px] max-[1050px]:min-h-[210px] max-[700px]:min-w-[160px] max-[700px]:min-h-[160px] max-[700px]:py-0 flex-shrink-0"
     >
       <Image
         src={sponsor.src}
@@ -109,7 +109,7 @@ const Sponsors = () => {
       </div>
 
       {/* DESKTOP TWO-ROW CAROUSEL */}
-      <div className="max-[650px]:hidden relative z-10 border-x-8 border-x-gray-900 w-full max-w-lg overflow-hidden">
+      <div className="max-[650px]:hidden relative z-10 border-x-8 border-x-gray-900 w-full max-w-lg mx-auto overflow-hidden">
         <div className="flex flex-col">
           {/* TOP ROW */}
           <div className="marquee overflow-hidden">
@@ -179,14 +179,14 @@ const Sponsors = () => {
           will-change: transform;
         }
 
-        /* Left direction (continuous) - slower for wider view */
+        /* Left direction (continuous) */
         .marquee__left {
-          animation: marquee-left 35s linear infinite;
+          animation: marquee-left 30s linear infinite;
         }
 
-        /* Right direction (continuous) - slower for wider view */
+        /* Right direction (continuous) */
         .marquee__right {
-          animation: marquee-right 35s linear infinite;
+          animation: marquee-right 30s linear infinite;
         }
 
         @keyframes marquee-left {
