@@ -25,8 +25,18 @@ const Sponsors = () => {
       className: "max-[1050px]:w-[160px] max-[1050px]:h-[140px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
     },
     {
+      href: "https://www.perplexity.ai/",
+      src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1760653896/Perplexity_AI_logo.svg_tljxnl.png",
+      height: 190,
+      width: 190,
+      alt: "perplexity_logo",
+      className: "max-[1050px]:w-[140px] max-[700px]:w-[100px]"
+    },
+    {
       href: "https://www.microsoft.com/en-us/",
       src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1760476530/RE1Mu3b_ptqsa6.png",
+      height: 180,
+      width: 180,
       alt: "microsoft_logo",
       className: "max-[1050px]:w-[130px] max-[700px]:w-[110px]"
     },
@@ -68,7 +78,7 @@ const Sponsors = () => {
     }
   ];
 
-  // Split sponsors into two rows (5 and 4)
+  // Split sponsors into two rows (5 and 5)
   const firstRow = sponsors.slice(0, 5);
   const secondRow = sponsors.slice(5);
 
@@ -77,7 +87,7 @@ const Sponsors = () => {
       href={sponsor.href} 
       target="_blank" 
       rel="noopener noreferrer" 
-      className="my-1.5 flex justify-center items-center transition-transform duration-300 hover:scale-110 border-3 border-gray-600 pixel-shadow bg-gradient-to-br from-white to-gray-300 py-2 min-h-[230px] min-w-[230px] max-[1050px]:min-w-[200px] max-[1050px]:min-h-[200px] max-[700px]:min-w-[140px] max-[700px]:min-h-[140px] max-[700px]:py-0 flex-shrink-0"
+      className="my-1.5 flex justify-center items-center transition-transform duration-300 hover:scale-110 border-3 border-gray-600 pixel-shadow bg-gradient-to-br from-white to-gray-300 py-2 min-h-[220px] min-w-[220px] max-[1350px]:min-w-[200px] max-[1350px]:min-h-[200px] max-[1050px]:min-w-[180px] max-[1050px]:min-h-[180px] max-[700px]:min-w-[140px] max-[700px]:min-h-[140px] max-[700px]:py-0 flex-shrink-0"
     >
       <Image
         src={sponsor.src}
@@ -99,7 +109,7 @@ const Sponsors = () => {
       </div>
 
       {/* DESKTOP TWO-ROW CAROUSEL */}
-      <div className="max-[650px]:hidden relative z-10 border-x-8 border-x-gray-900 w-full max-w-[700px] overflow-hidden">
+      <div className="max-[650px]:hidden relative z-10 border-x-8 border-x-gray-900 w-full max-w-lg overflow-hidden">
         <div className="flex flex-col">
           {/* TOP ROW */}
           <div className="marquee overflow-hidden">
@@ -126,7 +136,7 @@ const Sponsors = () => {
               <SponsorCard key={`top-${index}`} sponsor={sponsor} />
             ))}
           </div>
-          {/* Bottom row - Last 4 sponsors */}
+          {/* Bottom row - Last 5 sponsors */}
           <div className="flex gap-2 px-4 pb-2" style={{ width: 'max-content' }}>
             {sponsors.slice(5).map((sponsor, index) => (
               <SponsorCard key={`bottom-${index}`} sponsor={sponsor} />
@@ -169,14 +179,14 @@ const Sponsors = () => {
           will-change: transform;
         }
 
-        /* Left direction (continuous) */
+        /* Left direction (continuous) - slower for wider view */
         .marquee__left {
-          animation: marquee-left 30s linear infinite;
+          animation: marquee-left 35s linear infinite;
         }
 
-        /* Right direction (continuous) */
+        /* Right direction (continuous) - slower for wider view */
         .marquee__right {
-          animation: marquee-right 30s linear infinite;
+          animation: marquee-right 35s linear infinite;
         }
 
         @keyframes marquee-left {
@@ -187,6 +197,11 @@ const Sponsors = () => {
         @keyframes marquee-right {
           0% { transform: translateX(-50%); }
           100% { transform: translateX(0); }
+        }
+
+        /* Pause on hover */
+        .marquee:hover .marquee__track {
+          animation-play-state: paused;
         }
       `}</style>
     </section>
