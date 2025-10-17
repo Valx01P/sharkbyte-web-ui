@@ -15,6 +15,12 @@ const Team = () => {
     linkedin: "https://www.linkedin.com/in/alfredobenites/"
    },
    {
+     name: "Elias",
+     role: "Sponsors",
+     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1760724906/elias_zas5kg.jpg",
+     linkedin: "https://www.linkedin.com/in/elias-estrada-1445ab2b5"
+   },
+   {
      name: "Daniel",
      role: "Sponsors",
      image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480600/daniel_jon56g.png",
@@ -117,7 +123,7 @@ const Team = () => {
        <div className="flex flex-col gap-2">
          {/* Top row - First 5 team members */}
          <div className="flex gap-2 px-4" style={{ width: 'max-content' }}>
-           {teamMembers.slice(0, 4).map((member, index) => (
+           {teamMembers.slice(0, 5).map((member, index) => (
              <a 
                key={index} 
                href={member.linkedin} 
@@ -139,7 +145,7 @@ const Team = () => {
          </div>
          {/* Bottom row - Remaining team members */}
          <div className="flex gap-2 px-4 pb-2" style={{ width: 'max-content' }}>
-           {teamMembers.slice(4, 9).map((member, index) => (
+           {teamMembers.slice(5, 10).map((member, index) => (
              <a 
                key={`bottom-${index + 5}`} 
                href={member.linkedin} 
@@ -198,6 +204,11 @@ const Team = () => {
         @keyframes marquee-right {
           0% { transform: translateX(-50%); }
           100% { transform: translateX(0); }
+        }
+
+        /* Pause on hover - matching the sponsors behavior */
+        .marquee:hover .marquee__track {
+          animation-play-state: paused;
         }
       `}</style>
    </section>
