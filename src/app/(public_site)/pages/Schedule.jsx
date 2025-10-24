@@ -175,7 +175,7 @@ const Schedule = () => {
         ) : (
           // ---- COMPACT LIST VIEW ----
           <div className="w-full max-w-lg flex-1">
-            <ul className="divide-y divide-gray-700 border-2 border-gray-600 pixel-shadow bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 pixel-shadow overflow-y-auto max-h-[40vh]">
+            <ul className="divide-y divide-gray-700 border-2 border-gray-600 pixel-shadow bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 pixel-shadow overflow-y-auto max-h-[calc(40vh+60px)]">
               {scheduleData[activeDay].events.map((event, i) => (
                 <li
                   key={i}
