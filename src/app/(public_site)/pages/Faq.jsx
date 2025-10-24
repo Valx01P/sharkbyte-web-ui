@@ -15,6 +15,23 @@ const Faq = () => {
       answer: "Anyone 18 years or older can participate, regardless of experience level. Whether you're a beginner or experienced hacker, you're welcome!"
     },
     {
+      question: "How will I receive updates and communications?",
+      answer: (
+        <>
+          All communications will be through our{" "}
+          <a
+            href="https://discord.com/invite/init"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#8b5cf6] hover:underline"
+          >
+            Discord
+          </a>
+          . Make sure to join!
+        </>
+      )
+    },
+    {
       question: "What should I bring?",
       answer: "Bring your laptop, charger, and anything you need to be comfortable during the weekend (like a sleeping bag if you plan to stay overnight)."
     },
@@ -29,17 +46,17 @@ const Faq = () => {
   }
 
   return (
-    <section id='faq' className="w-screen min-h-screen flex flex-col justify-center items-center relative overflow-hidden pixel-bg-faq px-4">
+    <section id='faq' className="w-screen flex flex-col justify-center items-center relative overflow-hidden pixel-bg-faq px-4 py-8">
       {/* TITLE */}
-      <div className="mb-4 max-[650px]:mb-3">
+      <div className="mb-3 max-[650px]:mb-2">
         <div className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white px-4 py-2 border-3 border-gray-600 pixel-shadow max-[650px]:px-3 max-[650px]:py-1">
           <h1 className="text-lg font-bold text-center max-[1350px]:text-base max-[650px]:text-xs max-[500px]:text-[22px]">FAQ</h1>
         </div>
       </div>
 
       {/* FAQ CONTAINER */}
-      <div className="w-full max-w-lg max-[650px]:max-w-full">
-        <div className="space-y-2 max-[650px]:space-y-1">
+      <div className="w-full max-w-2xl max-[650px]:max-w-full">
+        <div className="space-y-0">
           {faqData.map((faq, index) => (
             <div key={index} className={`bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 border-2 border-gray-600 pixel-shadow transition-transform duration-300 ${openFaq === index ? '' : 'hover:scale-101'}`}>
               {/* QUESTION */}
@@ -69,8 +86,8 @@ const Faq = () => {
       </div>
 
       {/* CONTACT */}
-      <div className="mt-4 w-full max-w-lg max-[1350px]:mt-3.5 mx-2">
-        <div className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white px-4 py-3 border-3 border-gray-600 pixel-shadow max-[650px]:px-3 max-[650px]:py-2">
+      <div className="mt-3 w-full max-w-2xl max-[1350px]:mt-2.5 mx-2">
+        <div className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white px-4 py-2.5 border-3 border-gray-600 pixel-shadow max-[650px]:px-3 max-[650px]:py-2">
           <p className="text-center text-sm max-[1350px]:text-[24px] max-[500px]:text-[19px]">
             Can't find your answer? Email us at{" "}
             <a
