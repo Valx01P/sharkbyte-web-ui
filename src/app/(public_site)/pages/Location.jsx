@@ -271,7 +271,7 @@ const Location = () => {
   return (
     <section
       id="location"
-      className="w-screen min-h-screen flex flex-col justify-start items-center relative overflow-hidden pixel-bg-location py-18 max-[1350px]:py-22 max-[650px]:py-32"
+      className="w-screen min-h-screen flex flex-col justify-start items-center relative overflow-hidden pixel-bg-location py-4 max-[1350px]:py-4 max-[650px]:py-4"
     >
       {/* TITLE */}
       <div className="mx-4 mb-4 max-[650px]:mb-4 mt-4 max-[650px]:mt-2">
