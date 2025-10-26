@@ -1,15 +1,46 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 const Location = () => {
   const [activeMap, setActiveMap] = useState(1)
   const [isExpanded, setIsExpanded] = useState(false)
+  const locationRef = useRef(null)
   /*
     0: MDC Map 
     1: Google Map
     2: Campus Layout
   */
+
+  // Auto-collapse map when scrolling away from the location section
+  useEffect(() => {
+    if (!isExpanded || !locationRef.current) return
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          // If the location section is not intersecting (scrolled away) and map is expanded
+          if (!entry.isIntersecting && isExpanded) {
+            setIsExpanded(false)
+          }
+        })
+      },
+      {
+        // Trigger when 30% or less of the element is visible
+        threshold: 0.3,
+        // Add some margin to trigger slightly before completely out of view
+        rootMargin: '-50px'
+      }
+    )
+
+    observer.observe(locationRef.current)
+
+    return () => {
+      if (locationRef.current) {
+        observer.unobserve(locationRef.current)
+      }
+    }
+  }, [isExpanded])
 
   const mapOptions = [
     { 
@@ -270,6 +301,7 @@ const Location = () => {
 
   return (
     <section
+      ref={locationRef}
       id="location"
       className="w-screen min-h-screen flex flex-col justify-start items-center relative overflow-hidden pixel-bg-location py-4 max-[1350px]:py-4 max-[650px]:py-4"
     >
