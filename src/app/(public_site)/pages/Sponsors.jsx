@@ -20,61 +20,61 @@ const Sponsors = () => {
       href: "https://www.roocapital.com/",
       src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480616/roo_capital_zqae68.png",
       alt: "roo_capital_logo",
-      height: 190,
-      width: 190,
-      className: "max-[1050px]:w-[160px] max-[1050px]:h-[140px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
+      height: 170,
+      width: 170,
+      className: "max-[1050px]:w-[140px] max-[1050px]:h-[120px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
     },
     {
       href: "https://www.perplexity.ai/",
       src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1760653896/Perplexity_AI_logo.svg_tljxnl.png",
-      height: 190,
-      width: 190,
+      height: 170,
+      width: 170,
       alt: "perplexity_logo",
-      className: "max-[1050px]:w-[140px] max-[700px]:w-[100px]"
+      className: "max-[1050px]:w-[130px] max-[700px]:w-[100px]"
     },
     {
       href: "https://www.microsoft.com/en-us/",
       src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1760476530/RE1Mu3b_ptqsa6.png",
-      height: 180,
-      width: 180,
+      height: 160,
+      width: 160,
       alt: "microsoft_logo",
-      className: "max-[1050px]:w-[130px] max-[700px]:w-[110px]"
+      className: "max-[1050px]:w-[120px] max-[700px]:w-[110px]"
     },
     {
       href: "https://www.purebuttons.com/",
       src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1760476530/Pure-Buttons-Logo_gyr5mi.png",
       alt: "pure_buttons_logo",
-      className: "max-[1050px]:w-[130px] max-[700px]:w-[110px]"
+      className: "max-[1050px]:w-[120px] max-[700px]:w-[110px]"
     },
     {
       href: "https://4geeks.com/",
       src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1760114351/original_hmujtp.png",
       alt: "4_geeks_academy_logo",
-      className: "max-[1050px]:w-[130px] max-[700px]:w-[110px]"
+      className: "max-[1050px]:w-[120px] max-[700px]:w-[110px]"
     },
     {
       href: "https://cybriant.com/",
       src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1760114351/4b451e0c-fb5a-45db-82fb-a0688c6847ac-removebg-preview_fqdgxm.png",
       alt: "cybriant_logo",
-      height: 190,
-      width: 190,
-      className: "max-[1050px]:w-[180px] max-[1050px]:h-[170px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
+      height: 170,
+      width: 170,
+      className: "max-[1050px]:w-[160px] max-[1050px]:h-[150px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
     },
     {
       href: "https://miamitechworks.org/",
       src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1760114352/MiamiTechWorks-logo_p3petk.svg",
       alt: "miami_tech_works_logo",
-      height: 190,
-      width: 190,
-      className: "max-[1050px]:w-[160px] max-[1050px]:h-[140px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
+      height: 170,
+      width: 170,
+      className: "max-[1050px]:w-[140px] max-[1050px]:h-[120px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
     },
     {
       href: "https://www.redbull.com/",
       src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757706321/redbull_ouhiwo.svg",
       alt: "redbull_logo",
-      height: 190,
-      width: 190,
-      className: "max-[1050px]:w-[160px] max-[1050px]:h-[140px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
+      height: 170,
+      width: 170,
+      className: "max-[1050px]:w-[140px] max-[1050px]:h-[120px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
     }
   ];
 
@@ -87,12 +87,12 @@ const Sponsors = () => {
       href={sponsor.href} 
       target="_blank" 
       rel="noopener noreferrer" 
-      className="my-1.5 flex justify-center items-center transition-transform duration-300 hover:scale-110 border-3 border-gray-600 pixel-shadow bg-gradient-to-br from-white to-gray-300 py-2 min-h-[260px] min-w-[260px] max-[1350px]:min-w-[240px] max-[1350px]:min-h-[240px] max-[1050px]:min-w-[210px] max-[1050px]:min-h-[210px] max-[700px]:min-w-[160px] max-[700px]:min-h-[160px] max-[700px]:py-0 flex-shrink-0"
+      className="my-1.5 flex justify-center items-center transition-transform duration-300 hover:scale-110 border-3 border-gray-600 pixel-shadow bg-gradient-to-br from-white to-gray-300 py-2 min-h-[240px] min-w-[240px] max-[1350px]:min-w-[220px] max-[1350px]:min-h-[220px] max-[1050px]:min-w-[190px] max-[1050px]:min-h-[190px] max-[700px]:min-w-[160px] max-[700px]:min-h-[160px] max-[700px]:py-0 flex-shrink-0"
     >
       <Image
         src={sponsor.src}
-        height={sponsor.height || 140}
-        width={sponsor.width || 140}
+        height={sponsor.height || 130}
+        width={sponsor.width || 130}
         alt={sponsor.alt}
         className={sponsor.className}
       />
@@ -100,7 +100,7 @@ const Sponsors = () => {
   );
 
   return (
-    <section id="sponsors" className="w-screen h-screen flex flex-col justify-center items-center relative overflow-hidden pixel-bg-sponsors px-4">
+    <section id="sponsors" className="w-screen flex flex-col justify-center items-center relative overflow-hidden pixel-bg-sponsors py-16">
       {/* TITLE */}
       <div className="mb-3 max-[650px]:mb-2 relative z-10">
         <div className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white px-4 py-2 border-3 border-gray-600 pixel-shadow max-[650px]:px-3 max-[650px]:py-1">
@@ -151,7 +151,7 @@ const Sponsors = () => {
       </div>
         
       {/* SPONSOR CTA */}
-      <div className="w-[550px] relative z-10 mx-2 max-[650px]:w-[500px] max-[600px]:w-[400px] max-[500px]:w-[360px] max-[390px]:w-[300px] mt-4">
+      <div className="w-full max-w-lg relative z-10 mx-auto max-[650px]:max-w-[500px] max-[600px]:max-w-[400px] max-[500px]:max-w-[360px] max-[390px]:max-w-[300px] mt-4">
         <div className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white px-2 py-3 border-3 border-gray-600 pixel-shadow max-[650px]:px-3 max-[650px]:py-2">
           <p className="text-center text-sm max-[1350px]:text-[24px] max-[500px]:text-[19px]">
             Want to sponsor? Email us at{" "}
