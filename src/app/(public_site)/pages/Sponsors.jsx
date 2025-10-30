@@ -21,24 +21,24 @@ const Sponsors = () => {
       src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480616/roo_capital_zqae68.png",
       alt: "roo_capital_logo",
       height: 170,
-      width: 170,
-      className: "max-[1050px]:w-[140px] max-[1050px]:h-[120px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
+      width: 180,
+      className: "px-1 max-[1050px]:w-[140px] max-[1050px]:h-[120px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
     },
     {
       href: "https://www.perplexity.ai/",
       src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1760653896/Perplexity_AI_logo.svg_tljxnl.png",
       height: 170,
-      width: 170,
+      width: 180,
       alt: "perplexity_logo",
-      className: "max-[1050px]:w-[130px] max-[700px]:w-[100px]"
+      className: "max-[1050px]:w-[120px] max-[700px]:w-[100px] px-1"
     },
     {
       href: "https://www.microsoft.com/en-us/",
       src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1760476530/RE1Mu3b_ptqsa6.png",
       height: 160,
-      width: 160,
+      width: 180,
       alt: "microsoft_logo",
-      className: "max-[1050px]:w-[120px] max-[700px]:w-[110px]"
+      className: "max-[1050px]:w-[120px] max-[700px]:w-[110px] px-1"
     },
     {
       href: "https://www.purebuttons.com/",
@@ -65,24 +65,24 @@ const Sponsors = () => {
       src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1760114352/MiamiTechWorks-logo_p3petk.svg",
       alt: "miami_tech_works_logo",
       height: 170,
-      width: 170,
-      className: "max-[1050px]:w-[140px] max-[1050px]:h-[120px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
+      width: 180,
+      className: "px-1 max-[1050px]:w-[140px] max-[1050px]:h-[120px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
     },
     {
       href: "https://www.redbull.com/",
       src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757706321/redbull_ouhiwo.svg",
       alt: "redbull_logo",
       height: 170,
-      width: 170,
-      className: "max-[1050px]:w-[140px] max-[1050px]:h-[120px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
+      width: 180,
+      className: "px-1 max-[1050px]:w-[140px] max-[1050px]:h-[120px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
     },
     {
       href: "https://www.reactmiami.com/",
       src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1761852237/logo_yh1rv4.webp",
       alt: "react_miami_logo",
       height: 160,
-      width: 160,
-      className: "max-[1050px]:w-[140px] max-[1050px]:h-[120px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
+      width: 170,
+      className: "px-1 max-[1050px]:w-[140px] max-[1050px]:h-[120px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
     }
   ];
 
