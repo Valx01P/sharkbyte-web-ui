@@ -6,18 +6,15 @@ const Schedule = () => {
   const [activeDay, setActiveDay] = useState(0)
   const [compactView, setCompactView] = useState(true)
 
-  // Schedule data - public and sponsor events only
+  // Schedule data - essential events only
   const scheduleData = [
     {
       date: "Nov 7th",
       day: "Friday",
       events: [
         { time: "4:00 PM", title: "Check in", location: "Registration Area", type: "public" },
-        { time: "5:00 PM", title: "Dinner - Miami Dade College North Campus", location: "School of Justice", type: "public" },
-        { time: "7:00 PM", title: "Sponsor Fair", location: "Conference Center Building 3", type: "sponsor" },
-        { time: "8:05 PM", title: "Meet your 5th Teammate: Hacking with GitHub Copilot", location: "Workshop Room", type: "public" },
-        { time: "9:00 PM", title: "Game Tournament by Learning Resources", location: "Game Room", type: "public" },
-        { time: "11:00 PM", title: "Start Hacking ANNOUNCEMENT", location: "Main Hall", type: "public" },
+        { time: "5:00 PM", title: "Dinner", location: "School of Justice", type: "public" },
+        { time: "11:00 PM", title: "Start Hacking", location: "Main Hall", type: "public" },
         { time: "11:00 PM", title: "Snack Time", location: "School of Justice", type: "public" },
       ]
     },
@@ -25,18 +22,10 @@ const Schedule = () => {
       date: "Nov 8th",
       day: "Saturday",
       events: [
-        { time: "7:00 AM", title: "Breakfast Service", location: "School of Justice", type: "public" },
-        { time: "8:00 AM", title: "Big Sized Games by Learning Resources", location: "Game Room", type: "public" },
-        { time: "9:00 AM", title: "VR Demo", location: "Demo Area", type: "public" },
-        { time: "9:30 AM", title: "Intro to Google AI Studio", location: "Workshop Room", type: "public" },
-        { time: "12:00 PM", title: "Lunch Service", location: "School of Justice", type: "public" },
-        { time: "1:00 PM", title: "Intro to AI/LLM Workshop", location: "Workshop Room", type: "public" },
-        { time: "2:00 PM", title: "Professional Headshot", location: "Media Room", type: "public" },
+        { time: "7:00 AM", title: "Breakfast", location: "School of Justice", type: "public" },
+        { time: "12:00 PM", title: "Lunch", location: "School of Justice", type: "public" },
         { time: "3:00 PM", title: "Snack Time", location: "School of Justice", type: "public" },
-        { time: "5:00 PM", title: "MS Paint Bob Ross", location: "Workshop Room", type: "public" },
-        { time: "6:00 PM", title: "PitchIT with La'Shandra", location: "Main Hall", type: "public" },
-        { time: "7:00 PM", title: "Dinner Service", location: "School of Justice", type: "public" },
-        { time: "9:00 PM", title: "Karaoke Session", location: "Activity Room", type: "public" },
+        { time: "7:00 PM", title: "Dinner", location: "School of Justice", type: "public" },
         { time: "10:00 PM", title: "Snack Time", location: "School of Justice", type: "public" },
       ]
     },
@@ -44,10 +33,8 @@ const Schedule = () => {
       date: "Nov 9th",
       day: "Sunday",
       events: [
-        { time: "7:00 AM", title: "Breakfast Service", location: "School of Justice", type: "public" },
-        { time: "12:30 PM", title: "Lunch Service", location: "School of Justice", type: "public" },
-        { time: "12:30 PM", title: "Begin Projects Evaluation", location: "Main Room", type: "public" },
-        { time: "4:30 PM", title: "Finish Judging", location: "Main Room", type: "public" },
+        { time: "7:00 AM", title: "Breakfast", location: "School of Justice", type: "public" },
+        { time: "12:30 PM", title: "Lunch", location: "School of Justice", type: "public" },
         { time: "5:00 PM", title: "Closing Ceremony", location: "Main Hall", type: "public" },
       ]
     }
