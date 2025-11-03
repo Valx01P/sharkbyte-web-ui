@@ -29,7 +29,7 @@ const Team = () => {
    {
      name: "Jorge",
      role: "Co-Director",
-     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480602/jorge_oesssr.png",
+     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1762206189/jorge_b935uw.png",
      linkedin: "https://www.linkedin.com/in/jorge-rodriguez-27a4a6231/"
    },
    {
@@ -65,7 +65,7 @@ const Team = () => {
    {
      name: "Jimmy",
      role: "Volunteers",
-     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1762202210/jean_pfabjl.jpg",
+     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1762205747/jean_pfabjl.jpg",
      linkedin: "https://www.linkedin.com/in/jimmy-j-01679436a/?trk=contact-info"
    },
    {
