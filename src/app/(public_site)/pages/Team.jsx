@@ -61,12 +61,30 @@ const Team = () => {
      role: "Sponsors",
      image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480602/santiago_caq1e6.png",
      linkedin: "https://www.linkedin.com/in/santiago-padron-62922526b/"
+   },
+   {
+     name: "Jimmy",
+     role: "Volunteers",
+     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1762202210/jean_pfabjl.jpg",
+     linkedin: "https://www.linkedin.com/in/jimmy-j-01679436a/?trk=contact-info"
+   },
+   {
+     name: "Christian",
+     role: "Workshops",
+     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1762204613/christian_ouwf4a.jpg",
+     linkedin: "https://www.linkedin.com/in/christian-aguilera-4b480b306/"
+   },
+   {
+     name: "Erick",
+     role: "Activities",
+     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1762202210/erick_wlowur.jpg",
+     linkedin: "https://www.linkedin.com/in/erick-gonzalez-888b7a377/"
    }
  ]
 
  // Split team members into two halves
- const firstHalf = teamMembers.slice(0, Math.ceil(teamMembers.length / 2)); // First 5 members
- const secondHalf = teamMembers.slice(Math.ceil(teamMembers.length / 2)); // Last 4 members
+ const firstHalf = teamMembers.slice(0, Math.ceil(teamMembers.length / 2)); // First 7 members
+ const secondHalf = teamMembers.slice(Math.ceil(teamMembers.length / 2)); // Last 6 members
 
  const TeamCard = ({ member }) => {
    return (
@@ -121,9 +139,9 @@ const Team = () => {
      {/* MOBILE TWO-ROW CAROUSEL */}
      <div className="min-[651px]:hidden relative z-10 w-full overflow-x-auto">
        <div className="flex flex-col gap-2">
-         {/* Top row - First 5 team members */}
+         {/* Top row - First 7 team members */}
          <div className="flex gap-2 px-4" style={{ width: 'max-content' }}>
-           {teamMembers.slice(0, 5).map((member, index) => (
+           {teamMembers.slice(0, 7).map((member, index) => (
              <a 
                key={index} 
                href={member.linkedin} 
@@ -143,11 +161,11 @@ const Team = () => {
              </a>
            ))}
          </div>
-         {/* Bottom row - Remaining team members */}
+         {/* Bottom row - Remaining 6 team members */}
          <div className="flex gap-2 px-4 pb-2" style={{ width: 'max-content' }}>
-           {teamMembers.slice(5, 10).map((member, index) => (
+           {teamMembers.slice(7).map((member, index) => (
              <a 
-               key={`bottom-${index + 5}`} 
+               key={`bottom-${index + 7}`} 
                href={member.linkedin} 
                target="_blank" 
                rel="noopener noreferrer"
