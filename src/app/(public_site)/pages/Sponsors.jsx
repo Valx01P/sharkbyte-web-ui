@@ -24,14 +24,14 @@ const Sponsors = () => {
       width: 180,
       className: "px-1 max-[1050px]:w-[140px] max-[1050px]:h-[120px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
     },
-    {
+    /* {
       href: "https://www.perplexity.ai/",
       src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1760653896/Perplexity_AI_logo.svg_tljxnl.png",
       height: 170,
       width: 180,
       alt: "perplexity_logo",
       className: "max-[1050px]:w-[120px] max-[700px]:w-[100px] px-1"
-    },
+    }, */
     {
       href: "https://www.microsoft.com/en-us/",
       src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1760476530/RE1Mu3b_ptqsa6.png",
@@ -86,9 +86,9 @@ const Sponsors = () => {
     }
   ];
 
-  // Split sponsors into two rows (6 and 5)
-  const firstRow = sponsors.slice(0, 6);
-  const secondRow = sponsors.slice(6);
+  // Split sponsors into two rows (5 and 5)
+  const firstRow = sponsors.slice(0, 5);
+  const secondRow = sponsors.slice(5);
 
   const SponsorCard = ({ sponsor }) => (
     <a 
@@ -118,7 +118,7 @@ const Sponsors = () => {
         </div>
 
         {/* DESKTOP TWO-ROW CAROUSEL */}
-        <div className="max-[650px]:hidden relative z-10 border-x-8 border-x-gray-900 max-[850px]:border-x-6 max-[750px]:border-x-4 w-full max-w-lg mx-auto overflow-hidden">
+        <div className="max-[650px]:hidden relative z-10 border-x-8 border-x-gray-900 max-[850px]:border-x-6 max-[750px]:border-x-4 w-full max-w-md mx-auto overflow-hidden">
           <div className="flex flex-col gap-0.5">
             {/* TOP ROW */}
             <div className="marquee overflow-hidden">
@@ -139,15 +139,15 @@ const Sponsors = () => {
       {/* MOBILE TWO-ROW SCROLL */}
       <div className="min-[651px]:hidden relative z-10 w-full overflow-x-auto pb-1">
         <div className="flex flex-col gap-1.5">
-          {/* Top row - First 6 sponsors */}
+          {/* Top row - First 5 sponsors */}
           <div className="flex gap-1.5 px-3" style={{ width: 'max-content' }}>
-            {sponsors.slice(0, 6).map((sponsor, index) => (
+            {sponsors.slice(0, 5).map((sponsor, index) => (
               <SponsorCard key={`top-${index}`} sponsor={sponsor} />
             ))}
           </div>
           {/* Bottom row - Last 5 sponsors */}
           <div className="flex gap-1.5 px-3" style={{ width: 'max-content' }}>
-            {sponsors.slice(6).map((sponsor, index) => (
+            {sponsors.slice(5).map((sponsor, index) => (
               <SponsorCard key={`bottom-${index}`} sponsor={sponsor} />
             ))}
           </div>
@@ -160,7 +160,7 @@ const Sponsors = () => {
       </div>
         
       {/* SPONSOR CTA */}
-      <div className="w-full max-w-lg relative z-10 mx-auto max-[650px]:max-w-[500px] max-[600px]:max-w-[400px] max-[500px]:max-w-[360px] max-[390px]:max-w-[300px] mt-3 max-[850px]:mt-2 max-[750px]:mt-1.5 max-[650px]:mt-1">
+      <div className="w-full max-w-md relative z-10 mx-auto max-[650px]:max-w-[500px] max-[600px]:max-w-[400px] max-[500px]:max-w-[360px] max-[390px]:max-w-[300px] mt-3 max-[850px]:mt-2 max-[750px]:mt-1.5 max-[650px]:mt-1">
         <div className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white px-3 py-2.5 border-3 border-gray-600 pixel-shadow max-[850px]:py-2 max-[650px]:px-2 max-[650px]:py-1.5">
           <p className="text-center text-sm max-[1350px]:text-[24px] max-[850px]:text-[22px] max-[500px]:text-[19px]">
             Want to sponsor? Email us at{" "}
