@@ -15,7 +15,8 @@ const Partners = () => {
     ["Miami Tech Works", "https://miamitechworks.org/"],
     ["Momentum Miami", "https://www.momentum.miami/"],
     ["Entec MDC", "https://www.mdc.edu/entec/"],
-    ["Init National", ""]
+    ["Init National", ""],
+    ["WIT MDC", "https://www.instagram.com/witmdc?igsh=MTdzNmNyOHkwcWs3dg%3D%3D"]
   ]
 
   const facultyAdvisors = [
