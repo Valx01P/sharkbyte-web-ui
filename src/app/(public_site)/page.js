@@ -6,7 +6,6 @@ import { useHorizontalScroll } from '@/hooks/useHorizontalScroll'
 import Hero from './pages/Hero'
 import Stats from './pages/Stats'
 import About from './pages/About'
-import Schedule from './pages/Schedule'
 import Location from './pages/Location'
 import Faq from './pages/Faq'
 import Sponsors from './pages/Sponsors'
@@ -39,9 +38,8 @@ export default function Home() {
       </div>
 
       {/* VERTICAL */}
-      <div className="min-h-[400dvh] bg-gray-900">
+      <div className="min-h-[300dvh] bg-gray-900">
         <About />
-        <Schedule />
         <Location />
         <Faq />
       </div>
