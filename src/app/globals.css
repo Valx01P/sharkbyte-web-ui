@@ -112,19 +112,19 @@ section {
 }
 
 .pixel-bg-schedule {
-  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480565/schedule_uelugo.png');
+  background-image: url('');
 }
 
 .pixel-bg-location {
-  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757688633/transition-bg_oig0zs.png');
+  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480565/schedule_uelugo.png');
 }
 
 .pixel-bg-faq {
-  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480564/faq_qbkkst.png');
+  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757688633/transition-bg_oig0zs.png');
 }
 
 .pixel-bg-sponsors {
-  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480565/sponsors_izab1u.png');
+  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480564/faq_qbkkst.png');
 }
 
 .pixel-bg-sponsors::after {
