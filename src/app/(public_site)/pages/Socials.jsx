@@ -32,7 +32,7 @@ const Socials = () => {
         </div>
 
         {/* REGISTER BUTTON */}
-        <a
+        {/* <a
           href="https://airtable.com/appY1e4YbYhqNWdpE/shr5bPimkY7ck4v88"
           target="_blank"
           rel="noopener noreferrer"
@@ -49,10 +49,10 @@ const Socials = () => {
             <span className="pointer-events-none absolute inset-0 z-0 opacity-0 transition-opacity duration-700 ease-out group-hover:opacity-100 bg-gradient-to-r from-[#8b5cf6] to-[#6366f1]"></span>
             <span className="pointer-events-none absolute -inset-y-3 left-[-100%] z-10 h-[200%] w-[50%] rotate-12 bg-white/30 transition-transform duration-600 ease-out group-hover:translate-x-[420%]"></span>
           </h1>
-        </a>
+        </a> */}
 
         {/* CONTRIBUTOR SECTION */}
-        <div className="flex flex-col items-center text-center mt-2 max-[650px]:px-4">
+        {/* <div className="flex flex-col items-center text-center mt-2 max-[650px]:px-4">
           <h2 className="font-extrabold text-white text-[30px] max-[650px]:text-[26px] max-[650px]:font-normal max-[500px]:text-[22px] mb-2">
             Interested in volunteering, mentoring, or judging?
           </h2>
@@ -68,7 +68,8 @@ const Socials = () => {
             </a>
             .
           </p>
-        </div>
+        </div> */}
+
       </div>
     </section>
   )

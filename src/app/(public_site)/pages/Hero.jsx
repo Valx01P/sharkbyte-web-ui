@@ -24,13 +24,14 @@ const Hero = () => {
           {/* CONTENT BLOCK */}
           <div className="bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white p-3 px-6 border-3 border-gray-600 pixel-shadow max-[1350px]:text-sm max-[650px]:text-xs max-[1350px]:py-2.5 max-[1350px]:px-5 max-[650px]:p-2 max-[650px]:px-3.5 max-[420px]:px-2">
             <p className="text-center flex-wrap max-[500px]:text-[22px]">
-              Miami Dade College,
+              Thanks for attending SharkByte 2025
+              {/* Miami Dade College,
               <br />
               North Campus | Miami, FL
               <br />
-              November 7th - 9th, 2025
+              November 7th - 9th, 2025 */}
             </p>
-            <div className="m-2 max-[1350px]:m-1.5 max-[650px]:m-1 flex justify-center">
+            {/* <div className="m-2 max-[1350px]:m-1.5 max-[650px]:m-1 flex justify-center">
               <a
                 href="https://airtable.com/appY1e4YbYhqNWdpE/shr5bPimkY7ck4v88"
                 target="_blank"
@@ -43,7 +44,7 @@ const Hero = () => {
                   <span className="pointer-events-none absolute -inset-y-3 left-[-100%] z-10 h-[200%] w-[50%] rotate-12 bg-white/30 transition-transform duration-600 ease-out group-hover:translate-x-[420%]"></span>
                 </h1>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 
