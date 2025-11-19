@@ -87,7 +87,7 @@ section {
 .pixel-bg-location,
 .pixel-bg-faq,
 .pixel-bg-sponsors,
-.pixel-bg-sponsors-cta,
+.pixel-bg-partners-cta,
 .pixel-bg-team,
 .pixel-bg-socials {
   background-repeat: no-repeat;
@@ -98,40 +98,40 @@ section {
 }
 
 .pixel-bg-hero {
-  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480564/hero_z1wibm.png');
+  background-image: url('https://i.ibb.co/KpTHPYN4/section-hero.png');
   background-position: right center;
 }
 
 .pixel-bg-stats {
-  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480566/stats_aetoll.png');
+  background-image: url('https://i.ibb.co/7J4kysj7/section-stats.png');
   background-position: left center;
 }
 
 .pixel-bg-about {
-  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480564/about_ok66mt.png');
+  background-image: url('https://i.ibb.co/BK3xq3Rf/section-about.png');
 }
 
-.pixel-bg-schedule {
+/* .pixel-bg-schedule {
   background-image: url('');
-}
+} */
 
 .pixel-bg-location {
-  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480565/schedule_uelugo.png');
+  background-image: url('https://i.ibb.co/JjCMpK3s/section-location.png');
 }
 
 .pixel-bg-faq {
-  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757688633/transition-bg_oig0zs.png');
+  background-image: url('https://i.ibb.co/vxQW89zz/section-faq.png');
 }
 
 .pixel-bg-sponsors {
-  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480564/faq_qbkkst.png');
+  background-image: url('https://i.ibb.co/QBpLvfx/section-sponsors.png');
 }
 
 .pixel-bg-sponsors::after {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480564/rock-foreground_zelxd0.png');
+  background-image: url('https://i.ibb.co/84tLqBck/asset-rock-foreground.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right center;
@@ -142,16 +142,16 @@ section {
   z-index: 1;
 }
 
-.pixel-bg-sponsors-cta {
-  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480565/sponsors-cta_fepu1x.png');
+.pixel-bg-partners-cta {
+  background-image: url('https://i.ibb.co/PsgBMkdL/section-faculty.png');
 }
 
 .pixel-bg-team {
-  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480566/team_uc8ri2.png');
+  background-image: url('https://i.ibb.co/rKcRScGt/section-team.png');
 }
 
 .pixel-bg-socials {
-  background-image: url('https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480565/socials_pahir6.png');
+  background-image: url('https://i.ibb.co/zhVkj2XT/socials-pahir6.png');
 }
 
 /* Mobile: keep visual “seam” by locking each half */

@@ -50,7 +50,7 @@ export const metadata = {
     description: 'Join SharkByte, Miami Dade College\'s official hackathon! A free 3-day tech sprint November 7-9, 2025 in Miami, FL. Build innovative projects, learn new skills, and connect with fellow developers.',
     images: [
       {
-        url: 'https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757501851/sharkbyte_ho46sx.png',
+        url: 'https://i.ibb.co/nNN5XXmz/meta-preview-new.png',
         width: 1200,
         height: 630,
         alt: 'SharkByte 2025 Hackathon - Miami Dade College',
@@ -61,7 +61,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'SharkByte 2025 | Miami Dade College Hackathon',
     description: 'Join SharkByte, Miami Dade College\'s official hackathon! Free 3-day tech sprint November 7-9, 2025 in Miami, FL.',
-    images: ['https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757501126/poster_mlaa60.png'],
+    images: ['https://i.ibb.co/T58pGjZ/meta-twitter.png'],
     creator: '@init_mdcnorth',
   },
   icons: {

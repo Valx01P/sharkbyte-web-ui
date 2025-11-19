@@ -26,7 +26,7 @@ const Partners = () => {
   ]
 
   return (
-    <section id="partners" className="w-screen h-screen flex flex-col justify-center items-center relative overflow-hidden pixel-bg-sponsors-cta px-4">
+    <section id="partners" className="w-screen h-screen flex flex-col justify-center items-center relative overflow-hidden pixel-bg-partners-cta px-4">
       {/* TAB SWITCHER */}
       <div className="mb-4 max-[650px]:mb-3 relative z-10 flex gap-2">
         <button

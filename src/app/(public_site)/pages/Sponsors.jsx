@@ -6,19 +6,19 @@ const Sponsors = () => {
   const sponsors = [
     {
       href: "https://www.mdc.edu/north/",
-      src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480616/mdc_ijuvcd.png",
+      src: "https://i.ibb.co/1fsDggVX/mdc-north.png",
       alt: "mdc_north_logo",
       className: "max-[1050px]:w-[120px] max-[700px]:w-[100px]"
     },
     {
       href: "https://www.mdc.edu/entec/",
-      src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480615/entec_tjnwm3.png",
+      src: "https://i.ibb.co/DfLvZNcc/entec.png",
       alt: "entec_mdc_logo",
       className: "max-[1050px]:w-[120px] max-[700px]:w-[100px]"
     },
     {
       href: "https://www.roocapital.com/",
-      src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480616/roo_capital_zqae68.png",
+      src: "https://i.ibb.co/DgTndgYp/roo-capital.png",
       alt: "roo_capital_logo",
       height: 170,
       width: 180,
@@ -34,7 +34,7 @@ const Sponsors = () => {
     }, */
     {
       href: "https://www.microsoft.com/en-us/",
-      src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1760476530/RE1Mu3b_ptqsa6.png",
+      src: "https://i.ibb.co/bRW3gGHy/microsoft.png",
       height: 160,
       width: 180,
       alt: "microsoft_logo",
@@ -42,19 +42,19 @@ const Sponsors = () => {
     },
     {
       href: "https://www.purebuttons.com/",
-      src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1760476530/Pure-Buttons-Logo_gyr5mi.png",
+      src: "https://i.ibb.co/x42zDFb/pure-buttons.png",
       alt: "pure_buttons_logo",
       className: "max-[1050px]:w-[120px] max-[700px]:w-[110px]"
     },
     {
       href: "https://4geeks.com/",
-      src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1760114351/original_hmujtp.png",
+      src: "https://i.ibb.co/BHd04wnq/4geeks.png",
       alt: "4_geeks_academy_logo",
       className: "max-[1050px]:w-[120px] max-[700px]:w-[110px]"
     },
     {
       href: "https://cybriant.com/",
-      src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1760114351/4b451e0c-fb5a-45db-82fb-a0688c6847ac-removebg-preview_fqdgxm.png",
+      src: "https://i.ibb.co/rRgFM5vj/cybriant.png",
       alt: "cybriant_logo",
       height: 170,
       width: 170,
@@ -62,7 +62,7 @@ const Sponsors = () => {
     },
     {
       href: "https://miamitechworks.org/",
-      src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1760114352/MiamiTechWorks-logo_p3petk.svg",
+      src: "/svgs/miami_tech_works.svg",
       alt: "miami_tech_works_logo",
       height: 170,
       width: 180,
@@ -70,7 +70,7 @@ const Sponsors = () => {
     },
     {
       href: "https://www.redbull.com/",
-      src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757706321/redbull_ouhiwo.svg",
+      src: "/svgs/redbull.svg",
       alt: "redbull_logo",
       height: 170,
       width: 180,
@@ -78,7 +78,7 @@ const Sponsors = () => {
     },
     {
       href: "https://www.reactmiami.com/",
-      src: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1761852237/logo_yh1rv4.webp",
+      src: "https://i.ibb.co/vCMCRTrc/react-miami.webp",
       alt: "react_miami_logo",
       height: 160,
       width: 170,

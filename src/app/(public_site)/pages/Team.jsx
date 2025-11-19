@@ -5,79 +5,79 @@ const Team = () => {
    {
      name: "Abigail",
      role: "Marketing",
-     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480601/abigail_otyeho.png",
+     image: "https://i.ibb.co/M5x1hxJw/team-abigail.png",
      linkedin: "https://www.linkedin.com/in/abigail-lozano317/"
    },
    {
     name: "Alfredo",
     role: "Sponsors",
-    image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757515390/alfredo_nvmow9.jpg",
+    image: "https://i.ibb.co/LwH9TkT/team-alfredo.jpg",
     linkedin: "https://www.linkedin.com/in/alfredobenites/"
    },
    {
      name: "Elias",
      role: "Sponsors",
-     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1760724906/elias_zas5kg.jpg",
+     image: "https://i.ibb.co/XfT1JhRL/team-elias.jpg",
      linkedin: "https://www.linkedin.com/in/elias-estrada-1445ab2b5"
    },
    {
      name: "Daniel",
      role: "Sponsors",
-     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480600/daniel_jon56g.png",
+     image: "https://i.ibb.co/KjBx3fxd/team-daniel.png",
      linkedin: "https://www.linkedin.com/in/daniel-rodriguez-3ab841372"
    },
    {
      name: "Jorge",
      role: "Co-Director",
-     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1762206189/jorge_b935uw.png",
+     image: "https://i.ibb.co/v4dDZS5f/team-jorge.png",
      linkedin: "https://www.linkedin.com/in/jorge-rodriguez-27a4a6231/"
    },
    {
      name: "Yandel",
      role: "Director",
-     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757510442/yandel_sqbluu.jpg",
+     image: "https://i.ibb.co/WvBxFTQ0/team-yandel.jpg",
      linkedin: "https://www.linkedin.com/in/yp06/"
    },
    {
      name: "Raul",
      role: "Co-Director",
-     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480602/raul_qycqmw.png",
+     image: "https://i.ibb.co/20cb1PGj/team-raul.png",
      linkedin: "https://www.linkedin.com/in/raul02/"
    },
    {
      name: "Julianna",
      role: "Marketing",
-     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480604/julianna_vfgkdg.png",
+     image: "https://i.ibb.co/hJvsfxCr/team-julianna.png",
      linkedin: "https://www.linkedin.com/in/julianna-chii/"
    },
    {
      name: "Pablo",
      role: "Web Design",
-     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757510442/pablo_rzznjw.jpg",
+     image: "https://i.ibb.co/jPpP6xqp/team-pablo.jpg",
      linkedin: "https://www.linkedin.com/in/pablovaldes01/"
    },
    {
      name: "Santiago",
      role: "Sponsors",
-     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1757480602/santiago_caq1e6.png",
+     image: "https://i.ibb.co/VW63gh3c/team-santiago.png",
      linkedin: "https://www.linkedin.com/in/santiago-padron-62922526b/"
    },
    {
      name: "Jimmy",
      role: "Volunteers",
-     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1762205747/jean_pfabjl.jpg",
+     image: "https://i.ibb.co/847cfQqf/team-jean.jpg",
      linkedin: "https://www.linkedin.com/in/jimmy-j-01679436a/?trk=contact-info"
    },
    {
      name: "Christian",
      role: "Workshops",
-     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1762204613/christian_ouwf4a.jpg",
+     image: "https://i.ibb.co/LDJZbrGj/team-christian.jpg",
      linkedin: "https://www.linkedin.com/in/christian-aguilera-4b480b306/"
    },
    {
      name: "Erick",
      role: "Activities",
-     image: "https://res.cloudinary.com/dqo1uzz0i/image/upload/v1762202210/erick_wlowur.jpg",
+     image: "https://i.ibb.co/gHG6vQC/team-erick.jpg",
      linkedin: "https://www.linkedin.com/in/erick-gonzalez-888b7a377/"
    }
  ]
