@@ -12,9 +12,9 @@ const Hero = () => {
         <div className="px-8 max-[650px]:px-3">
           {/* MIDDLE SCREEN */}
           <div className="flex justify-center items-center z-10 relative">
-            <div className="flex absolute left-[-25px] top-[20px] md:left-[-170px] md:top-[-35px] -rotate-15 z-50">
+            <div className="flex absolute left-[-10px] top-[-80px] md:left-[-170px] md:top-[-35px] -rotate-[15deg] z-50 animate-bounce">
               {/* TEXT-BUBBLE */}
-              <Image className="w-15 h-auto md:w-[300px]"
+              <Image className="w-[160px] h-auto md:w-[300px]"
               src="https://i.ibb.co/8n9LbJ16/image-removebg-preview.png"
               alt="text-bubble for feedback form"
               width={300}
