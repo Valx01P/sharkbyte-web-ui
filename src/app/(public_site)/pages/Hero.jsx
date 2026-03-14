@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="px-8 max-[650px]:px-3">
           {/* MIDDLE SCREEN */}
           <div className="flex justify-center items-center z-10 relative">
-            <div className="flex absolute left-[-10px] top-[-80px] md:left-[-170px] md:top-[-35px] -rotate-[15deg] z-50 animate-bounce">
+            <div className="flex absolute left-[-24px] top-[-29px] md:left-[-170px] md:top-[-26px] -rotate-[15deg] z-50 animate-bounce">
               {/* TEXT-BUBBLE */}
               <Image className="w-[160px] h-auto md:w-[300px]"
               src="https://i.ibb.co/8n9LbJ16/image-removebg-preview.png"
@@ -29,7 +29,7 @@ const Hero = () => {
               width={200}
               height={200}
               priority
-              className="w-40 h-auto bg-transparent max-[650px]:w-32 max-[420px]:w-[260px]"
+              className="w-[150px] md:w-40 h-auto bg-transparent"
             />
           </div>
           {/* CONTENT BLOCK */}
