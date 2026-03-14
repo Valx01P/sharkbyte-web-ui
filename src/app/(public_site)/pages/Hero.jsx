@@ -6,12 +6,23 @@ const Hero = () => {
   return (
     <section id='home' className="flex justify-start items-center w-screen h-screen relative overflow-hidden pixel-bg-hero">
       {/* CONTENT CONTAINER */}
-      <div className="flex justify-around items-center w-full">
+      <div className="flex justify-around m-auto">
 
         {/* LEFT SIDE */}
         <div className="px-8 max-[650px]:px-3">
-          {/* LOGO */}
-          <div className="flex justify-center items-center z-10">
+          {/* MIDDLE SCREEN */}
+          <div className="flex justify-center items-center z-10 relative">
+            <div className="flex absolute left-[-25px] top-[20px] md:left-[-170px] md:top-[-35px] -rotate-15 z-50">
+              {/* TEXT-BUBBLE */}
+              <Image className="w-15 h-auto md:w-[300px]"
+              src="https://i.ibb.co/8n9LbJ16/image-removebg-preview.png"
+              alt="text-bubble for feedback form"
+              width={300}
+              height={300}
+              />
+            </div>
+
+            {/* SHARK-LOGO */}
             <Image
               src="/svgs/logo.svg"
               alt="SharkByte Logo"
